@@ -79,3 +79,26 @@ variable "encryption_info" {
   default = []
 }
 
+variable "open_monitoring" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      prometheus = list(object(
+        {
+          jmx_exporter = list(object(
+            {
+              enabled_in_broker = bool
+            }
+          ))
+          node_exporter = list(object(
+            {
+              enabled_in_broker = bool
+            }
+          ))
+        }
+      ))
+    }
+  ))
+  default = []
+}
+

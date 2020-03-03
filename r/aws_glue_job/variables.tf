@@ -101,3 +101,13 @@ variable "execution_property" {
   default = []
 }
 
+variable "notification_property" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      notify_delay_after = number
+    }
+  ))
+  default = []
+}
+

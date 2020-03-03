@@ -25,4 +25,8 @@ module "aws_glue_job" {
   execution_property = [{
     max_concurrent_runs = null
   }]
+
+  notification_property = [{
+    notify_delay_after = null
+  }]
 }

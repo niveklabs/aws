@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.50.0"
+    aws = ">= 2.51.0"
   }
 }
 
@@ -33,6 +33,13 @@ resource "aws_glue_job" "this" {
     for_each = var.execution_property
     content {
       max_concurrent_runs = execution_property.value["max_concurrent_runs"]
+    }
+  }
+
+  dynamic "notification_property" {
+    for_each = var.notification_property
+    content {
+      notify_delay_after = notification_property.value["notify_delay_after"]
     }
   }
 

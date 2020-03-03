@@ -18,6 +18,21 @@ output "last_processing_result" {
   value       = aws_lambda_event_source_mapping.this.last_processing_result
 }
 
+output "maximum_record_age_in_seconds" {
+  description = "returns a number"
+  value       = aws_lambda_event_source_mapping.this.maximum_record_age_in_seconds
+}
+
+output "maximum_retry_attempts" {
+  description = "returns a number"
+  value       = aws_lambda_event_source_mapping.this.maximum_retry_attempts
+}
+
+output "parallelization_factor" {
+  description = "returns a number"
+  value       = aws_lambda_event_source_mapping.this.parallelization_factor
+}
+
 output "state" {
   description = "returns a string"
   value       = aws_lambda_event_source_mapping.this.state

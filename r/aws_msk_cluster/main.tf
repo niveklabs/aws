@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.50.0"
+    aws = ">= 2.51.0"
   }
 }
 
@@ -54,6 +54,34 @@ resource "aws_msk_cluster" "this" {
         content {
           client_broker = encryption_in_transit.value["client_broker"]
           in_cluster    = encryption_in_transit.value["in_cluster"]
+        }
+      }
+
+    }
+  }
+
+  dynamic "open_monitoring" {
+    for_each = var.open_monitoring
+    content {
+
+      dynamic "prometheus" {
+        for_each = open_monitoring.value.prometheus
+        content {
+
+          dynamic "jmx_exporter" {
+            for_each = prometheus.value.jmx_exporter
+            content {
+              enabled_in_broker = jmx_exporter.value["enabled_in_broker"]
+            }
+          }
+
+          dynamic "node_exporter" {
+            for_each = prometheus.value.node_exporter
+            content {
+              enabled_in_broker = node_exporter.value["enabled_in_broker"]
+            }
+          }
+
         }
       }
 

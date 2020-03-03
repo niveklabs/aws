@@ -3,6 +3,11 @@ output "amazon_address" {
   value       = aws_dx_private_virtual_interface.this.amazon_address
 }
 
+output "amazon_side_asn" {
+  description = "returns a string"
+  value       = aws_dx_private_virtual_interface.this.amazon_side_asn
+}
+
 output "arn" {
   description = "returns a string"
   value       = aws_dx_private_virtual_interface.this.arn

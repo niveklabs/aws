@@ -33,4 +33,15 @@ module "aws_msk_cluster" {
       in_cluster    = null
     }]
   }]
+
+  open_monitoring = [{
+    prometheus = [{
+      jmx_exporter = [{
+        enabled_in_broker = null
+      }]
+      node_exporter = [{
+        enabled_in_broker = null
+      }]
+    }]
+  }]
 }

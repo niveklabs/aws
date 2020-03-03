@@ -2,7 +2,7 @@
 
 ```terraform
 provider "aws" {
-  version = "2.50.0"
+  version = "2.51.0"
 
   access_key                  = null
   allowed_account_ids         = []
