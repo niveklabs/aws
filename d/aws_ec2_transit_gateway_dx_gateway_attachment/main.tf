@@ -1,0 +1,12 @@
+terraform {
+  required_providers {
+    aws = ">= 2.50.0"
+  }
+}
+
+data "aws_ec2_transit_gateway_dx_gateway_attachment" "this" {
+  dx_gateway_id      = var.dx_gateway_id
+  tags               = var.tags
+  transit_gateway_id = var.transit_gateway_id
+}
+
