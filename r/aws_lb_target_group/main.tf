@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    aws = ">= 2.51.0"
+    aws = ">= 2.52.0"
   }
 }
 
 resource "aws_lb_target_group" "this" {
   deregistration_delay               = var.deregistration_delay
   lambda_multi_value_headers_enabled = var.lambda_multi_value_headers_enabled
+  load_balancing_algorithm_type      = var.load_balancing_algorithm_type
   name                               = var.name
   name_prefix                        = var.name_prefix
   port                               = var.port

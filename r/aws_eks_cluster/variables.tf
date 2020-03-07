@@ -26,6 +26,21 @@ variable "version" {
   default     = null
 }
 
+variable "encryption_config" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      provider = list(object(
+        {
+          key_arn = string
+        }
+      ))
+      resources = set(string)
+    }
+  ))
+  default = []
+}
+
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(

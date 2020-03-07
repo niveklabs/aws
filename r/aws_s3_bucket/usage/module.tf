@@ -23,6 +23,13 @@ module "aws_s3_bucket" {
     max_age_seconds = null
   }]
 
+  grant = [{
+    id          = null
+    permissions = []
+    type        = null
+    uri         = null
+  }]
+
   lifecycle_rule = [{
     abort_incomplete_multipart_upload_days = null
     enabled                                = null

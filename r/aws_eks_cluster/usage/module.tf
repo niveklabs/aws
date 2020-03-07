@@ -7,6 +7,13 @@ module "aws_eks_cluster" {
   tags                      = {}
   version                   = null
 
+  encryption_config = [{
+    provider = [{
+      key_arn = null
+    }]
+    resources = []
+  }]
+
   timeouts = [{
     create = null
     delete = null

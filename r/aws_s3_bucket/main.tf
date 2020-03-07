@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.51.0"
+    aws = ">= 2.52.0"
   }
 }
 
@@ -27,6 +27,16 @@ resource "aws_s3_bucket" "this" {
       allowed_origins = cors_rule.value["allowed_origins"]
       expose_headers  = cors_rule.value["expose_headers"]
       max_age_seconds = cors_rule.value["max_age_seconds"]
+    }
+  }
+
+  dynamic "grant" {
+    for_each = var.grant
+    content {
+      id          = grant.value["id"]
+      permissions = grant.value["permissions"]
+      type        = grant.value["type"]
+      uri         = grant.value["uri"]
     }
   }
 

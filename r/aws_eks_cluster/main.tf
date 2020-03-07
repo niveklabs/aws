@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.51.0"
+    aws = ">= 2.52.0"
   }
 }
 
@@ -10,6 +10,21 @@ resource "aws_eks_cluster" "this" {
   role_arn                  = var.role_arn
   tags                      = var.tags
   version                   = var.version
+
+  dynamic "encryption_config" {
+    for_each = var.encryption_config
+    content {
+      resources = encryption_config.value["resources"]
+
+      dynamic "provider" {
+        for_each = encryption_config.value.provider
+        content {
+          key_arn = provider.value["key_arn"]
+        }
+      }
+
+    }
+  }
 
   dynamic "timeouts" {
     for_each = var.timeouts

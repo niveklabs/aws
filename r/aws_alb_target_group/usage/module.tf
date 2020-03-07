@@ -3,6 +3,7 @@ module "aws_alb_target_group" {
 
   deregistration_delay               = null
   lambda_multi_value_headers_enabled = null
+  load_balancing_algorithm_type      = null
   name                               = null
   name_prefix                        = null
   port                               = null

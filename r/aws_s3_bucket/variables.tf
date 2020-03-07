@@ -90,6 +90,19 @@ variable "cors_rule" {
   default = []
 }
 
+variable "grant" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      id          = string
+      permissions = set(string)
+      type        = string
+      uri         = string
+    }
+  ))
+  default = []
+}
+
 variable "lifecycle_rule" {
   description = "nested mode: NestingList, min items: 0, max items: 0"
   type = set(object(

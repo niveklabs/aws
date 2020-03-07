@@ -10,6 +10,12 @@ variable "lambda_multi_value_headers_enabled" {
   default     = null
 }
 
+variable "load_balancing_algorithm_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "name" {
   description = "(optional)"
   type        = string
