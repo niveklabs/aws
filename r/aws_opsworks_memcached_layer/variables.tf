@@ -111,6 +111,12 @@ variable "system_packages" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "use_ebs_optimized_instances" {
   description = "(optional)"
   type        = bool

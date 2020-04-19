@@ -24,6 +24,7 @@ module "aws_opsworks_java_app_layer" {
   name                        = null
   stack_id                    = null
   system_packages             = []
+  tags                        = {}
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

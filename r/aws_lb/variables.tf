@@ -1,3 +1,9 @@
+variable "drop_invalid_header_fields" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "enable_cross_zone_load_balancing" {
   description = "(optional)"
   type        = bool

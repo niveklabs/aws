@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -25,6 +25,7 @@ resource "aws_opsworks_mysql_layer" "this" {
   root_password_on_all_instances = var.root_password_on_all_instances
   stack_id                       = var.stack_id
   system_packages                = var.system_packages
+  tags                           = var.tags
   use_ebs_optimized_instances    = var.use_ebs_optimized_instances
 
   dynamic "ebs_volume" {

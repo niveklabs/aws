@@ -91,6 +91,7 @@ variable "email_configuration" {
   type = set(object(
     {
       email_sending_account  = string
+      from_email_address     = string
       reply_to_email_address = string
       source_arn             = string
     }
@@ -169,11 +170,31 @@ variable "sms_configuration" {
   default = []
 }
 
+variable "software_token_mfa_configuration" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      enabled = bool
+    }
+  ))
+  default = []
+}
+
 variable "user_pool_add_ons" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       advanced_security_mode = string
+    }
+  ))
+  default = []
+}
+
+variable "username_configuration" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      case_sensitive = bool
     }
   ))
   default = []

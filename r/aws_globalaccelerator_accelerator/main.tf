@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -8,6 +8,7 @@ resource "aws_globalaccelerator_accelerator" "this" {
   enabled         = var.enabled
   ip_address_type = var.ip_address_type
   name            = var.name
+  tags            = var.tags
 
   dynamic "attributes" {
     for_each = var.attributes

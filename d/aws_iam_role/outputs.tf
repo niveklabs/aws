@@ -48,6 +48,11 @@ output "role_id" {
   value       = data.aws_iam_role.this.role_id
 }
 
+output "tags" {
+  description = "returns a map of string"
+  value       = data.aws_iam_role.this.tags
+}
+
 output "unique_id" {
   description = "returns a string"
   value       = data.aws_iam_role.this.unique_id

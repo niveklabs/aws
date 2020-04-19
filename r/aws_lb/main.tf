@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
 resource "aws_lb" "this" {
+  drop_invalid_header_fields       = var.drop_invalid_header_fields
   enable_cross_zone_load_balancing = var.enable_cross_zone_load_balancing
   enable_deletion_protection       = var.enable_deletion_protection
   enable_http2                     = var.enable_http2

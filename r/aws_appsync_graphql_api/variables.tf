@@ -20,6 +20,12 @@ variable "tags" {
   default     = null
 }
 
+variable "xray_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "additional_authentication_provider" {
   description = "nested mode: NestingList, min items: 0, max items: 0"
   type = set(object(

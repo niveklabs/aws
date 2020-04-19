@@ -10,3 +10,9 @@ variable "network_services" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -12,6 +12,7 @@ resource "aws_flow_log" "this" {
   log_format           = var.log_format
   log_group_name       = var.log_group_name
   subnet_id            = var.subnet_id
+  tags                 = var.tags
   traffic_type         = var.traffic_type
   vpc_id               = var.vpc_id
 }

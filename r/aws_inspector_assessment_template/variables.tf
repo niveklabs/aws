@@ -13,6 +13,12 @@ variable "rules_package_arns" {
   type        = set(string)
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "target_arn" {
   description = "(required)"
   type        = string

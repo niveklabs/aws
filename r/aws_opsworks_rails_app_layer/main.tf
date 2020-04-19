@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -29,6 +29,7 @@ resource "aws_opsworks_rails_app_layer" "this" {
   rubygems_version            = var.rubygems_version
   stack_id                    = var.stack_id
   system_packages             = var.system_packages
+  tags                        = var.tags
   use_ebs_optimized_instances = var.use_ebs_optimized_instances
 
   dynamic "ebs_volume" {

@@ -7,4 +7,5 @@ module "aws_cloud9_environment_ec2" {
   name                        = null
   owner_arn                   = null
   subnet_id                   = null
+  tags                        = {}
 }

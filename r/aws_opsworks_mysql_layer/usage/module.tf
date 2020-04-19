@@ -21,6 +21,7 @@ module "aws_opsworks_mysql_layer" {
   root_password_on_all_instances = null
   stack_id                       = null
   system_packages                = []
+  tags                           = {}
   use_ebs_optimized_instances    = null
 
   ebs_volume = [{

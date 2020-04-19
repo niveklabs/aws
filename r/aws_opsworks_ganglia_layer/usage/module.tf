@@ -20,6 +20,7 @@ module "aws_opsworks_ganglia_layer" {
   password                    = null
   stack_id                    = null
   system_packages             = []
+  tags                        = {}
   url                         = null
   use_ebs_optimized_instances = null
   username                    = null

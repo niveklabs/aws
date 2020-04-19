@@ -29,6 +29,7 @@ module "aws_cognito_user_pool" {
 
   email_configuration = [{
     email_sending_account  = null
+    from_email_address     = null
     reply_to_email_address = null
     source_arn             = null
   }]
@@ -76,8 +77,16 @@ module "aws_cognito_user_pool" {
     sns_caller_arn = null
   }]
 
+  software_token_mfa_configuration = [{
+    enabled = null
+  }]
+
   user_pool_add_ons = [{
     advanced_security_mode = null
+  }]
+
+  username_configuration = [{
+    case_sensitive = null
   }]
 
   verification_message_template = [{

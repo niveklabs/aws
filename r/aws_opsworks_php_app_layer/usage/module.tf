@@ -19,6 +19,7 @@ module "aws_opsworks_php_app_layer" {
   name                        = null
   stack_id                    = null
   system_packages             = []
+  tags                        = {}
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

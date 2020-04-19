@@ -110,6 +110,12 @@ variable "system_packages" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "url" {
   description = "(optional)"
   type        = string

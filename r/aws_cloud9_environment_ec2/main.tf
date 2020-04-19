@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -11,5 +11,6 @@ resource "aws_cloud9_environment_ec2" "this" {
   name                        = var.name
   owner_arn                   = var.owner_arn
   subnet_id                   = var.subnet_id
+  tags                        = var.tags
 }
 

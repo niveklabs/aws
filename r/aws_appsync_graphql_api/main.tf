@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -9,6 +9,7 @@ resource "aws_appsync_graphql_api" "this" {
   name                = var.name
   schema              = var.schema
   tags                = var.tags
+  xray_enabled        = var.xray_enabled
 
   dynamic "additional_authentication_provider" {
     for_each = var.additional_authentication_provider

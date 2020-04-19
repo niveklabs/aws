@@ -18,6 +18,11 @@ output "dns_name" {
   value       = data.aws_lb.this.dns_name
 }
 
+output "drop_invalid_header_fields" {
+  description = "returns a bool"
+  value       = data.aws_lb.this.drop_invalid_header_fields
+}
+
 output "enable_deletion_protection" {
   description = "returns a bool"
   value       = data.aws_lb.this.enable_deletion_protection

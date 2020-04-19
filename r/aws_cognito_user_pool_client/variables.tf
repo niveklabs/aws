@@ -18,7 +18,7 @@ variable "allowed_oauth_scopes" {
 
 variable "callback_urls" {
   description = "(optional)"
-  type        = list(string)
+  type        = set(string)
   default     = null
 }
 
@@ -42,13 +42,19 @@ variable "generate_secret" {
 
 variable "logout_urls" {
   description = "(optional)"
-  type        = list(string)
+  type        = set(string)
   default     = null
 }
 
 variable "name" {
   description = "(required)"
   type        = string
+}
+
+variable "prevent_user_existence_errors" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "read_attributes" {
@@ -65,7 +71,7 @@ variable "refresh_token_validity" {
 
 variable "supported_identity_providers" {
   description = "(optional)"
-  type        = list(string)
+  type        = set(string)
   default     = null
 }
 
@@ -78,5 +84,18 @@ variable "write_attributes" {
   description = "(optional)"
   type        = set(string)
   default     = null
+}
+
+variable "analytics_configuration" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      application_id   = string
+      external_id      = string
+      role_arn         = string
+      user_data_shared = bool
+    }
+  ))
+  default = []
 }
 

@@ -25,6 +25,7 @@ module "aws_opsworks_rails_app_layer" {
   rubygems_version            = null
   stack_id                    = null
   system_packages             = []
+  tags                        = {}
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

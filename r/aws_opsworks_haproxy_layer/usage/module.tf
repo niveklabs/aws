@@ -25,6 +25,7 @@ module "aws_opsworks_haproxy_layer" {
   stats_url                   = null
   stats_user                  = null
   system_packages             = []
+  tags                        = {}
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

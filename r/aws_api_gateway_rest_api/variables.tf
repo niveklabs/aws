@@ -50,7 +50,7 @@ variable "endpoint_configuration" {
   type = set(object(
     {
       types            = list(string)
-      vpc_endpoint_ids = list(string)
+      vpc_endpoint_ids = set(string)
     }
   ))
   default = []

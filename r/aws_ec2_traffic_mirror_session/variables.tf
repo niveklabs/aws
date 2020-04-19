@@ -20,6 +20,12 @@ variable "session_number" {
   type        = number
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "traffic_mirror_filter_id" {
   description = "(required)"
   type        = string

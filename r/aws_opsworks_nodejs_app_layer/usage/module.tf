@@ -20,6 +20,7 @@ module "aws_opsworks_nodejs_app_layer" {
   nodejs_version              = null
   stack_id                    = null
   system_packages             = []
+  tags                        = {}
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

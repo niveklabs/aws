@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -46,6 +46,7 @@ resource "aws_cognito_user_pool" "this" {
     for_each = var.email_configuration
     content {
       email_sending_account  = email_configuration.value["email_sending_account"]
+      from_email_address     = email_configuration.value["from_email_address"]
       reply_to_email_address = email_configuration.value["reply_to_email_address"]
       source_arn             = email_configuration.value["source_arn"]
     }
@@ -115,10 +116,24 @@ resource "aws_cognito_user_pool" "this" {
     }
   }
 
+  dynamic "software_token_mfa_configuration" {
+    for_each = var.software_token_mfa_configuration
+    content {
+      enabled = software_token_mfa_configuration.value["enabled"]
+    }
+  }
+
   dynamic "user_pool_add_ons" {
     for_each = var.user_pool_add_ons
     content {
       advanced_security_mode = user_pool_add_ons.value["advanced_security_mode"]
+    }
+  }
+
+  dynamic "username_configuration" {
+    for_each = var.username_configuration
+    content {
+      case_sensitive = username_configuration.value["case_sensitive"]
     }
   }
 

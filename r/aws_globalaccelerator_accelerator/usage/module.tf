@@ -4,6 +4,7 @@ module "aws_globalaccelerator_accelerator" {
   enabled         = null
   ip_address_type = null
   name            = null
+  tags            = {}
 
   attributes = [{
     flow_logs_enabled   = null

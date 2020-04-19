@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_opsworks_custom_layer.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_opsworks_custom_layer.this.id

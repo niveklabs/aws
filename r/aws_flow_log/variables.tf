@@ -40,6 +40,12 @@ variable "subnet_id" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "traffic_type" {
   description = "(required)"
   type        = string

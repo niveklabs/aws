@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.52.0"
+    aws = ">= v2.54.0"
   }
 }
 
@@ -29,6 +29,7 @@ resource "aws_opsworks_haproxy_layer" "this" {
   stats_url                   = var.stats_url
   stats_user                  = var.stats_user
   system_packages             = var.system_packages
+  tags                        = var.tags
   use_ebs_optimized_instances = var.use_ebs_optimized_instances
 
   dynamic "ebs_volume" {

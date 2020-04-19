@@ -8,6 +8,7 @@ module "aws_flow_log" {
   log_format           = null
   log_group_name       = null
   subnet_id            = null
+  tags                 = {}
   traffic_type         = null
   vpc_id               = null
 }

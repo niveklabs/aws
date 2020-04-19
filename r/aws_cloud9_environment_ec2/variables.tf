@@ -32,3 +32,9 @@ variable "subnet_id" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+

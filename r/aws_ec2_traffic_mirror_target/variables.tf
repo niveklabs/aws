@@ -16,3 +16,9 @@ variable "network_load_balancer_arn" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+

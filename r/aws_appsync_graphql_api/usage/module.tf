@@ -5,6 +5,7 @@ module "aws_appsync_graphql_api" {
   name                = null
   schema              = null
   tags                = {}
+  xray_enabled        = null
 
   additional_authentication_provider = [{
     authentication_type = null
