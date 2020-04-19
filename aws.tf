@@ -1,5 +1,5 @@
 provider "aws" {
-  version = "v2.57.0"
+  version = "v2.58.0"
 
   access_key                  = null
   allowed_account_ids         = []
@@ -132,6 +132,7 @@ provider "aws" {
     redshift               = null
     resourcegroups         = null
     route53                = null
+    route53domains         = null
     route53resolver        = null
     s3                     = null
     s3control              = null

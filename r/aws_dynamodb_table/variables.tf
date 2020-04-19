@@ -99,6 +99,16 @@ variable "point_in_time_recovery" {
   default = []
 }
 
+variable "replica" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      region_name = string
+    }
+  ))
+  default = []
+}
+
 variable "server_side_encryption" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

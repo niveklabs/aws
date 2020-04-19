@@ -6,6 +6,13 @@ module "aws_backup_plan" {
 
   rule = [{
     completion_window = null
+    copy_action = [{
+      destination_vault_arn = null
+      lifecycle = [{
+        cold_storage_after = null
+        delete_after       = null
+      }]
+    }]
     lifecycle = [{
       cold_storage_after = null
       delete_after       = null

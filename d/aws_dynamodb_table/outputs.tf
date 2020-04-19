@@ -48,6 +48,11 @@ output "read_capacity" {
   value       = data.aws_dynamodb_table.this.read_capacity
 }
 
+output "replica" {
+  description = "returns a set of object"
+  value       = data.aws_dynamodb_table.this.replica
+}
+
 output "stream_arn" {
   description = "returns a string"
   value       = data.aws_dynamodb_table.this.stream_arn

@@ -79,6 +79,31 @@ variable "username" {
   default     = null
 }
 
+variable "elasticsearch_settings" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      endpoint_uri               = string
+      error_retry_duration       = number
+      full_load_error_percentage = number
+      service_access_role_arn    = string
+    }
+  ))
+  default = []
+}
+
+variable "kinesis_settings" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      message_format          = string
+      service_access_role_arn = string
+      stream_arn              = string
+    }
+  ))
+  default = []
+}
+
 variable "mongodb_settings" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

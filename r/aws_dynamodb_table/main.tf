@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.57.0"
+    aws = ">= v2.58.0"
   }
 }
 
@@ -50,6 +50,13 @@ resource "aws_dynamodb_table" "this" {
     for_each = var.point_in_time_recovery
     content {
       enabled = point_in_time_recovery.value["enabled"]
+    }
+  }
+
+  dynamic "replica" {
+    for_each = var.replica
+    content {
+      region_name = replica.value["region_name"]
     }
   }
 

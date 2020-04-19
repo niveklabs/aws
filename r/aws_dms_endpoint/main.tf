@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.57.0"
+    aws = ">= v2.58.0"
   }
 }
 
@@ -19,6 +19,25 @@ resource "aws_dms_endpoint" "this" {
   ssl_mode                    = var.ssl_mode
   tags                        = var.tags
   username                    = var.username
+
+  dynamic "elasticsearch_settings" {
+    for_each = var.elasticsearch_settings
+    content {
+      endpoint_uri               = elasticsearch_settings.value["endpoint_uri"]
+      error_retry_duration       = elasticsearch_settings.value["error_retry_duration"]
+      full_load_error_percentage = elasticsearch_settings.value["full_load_error_percentage"]
+      service_access_role_arn    = elasticsearch_settings.value["service_access_role_arn"]
+    }
+  }
+
+  dynamic "kinesis_settings" {
+    for_each = var.kinesis_settings
+    content {
+      message_format          = kinesis_settings.value["message_format"]
+      service_access_role_arn = kinesis_settings.value["service_access_role_arn"]
+      stream_arn              = kinesis_settings.value["stream_arn"]
+    }
+  }
 
   dynamic "mongodb_settings" {
     for_each = var.mongodb_settings

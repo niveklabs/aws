@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.57.0"
+    aws = ">= v2.58.0"
   }
 }
 
@@ -17,6 +17,22 @@ resource "aws_backup_plan" "this" {
       schedule            = rule.value["schedule"]
       start_window        = rule.value["start_window"]
       target_vault_name   = rule.value["target_vault_name"]
+
+      dynamic "copy_action" {
+        for_each = rule.value.copy_action
+        content {
+          destination_vault_arn = copy_action.value["destination_vault_arn"]
+
+          dynamic "lifecycle" {
+            for_each = copy_action.value.lifecycle
+            content {
+              cold_storage_after = lifecycle.value["cold_storage_after"]
+              delete_after       = lifecycle.value["delete_after"]
+            }
+          }
+
+        }
+      }
 
       dynamic "lifecycle" {
         for_each = rule.value.lifecycle

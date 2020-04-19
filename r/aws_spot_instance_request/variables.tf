@@ -281,6 +281,7 @@ variable "root_block_device" {
   type = set(object(
     {
       delete_on_termination = bool
+      device_name           = string
       encrypted             = bool
       iops                  = number
       kms_key_id            = string

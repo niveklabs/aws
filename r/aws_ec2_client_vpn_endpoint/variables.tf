@@ -39,7 +39,7 @@ variable "transport_protocol" {
 }
 
 variable "authentication_options" {
-  description = "nested mode: NestingList, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 1, max items: 2"
   type = set(object(
     {
       active_directory_id        = string

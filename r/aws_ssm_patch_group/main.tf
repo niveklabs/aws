@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.57.0"
+    aws = ">= v2.58.0"
   }
 }
 

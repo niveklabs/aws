@@ -37,6 +37,10 @@ module "aws_dynamodb_table" {
     enabled = null
   }]
 
+  replica = [{
+    region_name = null
+  }]
+
   server_side_encryption = [{
     enabled     = null
     kms_key_arn = null

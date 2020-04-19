@@ -74,6 +74,7 @@ module "aws_spot_instance_request" {
 
   root_block_device = [{
     delete_on_termination = null
+    device_name           = null
     encrypted             = null
     iops                  = null
     kms_key_id            = null

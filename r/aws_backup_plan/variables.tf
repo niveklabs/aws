@@ -14,6 +14,17 @@ variable "rule" {
   type = set(object(
     {
       completion_window = number
+      copy_action = set(object(
+        {
+          destination_vault_arn = string
+          lifecycle = list(object(
+            {
+              cold_storage_after = number
+              delete_after       = number
+            }
+          ))
+        }
+      ))
       lifecycle = list(object(
         {
           cold_storage_after = number

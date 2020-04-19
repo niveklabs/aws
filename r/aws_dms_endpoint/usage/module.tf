@@ -16,6 +16,19 @@ module "aws_dms_endpoint" {
   tags                        = {}
   username                    = null
 
+  elasticsearch_settings = [{
+    endpoint_uri               = null
+    error_retry_duration       = null
+    full_load_error_percentage = null
+    service_access_role_arn    = null
+  }]
+
+  kinesis_settings = [{
+    message_format          = null
+    service_access_role_arn = null
+    stream_arn              = null
+  }]
+
   mongodb_settings = [{
     auth_mechanism      = null
     auth_source         = null
