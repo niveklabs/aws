@@ -1,0 +1,11 @@
+terraform {
+  required_providers {
+    aws = ">= v2.53.0"
+  }
+}
+
+resource "aws_config_configuration_recorder_status" "this" {
+  is_enabled = var.is_enabled
+  name       = var.name
+}
+
