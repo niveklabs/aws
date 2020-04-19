@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
@@ -54,6 +54,45 @@ resource "aws_msk_cluster" "this" {
         content {
           client_broker = encryption_in_transit.value["client_broker"]
           in_cluster    = encryption_in_transit.value["in_cluster"]
+        }
+      }
+
+    }
+  }
+
+  dynamic "logging_info" {
+    for_each = var.logging_info
+    content {
+
+      dynamic "broker_logs" {
+        for_each = logging_info.value.broker_logs
+        content {
+
+          dynamic "cloudwatch_logs" {
+            for_each = broker_logs.value.cloudwatch_logs
+            content {
+              enabled   = cloudwatch_logs.value["enabled"]
+              log_group = cloudwatch_logs.value["log_group"]
+            }
+          }
+
+          dynamic "firehose" {
+            for_each = broker_logs.value.firehose
+            content {
+              delivery_stream = firehose.value["delivery_stream"]
+              enabled         = firehose.value["enabled"]
+            }
+          }
+
+          dynamic "s3" {
+            for_each = broker_logs.value.s3
+            content {
+              bucket  = s3.value["bucket"]
+              enabled = s3.value["enabled"]
+              prefix  = s3.value["prefix"]
+            }
+          }
+
         }
       }
 

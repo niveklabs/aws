@@ -1,5 +1,5 @@
 provider "aws" {
-  version = "v2.54.0"
+  version = "v2.55.0"
 
   access_key                  = null
   allowed_account_ids         = []

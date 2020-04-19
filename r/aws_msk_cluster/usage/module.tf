@@ -34,6 +34,24 @@ module "aws_msk_cluster" {
     }]
   }]
 
+  logging_info = [{
+    broker_logs = [{
+      cloudwatch_logs = [{
+        enabled   = null
+        log_group = null
+      }]
+      firehose = [{
+        delivery_stream = null
+        enabled         = null
+      }]
+      s3 = [{
+        bucket  = null
+        enabled = null
+        prefix  = null
+      }]
+    }]
+  }]
+
   open_monitoring = [{
     prometheus = [{
       jmx_exporter = [{

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
@@ -61,6 +61,15 @@ resource "aws_instance" "this" {
       device_name  = ephemeral_block_device.value["device_name"]
       no_device    = ephemeral_block_device.value["no_device"]
       virtual_name = ephemeral_block_device.value["virtual_name"]
+    }
+  }
+
+  dynamic "metadata_options" {
+    for_each = var.metadata_options
+    content {
+      http_endpoint               = metadata_options.value["http_endpoint"]
+      http_put_response_hop_limit = metadata_options.value["http_put_response_hop_limit"]
+      http_tokens                 = metadata_options.value["http_tokens"]
     }
   }
 

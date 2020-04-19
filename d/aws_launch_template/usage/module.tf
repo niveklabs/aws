@@ -3,4 +3,9 @@ module "aws_launch_template" {
 
   name = null
   tags = {}
+
+  filter = [{
+    name   = null
+    values = []
+  }]
 }

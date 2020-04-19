@@ -79,6 +79,38 @@ variable "encryption_info" {
   default = []
 }
 
+variable "logging_info" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      broker_logs = list(object(
+        {
+          cloudwatch_logs = list(object(
+            {
+              enabled   = bool
+              log_group = string
+            }
+          ))
+          firehose = list(object(
+            {
+              delivery_stream = string
+              enabled         = bool
+            }
+          ))
+          s3 = list(object(
+            {
+              bucket  = string
+              enabled = bool
+              prefix  = string
+            }
+          ))
+        }
+      ))
+    }
+  ))
+  default = []
+}
+
 variable "open_monitoring" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

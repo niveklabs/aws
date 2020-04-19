@@ -52,6 +52,12 @@ module "aws_instance" {
     virtual_name = null
   }]
 
+  metadata_options = [{
+    http_endpoint               = null
+    http_put_response_hop_limit = null
+    http_tokens                 = null
+  }]
+
   network_interface = [{
     delete_on_termination = null
     device_index          = null

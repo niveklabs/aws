@@ -1,14 +1,15 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
 resource "aws_athena_workgroup" "this" {
-  description = var.description
-  name        = var.name
-  state       = var.state
-  tags        = var.tags
+  description   = var.description
+  force_destroy = var.force_destroy
+  name          = var.name
+  state         = var.state
+  tags          = var.tags
 
   dynamic "configuration" {
     for_each = var.configuration

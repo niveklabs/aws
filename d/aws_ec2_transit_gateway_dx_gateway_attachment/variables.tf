@@ -1,6 +1,7 @@
 variable "dx_gateway_id" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "tags" {
@@ -10,7 +11,19 @@ variable "tags" {
 }
 
 variable "transit_gateway_id" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
+}
+
+variable "filter" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      name   = string
+      values = list(string)
+    }
+  ))
+  default = []
 }
 

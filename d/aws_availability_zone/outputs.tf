@@ -1,3 +1,8 @@
+output "group_name" {
+  description = "returns a string"
+  value       = data.aws_availability_zone.this.group_name
+}
+
 output "id" {
   description = "returns a string"
   value       = data.aws_availability_zone.this.id
@@ -11,6 +16,16 @@ output "name" {
 output "name_suffix" {
   description = "returns a string"
   value       = data.aws_availability_zone.this.name_suffix
+}
+
+output "network_border_group" {
+  description = "returns a string"
+  value       = data.aws_availability_zone.this.network_border_group
+}
+
+output "opt_in_status" {
+  description = "returns a string"
+  value       = data.aws_availability_zone.this.opt_in_status
 }
 
 output "region" {

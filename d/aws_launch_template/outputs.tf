@@ -83,6 +83,11 @@ output "latest_version" {
   value       = data.aws_launch_template.this.latest_version
 }
 
+output "metadata_options" {
+  description = "returns a list of object"
+  value       = data.aws_launch_template.this.metadata_options
+}
+
 output "monitoring" {
   description = "returns a list of object"
   value       = data.aws_launch_template.this.monitoring

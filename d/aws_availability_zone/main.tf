@@ -1,12 +1,22 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
 data "aws_availability_zone" "this" {
-  name    = var.name
-  state   = var.state
-  zone_id = var.zone_id
+  all_availability_zones = var.all_availability_zones
+  name                   = var.name
+  state                  = var.state
+  zone_id                = var.zone_id
+
+  dynamic "filter" {
+    for_each = var.filter
+    content {
+      name   = filter.value["name"]
+      values = filter.value["values"]
+    }
+  }
+
 }
 

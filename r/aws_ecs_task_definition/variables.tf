@@ -62,6 +62,17 @@ variable "task_role_arn" {
   default     = null
 }
 
+variable "inference_accelerator" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      device_name = string
+      device_type = string
+    }
+  ))
+  default = []
+}
+
 variable "placement_constraints" {
   description = "nested mode: NestingSet, min items: 0, max items: 10"
   type = set(object(

@@ -13,6 +13,11 @@ module "aws_ecs_task_definition" {
   tags                     = {}
   task_role_arn            = null
 
+  inference_accelerator = [{
+    device_name = null
+    device_type = null
+  }]
+
   placement_constraints = [{
     expression = null
     type       = null

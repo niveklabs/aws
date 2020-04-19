@@ -78,6 +78,11 @@ output "key_name" {
   value       = data.aws_instance.this.key_name
 }
 
+output "metadata_options" {
+  description = "returns a list of object"
+  value       = data.aws_instance.this.metadata_options
+}
+
 output "monitoring" {
   description = "returns a bool"
   value       = data.aws_instance.this.monitoring

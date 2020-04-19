@@ -76,6 +76,12 @@ module "aws_launch_template" {
     license_configuration_arn = null
   }]
 
+  metadata_options = [{
+    http_endpoint               = null
+    http_put_response_hop_limit = null
+    http_tokens                 = null
+  }]
+
   monitoring = [{
     enabled = null
   }]

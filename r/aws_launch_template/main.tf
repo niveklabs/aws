@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
@@ -119,6 +119,15 @@ resource "aws_launch_template" "this" {
     for_each = var.license_specification
     content {
       license_configuration_arn = license_specification.value["license_configuration_arn"]
+    }
+  }
+
+  dynamic "metadata_options" {
+    for_each = var.metadata_options
+    content {
+      http_endpoint               = metadata_options.value["http_endpoint"]
+      http_put_response_hop_limit = metadata_options.value["http_put_response_hop_limit"]
+      http_tokens                 = metadata_options.value["http_tokens"]
     }
   }
 

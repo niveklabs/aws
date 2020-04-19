@@ -1,10 +1,11 @@
 module "aws_athena_workgroup" {
   source = "./aws/r/aws_athena_workgroup"
 
-  description = null
-  name        = null
-  state       = null
-  tags        = {}
+  description   = null
+  force_destroy = null
+  name          = null
+  state         = null
+  tags          = {}
 
   configuration = [{
     bytes_scanned_cutoff_per_query     = null

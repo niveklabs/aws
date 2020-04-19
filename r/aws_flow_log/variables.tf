@@ -34,6 +34,12 @@ variable "log_group_name" {
   default     = null
 }
 
+variable "max_aggregation_interval" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
 variable "subnet_id" {
   description = "(optional)"
   type        = string

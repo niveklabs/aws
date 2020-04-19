@@ -4,6 +4,12 @@ variable "description" {
   default     = null
 }
 
+variable "force_destroy" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "name" {
   description = "(required)"
   type        = string

@@ -13,6 +13,11 @@ output "id" {
   value       = aws_storagegateway_nfs_file_share.this.id
 }
 
+output "path" {
+  description = "returns a string"
+  value       = aws_storagegateway_nfs_file_share.this.path
+}
+
 output "this" {
   value = aws_storagegateway_nfs_file_share.this
 }

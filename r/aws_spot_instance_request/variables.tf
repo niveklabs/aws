@@ -252,6 +252,18 @@ variable "ephemeral_block_device" {
   default = []
 }
 
+variable "metadata_options" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      http_endpoint               = string
+      http_put_response_hop_limit = number
+      http_tokens                 = string
+    }
+  ))
+  default = []
+}
+
 variable "network_interface" {
   description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(

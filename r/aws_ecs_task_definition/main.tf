@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.54.0"
+    aws = ">= v2.55.0"
   }
 }
 
@@ -16,6 +16,14 @@ resource "aws_ecs_task_definition" "this" {
   requires_compatibilities = var.requires_compatibilities
   tags                     = var.tags
   task_role_arn            = var.task_role_arn
+
+  dynamic "inference_accelerator" {
+    for_each = var.inference_accelerator
+    content {
+      device_name = inference_accelerator.value["device_name"]
+      device_type = inference_accelerator.value["device_type"]
+    }
+  }
 
   dynamic "placement_constraints" {
     for_each = var.placement_constraints
