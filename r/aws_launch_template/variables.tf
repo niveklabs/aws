@@ -167,6 +167,16 @@ variable "elastic_inference_accelerator" {
   default = []
 }
 
+variable "hibernation_options" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      configured = bool
+    }
+  ))
+  default = []
+}
+
 variable "iam_instance_profile" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

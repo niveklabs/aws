@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.55.0"
+    aws = ">= v2.56.0"
   }
 }
 
@@ -13,6 +13,7 @@ resource "aws_codepipeline" "this" {
     for_each = var.artifact_store
     content {
       location = artifact_store.value["location"]
+      region   = artifact_store.value["region"]
       type     = artifact_store.value["type"]
 
       dynamic "encryption_key" {
@@ -41,6 +42,7 @@ resource "aws_codepipeline" "this" {
           output_artifacts = action.value["output_artifacts"]
           owner            = action.value["owner"]
           provider         = action.value["provider"]
+          region           = action.value["region"]
           role_arn         = action.value["role_arn"]
           run_order        = action.value["run_order"]
           version          = action.value["version"]

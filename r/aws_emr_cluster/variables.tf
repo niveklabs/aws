@@ -141,7 +141,7 @@ variable "visible_to_all_users" {
 }
 
 variable "bootstrap_action" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  description = "nested mode: NestingList, min items: 0, max items: 0"
   type = set(object(
     {
       args = list(string)

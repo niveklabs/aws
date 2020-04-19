@@ -38,6 +38,11 @@ output "elastic_gpu_specifications" {
   value       = data.aws_launch_template.this.elastic_gpu_specifications
 }
 
+output "hibernation_options" {
+  description = "returns a list of object"
+  value       = data.aws_launch_template.this.hibernation_options
+}
+
 output "iam_instance_profile" {
   description = "returns a list of object"
   value       = data.aws_launch_template.this.iam_instance_profile

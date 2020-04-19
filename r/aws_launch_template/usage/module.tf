@@ -56,6 +56,10 @@ module "aws_launch_template" {
     type = null
   }]
 
+  hibernation_options = [{
+    configured = null
+  }]
+
   iam_instance_profile = [{
     arn  = null
     name = null

@@ -15,7 +15,7 @@ variable "tags" {
 }
 
 variable "artifact_store" {
-  description = "nested mode: NestingList, min items: 1, max items: 1"
+  description = "nested mode: NestingSet, min items: 1, max items: 0"
   type = set(object(
     {
       encryption_key = list(object(
@@ -25,6 +25,7 @@ variable "artifact_store" {
         }
       ))
       location = string
+      region   = string
       type     = string
     }
   ))
@@ -43,6 +44,7 @@ variable "stage" {
           output_artifacts = list(string)
           owner            = string
           provider         = string
+          region           = string
           role_arn         = string
           run_order        = number
           version          = string

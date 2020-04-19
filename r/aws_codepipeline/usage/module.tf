@@ -11,6 +11,7 @@ module "aws_codepipeline" {
       type = null
     }]
     location = null
+    region   = null
     type     = null
   }]
 
@@ -23,6 +24,7 @@ module "aws_codepipeline" {
       output_artifacts = []
       owner            = null
       provider         = null
+      region           = null
       role_arn         = null
       run_order        = null
       version          = null

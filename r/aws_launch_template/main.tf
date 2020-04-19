@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.55.0"
+    aws = ">= v2.56.0"
   }
 }
 
@@ -85,6 +85,13 @@ resource "aws_launch_template" "this" {
     for_each = var.elastic_inference_accelerator
     content {
       type = elastic_inference_accelerator.value["type"]
+    }
+  }
+
+  dynamic "hibernation_options" {
+    for_each = var.hibernation_options
+    content {
+      configured = hibernation_options.value["configured"]
     }
   }
 
