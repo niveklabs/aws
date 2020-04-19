@@ -10,6 +10,7 @@ module "aws_spot_fleet_request" {
   load_balancers                      = []
   replace_unhealthy_instances         = null
   spot_price                          = null
+  tags                                = {}
   target_capacity                     = null
   target_group_arns                   = []
   terminate_instances_with_expiration = null

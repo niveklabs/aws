@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.56.0"
+    aws = ">= v2.57.0"
   }
 }
 
@@ -13,6 +13,7 @@ resource "aws_docdb_cluster" "this" {
   cluster_members                 = var.cluster_members
   db_cluster_parameter_group_name = var.db_cluster_parameter_group_name
   db_subnet_group_name            = var.db_subnet_group_name
+  deletion_protection             = var.deletion_protection
   enabled_cloudwatch_logs_exports = var.enabled_cloudwatch_logs_exports
   engine                          = var.engine
   engine_version                  = var.engine_version

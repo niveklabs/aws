@@ -9,6 +9,7 @@ module "aws_docdb_cluster" {
   cluster_members                 = []
   db_cluster_parameter_group_name = null
   db_subnet_group_name            = null
+  deletion_protection             = null
   enabled_cloudwatch_logs_exports = []
   engine                          = null
   engine_version                  = null

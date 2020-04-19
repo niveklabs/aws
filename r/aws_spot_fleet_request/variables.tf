@@ -51,6 +51,12 @@ variable "spot_price" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "target_capacity" {
   description = "(required)"
   type        = number

@@ -46,6 +46,12 @@ variable "db_subnet_group_name" {
   default     = null
 }
 
+variable "deletion_protection" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "enabled_cloudwatch_logs_exports" {
   description = "(optional)"
   type        = list(string)

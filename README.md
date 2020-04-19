@@ -3,13 +3,11 @@
 [embedmd]:# (aws.tf)
 ```tf
 provider "aws" {
-  version = "v2.56.0"
+  version = "v2.57.0"
 
   access_key                  = null
   allowed_account_ids         = []
   forbidden_account_ids       = []
-  ignore_tag_prefixes         = []
-  ignore_tags                 = []
   insecure                    = null
   max_retries                 = null
   profile                     = null
@@ -166,6 +164,11 @@ provider "aws" {
     workmail               = null
     workspaces             = null
     xray                   = null
+  }]
+
+  ignore_tags = [{
+    key_prefixes = []
+    keys         = []
   }]
 }
 ```

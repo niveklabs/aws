@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.56.0"
+    aws = ">= v2.57.0"
   }
 }
 
@@ -14,6 +14,7 @@ resource "aws_spot_fleet_request" "this" {
   load_balancers                      = var.load_balancers
   replace_unhealthy_instances         = var.replace_unhealthy_instances
   spot_price                          = var.spot_price
+  tags                                = var.tags
   target_capacity                     = var.target_capacity
   target_group_arns                   = var.target_group_arns
   terminate_instances_with_expiration = var.terminate_instances_with_expiration
