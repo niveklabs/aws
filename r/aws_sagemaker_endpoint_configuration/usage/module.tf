@@ -1,5 +1,5 @@
 module "aws_sagemaker_endpoint_configuration" {
-  source = "./aws/r/aws_sagemaker_endpoint_configuration"
+  source = "./modules/aws/r/aws_sagemaker_endpoint_configuration"
 
   kms_key_arn = null
   name        = null

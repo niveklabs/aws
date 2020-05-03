@@ -1,5 +1,5 @@
 module "aws_api_gateway_stage" {
-  source = "./aws/r/aws_api_gateway_stage"
+  source = "./modules/aws/r/aws_api_gateway_stage"
 
   cache_cluster_enabled = null
   cache_cluster_size    = null

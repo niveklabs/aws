@@ -1,5 +1,5 @@
 module "aws_network_interface" {
-  source = "./aws/d/aws_network_interface"
+  source = "./modules/aws/d/aws_network_interface"
 
   tags = {}
 

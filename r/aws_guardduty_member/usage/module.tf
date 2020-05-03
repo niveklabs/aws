@@ -1,5 +1,5 @@
 module "aws_guardduty_member" {
-  source = "./aws/r/aws_guardduty_member"
+  source = "./modules/aws/r/aws_guardduty_member"
 
   account_id                 = null
   detector_id                = null

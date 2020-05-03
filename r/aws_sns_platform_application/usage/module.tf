@@ -1,5 +1,5 @@
 module "aws_sns_platform_application" {
-  source = "./aws/r/aws_sns_platform_application"
+  source = "./modules/aws/r/aws_sns_platform_application"
 
   event_delivery_failure_topic_arn = null
   event_endpoint_created_topic_arn = null

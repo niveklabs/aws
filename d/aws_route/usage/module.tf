@@ -1,5 +1,5 @@
 module "aws_route" {
-  source = "./aws/d/aws_route"
+  source = "./modules/aws/d/aws_route"
 
   destination_cidr_block      = null
   destination_ipv6_cidr_block = null

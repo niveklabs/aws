@@ -1,5 +1,5 @@
 module "aws_transfer_server" {
-  source = "./aws/r/aws_transfer_server"
+  source = "./modules/aws/r/aws_transfer_server"
 
   endpoint_type          = null
   force_destroy          = null

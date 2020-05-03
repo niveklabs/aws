@@ -1,5 +1,5 @@
 module "aws_elasticache_replication_group" {
-  source = "./aws/r/aws_elasticache_replication_group"
+  source = "./modules/aws/r/aws_elasticache_replication_group"
 
   apply_immediately             = null
   at_rest_encryption_enabled    = null

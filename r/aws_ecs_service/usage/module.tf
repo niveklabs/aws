@@ -1,5 +1,5 @@
 module "aws_ecs_service" {
-  source = "./aws/r/aws_ecs_service"
+  source = "./modules/aws/r/aws_ecs_service"
 
   cluster                            = null
   deployment_maximum_percent         = null

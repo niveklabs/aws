@@ -1,5 +1,5 @@
 module "aws_ssm_association" {
-  source = "./aws/r/aws_ssm_association"
+  source = "./modules/aws/r/aws_ssm_association"
 
   association_name                 = null
   automation_target_parameter_name = null

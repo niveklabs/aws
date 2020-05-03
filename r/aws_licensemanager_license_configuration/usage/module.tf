@@ -1,5 +1,5 @@
 module "aws_licensemanager_license_configuration" {
-  source = "./aws/r/aws_licensemanager_license_configuration"
+  source = "./modules/aws/r/aws_licensemanager_license_configuration"
 
   description              = null
   license_count            = null

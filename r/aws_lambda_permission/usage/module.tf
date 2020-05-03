@@ -1,5 +1,5 @@
 module "aws_lambda_permission" {
-  source = "./aws/r/aws_lambda_permission"
+  source = "./modules/aws/r/aws_lambda_permission"
 
   action              = null
   event_source_token  = null

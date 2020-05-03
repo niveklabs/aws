@@ -1,5 +1,5 @@
 module "aws_rds_cluster" {
-  source = "./aws/r/aws_rds_cluster"
+  source = "./modules/aws/r/aws_rds_cluster"
 
   apply_immediately                   = null
   availability_zones                  = []

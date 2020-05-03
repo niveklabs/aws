@@ -1,5 +1,5 @@
 module "aws_cloudwatch_metric_alarm" {
-  source = "./aws/r/aws_cloudwatch_metric_alarm"
+  source = "./modules/aws/r/aws_cloudwatch_metric_alarm"
 
   actions_enabled                       = null
   alarm_actions                         = []

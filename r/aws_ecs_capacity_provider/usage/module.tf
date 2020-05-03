@@ -1,5 +1,5 @@
 module "aws_ecs_capacity_provider" {
-  source = "./aws/r/aws_ecs_capacity_provider"
+  source = "./modules/aws/r/aws_ecs_capacity_provider"
 
   name = null
   tags = {}

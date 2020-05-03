@@ -1,5 +1,5 @@
 module "aws_config_configuration_aggregator" {
-  source = "./aws/r/aws_config_configuration_aggregator"
+  source = "./modules/aws/r/aws_config_configuration_aggregator"
 
   name = null
   tags = {}

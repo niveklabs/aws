@@ -1,5 +1,5 @@
 module "aws_subnet" {
-  source = "./aws/d/aws_subnet"
+  source = "./modules/aws/d/aws_subnet"
 
   availability_zone    = null
   availability_zone_id = null

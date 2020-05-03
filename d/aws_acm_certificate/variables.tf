@@ -21,6 +21,12 @@ variable "statuses" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "types" {
   description = "(optional)"
   type        = list(string)

@@ -1,5 +1,5 @@
 module "aws_ses_event_destination" {
-  source = "./aws/r/aws_ses_event_destination"
+  source = "./modules/aws/r/aws_ses_event_destination"
 
   configuration_set_name = null
   enabled                = null

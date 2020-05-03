@@ -1,5 +1,5 @@
 module "aws_alb" {
-  source = "./aws/r/aws_alb"
+  source = "./modules/aws/r/aws_alb"
 
   drop_invalid_header_fields       = null
   enable_cross_zone_load_balancing = null

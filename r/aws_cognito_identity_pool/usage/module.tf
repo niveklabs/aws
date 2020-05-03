@@ -1,5 +1,5 @@
 module "aws_cognito_identity_pool" {
-  source = "./aws/r/aws_cognito_identity_pool"
+  source = "./modules/aws/r/aws_cognito_identity_pool"
 
   allow_unauthenticated_identities = null
   developer_provider_name          = null

@@ -1,5 +1,5 @@
 module "aws_glue_job" {
-  source = "./aws/r/aws_glue_job"
+  source = "./modules/aws/r/aws_glue_job"
 
   allocated_capacity     = null
   connections            = []

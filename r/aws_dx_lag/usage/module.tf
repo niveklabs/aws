@@ -1,5 +1,5 @@
 module "aws_dx_lag" {
-  source = "./aws/r/aws_dx_lag"
+  source = "./modules/aws/r/aws_dx_lag"
 
   connections_bandwidth = null
   force_destroy         = null

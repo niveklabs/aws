@@ -1,5 +1,5 @@
 module "aws_availability_zones" {
-  source = "./aws/d/aws_availability_zones"
+  source = "./modules/aws/d/aws_availability_zones"
 
   all_availability_zones = null
   blacklisted_names      = []

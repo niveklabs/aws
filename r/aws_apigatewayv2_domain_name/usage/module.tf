@@ -1,5 +1,5 @@
 module "aws_apigatewayv2_domain_name" {
-  source = "./aws/r/aws_apigatewayv2_domain_name"
+  source = "./modules/aws/r/aws_apigatewayv2_domain_name"
 
   domain_name = null
   tags        = {}

@@ -1,5 +1,5 @@
 module "aws_sns_sms_preferences" {
-  source = "./aws/r/aws_sns_sms_preferences"
+  source = "./modules/aws/r/aws_sns_sms_preferences"
 
   default_sender_id                     = null
   default_sms_type                      = null

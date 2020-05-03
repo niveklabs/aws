@@ -1,5 +1,5 @@
 module "aws_redshift_snapshot_schedule" {
-  source = "./aws/r/aws_redshift_snapshot_schedule"
+  source = "./modules/aws/r/aws_redshift_snapshot_schedule"
 
   definitions       = []
   description       = null

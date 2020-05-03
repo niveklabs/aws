@@ -1,5 +1,5 @@
 module "aws_opsworks_nodejs_app_layer" {
-  source = "./aws/r/aws_opsworks_nodejs_app_layer"
+  source = "./modules/aws/r/aws_opsworks_nodejs_app_layer"
 
   auto_assign_elastic_ips     = null
   auto_assign_public_ips      = null

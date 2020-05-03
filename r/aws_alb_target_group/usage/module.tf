@@ -1,5 +1,5 @@
 module "aws_alb_target_group" {
-  source = "./aws/r/aws_alb_target_group"
+  source = "./modules/aws/r/aws_alb_target_group"
 
   deregistration_delay               = null
   lambda_multi_value_headers_enabled = null

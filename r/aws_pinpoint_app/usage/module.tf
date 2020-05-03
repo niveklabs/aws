@@ -1,5 +1,5 @@
 module "aws_pinpoint_app" {
-  source = "./aws/r/aws_pinpoint_app"
+  source = "./modules/aws/r/aws_pinpoint_app"
 
   name        = null
   name_prefix = null

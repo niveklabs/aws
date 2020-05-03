@@ -1,5 +1,5 @@
 module "aws_elastic_beanstalk_application" {
-  source = "./aws/r/aws_elastic_beanstalk_application"
+  source = "./modules/aws/r/aws_elastic_beanstalk_application"
 
   description = null
   name        = null

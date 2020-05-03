@@ -1,5 +1,5 @@
 module "aws_arn" {
-  source = "./aws/d/aws_arn"
+  source = "./modules/aws/d/aws_arn"
 
   arn = null
 }

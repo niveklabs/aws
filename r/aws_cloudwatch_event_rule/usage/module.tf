@@ -1,5 +1,5 @@
 module "aws_cloudwatch_event_rule" {
-  source = "./aws/r/aws_cloudwatch_event_rule"
+  source = "./modules/aws/r/aws_cloudwatch_event_rule"
 
   description         = null
   event_pattern       = null

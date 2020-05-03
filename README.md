@@ -1,9 +1,9 @@
-# AWS Provider
+# aws Provider
 
 [embedmd]:# (aws.tf)
 ```tf
 provider "aws" {
-  version = "v2.58.0"
+  version = "2.59.0"
 
   access_key                  = null
   allowed_account_ids         = []
@@ -22,14 +22,14 @@ provider "aws" {
   skip_requesting_account_id  = null
   token                       = null
 
-  assume_role = [{
+  assume_role {
     external_id  = null
     policy       = null
     role_arn     = null
     session_name = null
-  }]
+  }
 
-  endpoints = [{
+  endpoints {
     accessanalyzer         = null
     acm                    = null
     acmpca                 = null
@@ -165,11 +165,11 @@ provider "aws" {
     workmail               = null
     workspaces             = null
     xray                   = null
-  }]
+  }
 
-  ignore_tags = [{
+  ignore_tags {
     key_prefixes = []
     keys         = []
-  }]
+  }
 }
 ```

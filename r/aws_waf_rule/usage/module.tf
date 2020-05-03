@@ -1,5 +1,5 @@
 module "aws_waf_rule" {
-  source = "./aws/r/aws_waf_rule"
+  source = "./modules/aws/r/aws_waf_rule"
 
   metric_name = null
   name        = null

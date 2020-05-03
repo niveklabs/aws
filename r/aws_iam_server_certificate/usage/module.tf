@@ -1,5 +1,5 @@
 module "aws_iam_server_certificate" {
-  source = "./aws/r/aws_iam_server_certificate"
+  source = "./modules/aws/r/aws_iam_server_certificate"
 
   arn               = null
   certificate_body  = null

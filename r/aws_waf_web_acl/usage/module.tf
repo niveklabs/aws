@@ -1,5 +1,5 @@
 module "aws_waf_web_acl" {
-  source = "./aws/r/aws_waf_web_acl"
+  source = "./modules/aws/r/aws_waf_web_acl"
 
   metric_name = null
   name        = null

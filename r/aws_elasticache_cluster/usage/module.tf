@@ -1,5 +1,5 @@
 module "aws_elasticache_cluster" {
-  source = "./aws/r/aws_elasticache_cluster"
+  source = "./modules/aws/r/aws_elasticache_cluster"
 
   apply_immediately            = null
   availability_zone            = null

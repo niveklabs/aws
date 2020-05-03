@@ -1,5 +1,5 @@
 module "aws_athena_database" {
-  source = "./aws/r/aws_athena_database"
+  source = "./modules/aws/r/aws_athena_database"
 
   bucket        = null
   force_destroy = null

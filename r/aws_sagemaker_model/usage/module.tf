@@ -1,5 +1,5 @@
 module "aws_sagemaker_model" {
-  source = "./aws/r/aws_sagemaker_model"
+  source = "./modules/aws/r/aws_sagemaker_model"
 
   enable_network_isolation = null
   execution_role_arn       = null

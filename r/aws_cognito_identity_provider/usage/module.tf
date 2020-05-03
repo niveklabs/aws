@@ -1,5 +1,5 @@
 module "aws_cognito_identity_provider" {
-  source = "./aws/r/aws_cognito_identity_provider"
+  source = "./modules/aws/r/aws_cognito_identity_provider"
 
   attribute_mapping = {}
   idp_identifiers   = []

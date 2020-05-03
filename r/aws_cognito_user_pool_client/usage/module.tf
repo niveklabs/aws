@@ -1,5 +1,5 @@
 module "aws_cognito_user_pool_client" {
-  source = "./aws/r/aws_cognito_user_pool_client"
+  source = "./modules/aws/r/aws_cognito_user_pool_client"
 
   allowed_oauth_flows                  = []
   allowed_oauth_flows_user_pool_client = null

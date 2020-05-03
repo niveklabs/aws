@@ -1,5 +1,5 @@
 module "aws_datasync_location_s3" {
-  source = "./aws/r/aws_datasync_location_s3"
+  source = "./modules/aws/r/aws_datasync_location_s3"
 
   s3_bucket_arn = null
   subdirectory  = null

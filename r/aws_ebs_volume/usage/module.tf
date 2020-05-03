@@ -1,5 +1,5 @@
 module "aws_ebs_volume" {
-  source = "./aws/r/aws_ebs_volume"
+  source = "./modules/aws/r/aws_ebs_volume"
 
   availability_zone = null
   encrypted         = null

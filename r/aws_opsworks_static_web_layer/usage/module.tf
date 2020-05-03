@@ -1,5 +1,5 @@
 module "aws_opsworks_static_web_layer" {
-  source = "./aws/r/aws_opsworks_static_web_layer"
+  source = "./modules/aws/r/aws_opsworks_static_web_layer"
 
   auto_assign_elastic_ips     = null
   auto_assign_public_ips      = null

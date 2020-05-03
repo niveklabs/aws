@@ -1,5 +1,5 @@
 module "aws_config_organization_managed_rule" {
-  source = "./aws/r/aws_config_organization_managed_rule"
+  source = "./modules/aws/r/aws_config_organization_managed_rule"
 
   description                 = null
   excluded_accounts           = []

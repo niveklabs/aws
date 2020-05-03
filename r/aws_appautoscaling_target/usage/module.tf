@@ -1,5 +1,5 @@
 module "aws_appautoscaling_target" {
-  source = "./aws/r/aws_appautoscaling_target"
+  source = "./modules/aws/r/aws_appautoscaling_target"
 
   max_capacity       = null
   min_capacity       = null

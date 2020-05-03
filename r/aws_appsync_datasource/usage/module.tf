@@ -1,5 +1,5 @@
 module "aws_appsync_datasource" {
-  source = "./aws/r/aws_appsync_datasource"
+  source = "./modules/aws/r/aws_appsync_datasource"
 
   api_id           = null
   description      = null

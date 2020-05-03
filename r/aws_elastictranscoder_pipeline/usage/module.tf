@@ -1,5 +1,5 @@
 module "aws_elastictranscoder_pipeline" {
-  source = "./aws/r/aws_elastictranscoder_pipeline"
+  source = "./modules/aws/r/aws_elastictranscoder_pipeline"
 
   aws_kms_key_arn = null
   input_bucket    = null

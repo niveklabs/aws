@@ -1,5 +1,5 @@
 module "aws_alb_listener" {
-  source = "./aws/r/aws_alb_listener"
+  source = "./modules/aws/r/aws_alb_listener"
 
   certificate_arn   = null
   load_balancer_arn = null

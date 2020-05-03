@@ -1,5 +1,5 @@
 module "aws_cur_report_definition" {
-  source = "./aws/r/aws_cur_report_definition"
+  source = "./modules/aws/r/aws_cur_report_definition"
 
   additional_artifacts       = []
   additional_schema_elements = []

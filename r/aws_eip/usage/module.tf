@@ -1,5 +1,5 @@
 module "aws_eip" {
-  source = "./aws/r/aws_eip"
+  source = "./modules/aws/r/aws_eip"
 
   associate_with_private_ip = null
   instance                  = null

@@ -1,5 +1,5 @@
 module "aws_eip" {
-  source = "./aws/d/aws_eip"
+  source = "./modules/aws/d/aws_eip"
 
   public_ip = null
   tags      = {}

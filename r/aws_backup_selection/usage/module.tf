@@ -1,5 +1,5 @@
 module "aws_backup_selection" {
-  source = "./aws/r/aws_backup_selection"
+  source = "./modules/aws/r/aws_backup_selection"
 
   iam_role_arn = null
   name         = null

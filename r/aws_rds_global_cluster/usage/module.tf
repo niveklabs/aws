@@ -1,5 +1,5 @@
 module "aws_rds_global_cluster" {
-  source = "./aws/r/aws_rds_global_cluster"
+  source = "./modules/aws/r/aws_rds_global_cluster"
 
   database_name             = null
   deletion_protection       = null

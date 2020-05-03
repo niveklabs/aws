@@ -1,5 +1,5 @@
 module "aws_fsx_lustre_file_system" {
-  source = "./aws/r/aws_fsx_lustre_file_system"
+  source = "./modules/aws/r/aws_fsx_lustre_file_system"
 
   export_path                   = null
   import_path                   = null

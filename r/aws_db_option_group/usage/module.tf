@@ -1,5 +1,5 @@
 module "aws_db_option_group" {
-  source = "./aws/r/aws_db_option_group"
+  source = "./modules/aws/r/aws_db_option_group"
 
   engine_name              = null
   major_engine_version     = null

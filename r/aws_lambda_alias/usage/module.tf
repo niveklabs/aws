@@ -1,5 +1,5 @@
 module "aws_lambda_alias" {
-  source = "./aws/r/aws_lambda_alias"
+  source = "./modules/aws/r/aws_lambda_alias"
 
   description      = null
   function_name    = null

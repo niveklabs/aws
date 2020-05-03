@@ -1,5 +1,5 @@
 module "aws_codestarnotifications_notification_rule" {
-  source = "./aws/r/aws_codestarnotifications_notification_rule"
+  source = "./modules/aws/r/aws_codestarnotifications_notification_rule"
 
   detail_type    = null
   event_type_ids = []

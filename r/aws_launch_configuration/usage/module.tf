@@ -1,5 +1,5 @@
 module "aws_launch_configuration" {
-  source = "./aws/r/aws_launch_configuration"
+  source = "./modules/aws/r/aws_launch_configuration"
 
   associate_public_ip_address      = null
   ebs_optimized                    = null

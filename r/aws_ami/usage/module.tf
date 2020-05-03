@@ -1,5 +1,5 @@
 module "aws_ami" {
-  source = "./aws/r/aws_ami"
+  source = "./modules/aws/r/aws_ami"
 
   architecture        = null
   description         = null

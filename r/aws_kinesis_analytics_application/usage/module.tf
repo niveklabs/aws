@@ -1,5 +1,5 @@
 module "aws_kinesis_analytics_application" {
-  source = "./aws/r/aws_kinesis_analytics_application"
+  source = "./modules/aws/r/aws_kinesis_analytics_application"
 
   code        = null
   description = null

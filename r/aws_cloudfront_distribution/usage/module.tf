@@ -1,5 +1,5 @@
 module "aws_cloudfront_distribution" {
-  source = "./aws/r/aws_cloudfront_distribution"
+  source = "./modules/aws/r/aws_cloudfront_distribution"
 
   aliases             = []
   comment             = null

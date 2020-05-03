@@ -1,5 +1,5 @@
 module "aws_ssm_maintenance_window_target" {
-  source = "./aws/r/aws_ssm_maintenance_window_target"
+  source = "./modules/aws/r/aws_ssm_maintenance_window_target"
 
   description       = null
   name              = null

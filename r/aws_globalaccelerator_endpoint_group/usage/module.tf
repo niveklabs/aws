@@ -1,5 +1,5 @@
 module "aws_globalaccelerator_endpoint_group" {
-  source = "./aws/r/aws_globalaccelerator_endpoint_group"
+  source = "./modules/aws/r/aws_globalaccelerator_endpoint_group"
 
   endpoint_group_region         = null
   health_check_interval_seconds = null

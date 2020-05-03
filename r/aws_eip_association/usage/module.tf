@@ -1,5 +1,5 @@
 module "aws_eip_association" {
-  source = "./aws/r/aws_eip_association"
+  source = "./modules/aws/r/aws_eip_association"
 
   allocation_id        = null
   allow_reassociation  = null

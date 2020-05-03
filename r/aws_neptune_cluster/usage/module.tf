@@ -1,5 +1,5 @@
 module "aws_neptune_cluster" {
-  source = "./aws/r/aws_neptune_cluster"
+  source = "./modules/aws/r/aws_neptune_cluster"
 
   apply_immediately                    = null
   availability_zones                   = []

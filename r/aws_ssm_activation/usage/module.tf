@@ -1,5 +1,5 @@
 module "aws_ssm_activation" {
-  source = "./aws/r/aws_ssm_activation"
+  source = "./modules/aws/r/aws_ssm_activation"
 
   description        = null
   expiration_date    = null

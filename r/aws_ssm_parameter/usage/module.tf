@@ -1,5 +1,5 @@
 module "aws_ssm_parameter" {
-  source = "./aws/r/aws_ssm_parameter"
+  source = "./modules/aws/r/aws_ssm_parameter"
 
   allowed_pattern = null
   arn             = null

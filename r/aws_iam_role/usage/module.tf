@@ -1,5 +1,5 @@
 module "aws_iam_role" {
-  source = "./aws/r/aws_iam_role"
+  source = "./modules/aws/r/aws_iam_role"
 
   assume_role_policy    = null
   description           = null

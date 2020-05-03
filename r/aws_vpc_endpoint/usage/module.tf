@@ -1,5 +1,5 @@
 module "aws_vpc_endpoint" {
-  source = "./aws/r/aws_vpc_endpoint"
+  source = "./modules/aws/r/aws_vpc_endpoint"
 
   auto_accept         = null
   policy              = null

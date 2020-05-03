@@ -1,5 +1,5 @@
 module "aws_cloudwatch_event_target" {
-  source = "./aws/r/aws_cloudwatch_event_target"
+  source = "./modules/aws/r/aws_cloudwatch_event_target"
 
   arn        = null
   input      = null

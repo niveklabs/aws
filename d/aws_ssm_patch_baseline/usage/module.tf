@@ -1,5 +1,5 @@
 module "aws_ssm_patch_baseline" {
-  source = "./aws/d/aws_ssm_patch_baseline"
+  source = "./modules/aws/d/aws_ssm_patch_baseline"
 
   default_baseline = null
   name_prefix      = null

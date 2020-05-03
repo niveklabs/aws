@@ -1,5 +1,5 @@
 module "aws_api_gateway_method_response" {
-  source = "./aws/r/aws_api_gateway_method_response"
+  source = "./modules/aws/r/aws_api_gateway_method_response"
 
   http_method                 = null
   resource_id                 = null

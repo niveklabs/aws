@@ -1,5 +1,5 @@
 module "aws_dx_gateway_association" {
-  source = "./aws/r/aws_dx_gateway_association"
+  source = "./modules/aws/r/aws_dx_gateway_association"
 
   allowed_prefixes                    = []
   associated_gateway_id               = null

@@ -1,5 +1,5 @@
 module "aws_elasticsearch_domain" {
-  source = "./aws/r/aws_elasticsearch_domain"
+  source = "./modules/aws/r/aws_elasticsearch_domain"
 
   access_policies       = null
   advanced_options      = {}

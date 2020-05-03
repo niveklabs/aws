@@ -1,5 +1,5 @@
 module "aws_lambda_function" {
-  source = "./aws/r/aws_lambda_function"
+  source = "./modules/aws/r/aws_lambda_function"
 
   description                    = null
   filename                       = null

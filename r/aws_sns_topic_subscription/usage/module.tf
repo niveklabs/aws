@@ -1,5 +1,5 @@
 module "aws_sns_topic_subscription" {
-  source = "./aws/r/aws_sns_topic_subscription"
+  source = "./modules/aws/r/aws_sns_topic_subscription"
 
   confirmation_timeout_in_minutes = null
   delivery_policy                 = null

@@ -1,5 +1,5 @@
 module "aws_kms_external_key" {
-  source = "./aws/r/aws_kms_external_key"
+  source = "./modules/aws/r/aws_kms_external_key"
 
   deletion_window_in_days = null
   description             = null

@@ -1,5 +1,5 @@
 module "aws_backup_plan" {
-  source = "./aws/r/aws_backup_plan"
+  source = "./modules/aws/r/aws_backup_plan"
 
   name = null
   tags = {}

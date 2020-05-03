@@ -1,5 +1,5 @@
 module "aws_iot_thing_type" {
-  source = "./aws/r/aws_iot_thing_type"
+  source = "./modules/aws/r/aws_iot_thing_type"
 
   deprecated = null
   name       = null

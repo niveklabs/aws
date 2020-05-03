@@ -1,5 +1,5 @@
 module "aws_codebuild_webhook" {
-  source = "./aws/r/aws_codebuild_webhook"
+  source = "./modules/aws/r/aws_codebuild_webhook"
 
   branch_filter = null
   project_name  = null

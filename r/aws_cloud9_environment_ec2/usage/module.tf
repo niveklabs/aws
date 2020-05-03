@@ -1,5 +1,5 @@
 module "aws_cloud9_environment_ec2" {
-  source = "./aws/r/aws_cloud9_environment_ec2"
+  source = "./modules/aws/r/aws_cloud9_environment_ec2"
 
   automatic_stop_time_minutes = null
   description                 = null

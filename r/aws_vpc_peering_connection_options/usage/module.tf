@@ -1,5 +1,5 @@
 module "aws_vpc_peering_connection_options" {
-  source = "./aws/r/aws_vpc_peering_connection_options"
+  source = "./modules/aws/r/aws_vpc_peering_connection_options"
 
   vpc_peering_connection_id = null
 

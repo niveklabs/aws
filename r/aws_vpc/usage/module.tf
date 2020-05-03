@@ -1,5 +1,5 @@
 module "aws_vpc" {
-  source = "./aws/r/aws_vpc"
+  source = "./modules/aws/r/aws_vpc"
 
   assign_generated_ipv6_cidr_block = null
   cidr_block                       = null

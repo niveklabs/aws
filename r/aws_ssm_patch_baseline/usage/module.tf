@@ -1,5 +1,5 @@
 module "aws_ssm_patch_baseline" {
-  source = "./aws/r/aws_ssm_patch_baseline"
+  source = "./modules/aws/r/aws_ssm_patch_baseline"
 
   approved_patches                  = []
   approved_patches_compliance_level = null

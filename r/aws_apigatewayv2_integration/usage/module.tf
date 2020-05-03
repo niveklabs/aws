@@ -1,5 +1,5 @@
 module "aws_apigatewayv2_integration" {
-  source = "./aws/r/aws_apigatewayv2_integration"
+  source = "./modules/aws/r/aws_apigatewayv2_integration"
 
   api_id                        = null
   connection_id                 = null

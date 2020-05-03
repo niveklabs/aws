@@ -1,5 +1,5 @@
 module "aws_flow_log" {
-  source = "./aws/r/aws_flow_log"
+  source = "./modules/aws/r/aws_flow_log"
 
   eni_id                   = null
   iam_role_arn             = null

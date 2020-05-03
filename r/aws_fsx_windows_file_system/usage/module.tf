@@ -1,5 +1,5 @@
 module "aws_fsx_windows_file_system" {
-  source = "./aws/r/aws_fsx_windows_file_system"
+  source = "./modules/aws/r/aws_fsx_windows_file_system"
 
   active_directory_id               = null
   automatic_backup_retention_days   = null

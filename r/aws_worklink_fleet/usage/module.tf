@@ -1,5 +1,5 @@
 module "aws_worklink_fleet" {
-  source = "./aws/r/aws_worklink_fleet"
+  source = "./modules/aws/r/aws_worklink_fleet"
 
   audit_stream_arn               = null
   device_ca_certificate          = null

@@ -1,5 +1,5 @@
 module "aws_storagegateway_cached_iscsi_volume" {
-  source = "./aws/r/aws_storagegateway_cached_iscsi_volume"
+  source = "./modules/aws/r/aws_storagegateway_cached_iscsi_volume"
 
   gateway_arn          = null
   network_interface_id = null

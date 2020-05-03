@@ -1,5 +1,5 @@
 module "aws_ami" {
-  source = "./aws/d/aws_ami"
+  source = "./modules/aws/d/aws_ami"
 
   executable_users = []
   most_recent      = null

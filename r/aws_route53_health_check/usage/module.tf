@@ -1,5 +1,5 @@
 module "aws_route53_health_check" {
-  source = "./aws/r/aws_route53_health_check"
+  source = "./modules/aws/r/aws_route53_health_check"
 
   child_health_threshold          = null
   child_healthchecks              = []

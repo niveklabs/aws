@@ -1,5 +1,5 @@
 module "aws_apigatewayv2_stage" {
-  source = "./aws/r/aws_apigatewayv2_stage"
+  source = "./modules/aws/r/aws_apigatewayv2_stage"
 
   api_id                = null
   auto_deploy           = null

@@ -1,5 +1,5 @@
 module "aws_default_route_table" {
-  source = "./aws/r/aws_default_route_table"
+  source = "./modules/aws/r/aws_default_route_table"
 
   default_route_table_id = null
   propagating_vgws       = []

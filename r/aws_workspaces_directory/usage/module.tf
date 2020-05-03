@@ -1,5 +1,5 @@
 module "aws_workspaces_directory" {
-  source = "./aws/r/aws_workspaces_directory"
+  source = "./modules/aws/r/aws_workspaces_directory"
 
   directory_id = null
   subnet_ids   = []

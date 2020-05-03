@@ -1,5 +1,5 @@
 module "aws_dms_replication_instance" {
-  source = "./aws/r/aws_dms_replication_instance"
+  source = "./modules/aws/r/aws_dms_replication_instance"
 
   allocated_storage            = null
   apply_immediately            = null

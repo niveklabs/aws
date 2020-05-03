@@ -1,5 +1,5 @@
 module "aws_dx_hosted_public_virtual_interface" {
-  source = "./aws/r/aws_dx_hosted_public_virtual_interface"
+  source = "./modules/aws/r/aws_dx_hosted_public_virtual_interface"
 
   address_family        = null
   amazon_address        = null

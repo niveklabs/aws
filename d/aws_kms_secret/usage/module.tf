@@ -1,5 +1,5 @@
 module "aws_kms_secret" {
-  source = "./aws/d/aws_kms_secret"
+  source = "./modules/aws/d/aws_kms_secret"
 
 
   secret = [{

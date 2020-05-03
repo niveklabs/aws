@@ -1,5 +1,5 @@
 module "aws_lightsail_instance" {
-  source = "./aws/r/aws_lightsail_instance"
+  source = "./modules/aws/r/aws_lightsail_instance"
 
   availability_zone = null
   blueprint_id      = null

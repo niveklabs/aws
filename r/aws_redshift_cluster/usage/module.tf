@@ -1,5 +1,5 @@
 module "aws_redshift_cluster" {
-  source = "./aws/r/aws_redshift_cluster"
+  source = "./modules/aws/r/aws_redshift_cluster"
 
   allow_version_upgrade               = null
   automated_snapshot_retention_period = null

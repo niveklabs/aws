@@ -1,5 +1,5 @@
 module "aws_glue_script" {
-  source = "./aws/d/aws_glue_script"
+  source = "./modules/aws/d/aws_glue_script"
 
   language = null
 

@@ -1,5 +1,5 @@
 module "aws_s3_bucket_analytics_configuration" {
-  source = "./aws/r/aws_s3_bucket_analytics_configuration"
+  source = "./modules/aws/r/aws_s3_bucket_analytics_configuration"
 
   bucket = null
   name   = null

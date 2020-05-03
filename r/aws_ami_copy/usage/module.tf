@@ -1,5 +1,5 @@
 module "aws_ami_copy" {
-  source = "./aws/r/aws_ami_copy"
+  source = "./modules/aws/r/aws_ami_copy"
 
   description       = null
   encrypted         = null

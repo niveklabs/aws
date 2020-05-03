@@ -1,5 +1,5 @@
 module "aws_wafregional_ipset" {
-  source = "./aws/r/aws_wafregional_ipset"
+  source = "./modules/aws/r/aws_wafregional_ipset"
 
   name = null
 

@@ -1,5 +1,5 @@
 module "aws_api_gateway_integration_response" {
-  source = "./aws/r/aws_api_gateway_integration_response"
+  source = "./modules/aws/r/aws_api_gateway_integration_response"
 
   content_handling            = null
   http_method                 = null

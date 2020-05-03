@@ -1,5 +1,5 @@
 module "aws_acmpca_certificate_authority" {
-  source = "./aws/d/aws_acmpca_certificate_authority"
+  source = "./modules/aws/d/aws_acmpca_certificate_authority"
 
   arn  = null
   tags = {}

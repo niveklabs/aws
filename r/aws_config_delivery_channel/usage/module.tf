@@ -1,5 +1,5 @@
 module "aws_config_delivery_channel" {
-  source = "./aws/r/aws_config_delivery_channel"
+  source = "./modules/aws/r/aws_config_delivery_channel"
 
   name           = null
   s3_bucket_name = null

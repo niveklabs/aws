@@ -1,5 +1,5 @@
 module "aws_efs_file_system" {
-  source = "./aws/r/aws_efs_file_system"
+  source = "./modules/aws/r/aws_efs_file_system"
 
   creation_token                  = null
   encrypted                       = null

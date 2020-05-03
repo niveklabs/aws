@@ -1,5 +1,5 @@
 module "aws_codepipeline_webhook" {
-  source = "./aws/r/aws_codepipeline_webhook"
+  source = "./modules/aws/r/aws_codepipeline_webhook"
 
   authentication  = null
   name            = null

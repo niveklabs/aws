@@ -1,5 +1,5 @@
 module "aws_iam_policy" {
-  source = "./aws/r/aws_iam_policy"
+  source = "./modules/aws/r/aws_iam_policy"
 
   description = null
   name        = null

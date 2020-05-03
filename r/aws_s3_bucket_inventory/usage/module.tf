@@ -1,5 +1,5 @@
 module "aws_s3_bucket_inventory" {
-  source = "./aws/r/aws_s3_bucket_inventory"
+  source = "./modules/aws/r/aws_s3_bucket_inventory"
 
   bucket                   = null
   enabled                  = null

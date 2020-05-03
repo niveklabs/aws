@@ -1,5 +1,5 @@
 module "aws_opsworks_memcached_layer" {
-  source = "./aws/r/aws_opsworks_memcached_layer"
+  source = "./modules/aws/r/aws_opsworks_memcached_layer"
 
   allocated_memory            = null
   auto_assign_elastic_ips     = null

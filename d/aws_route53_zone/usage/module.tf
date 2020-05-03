@@ -1,5 +1,5 @@
 module "aws_route53_zone" {
-  source = "./aws/d/aws_route53_zone"
+  source = "./modules/aws/d/aws_route53_zone"
 
   name                      = null
   private_zone              = null

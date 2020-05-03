@@ -1,5 +1,5 @@
 module "aws_vpc_dhcp_options" {
-  source = "./aws/r/aws_vpc_dhcp_options"
+  source = "./modules/aws/r/aws_vpc_dhcp_options"
 
   domain_name          = null
   domain_name_servers  = []

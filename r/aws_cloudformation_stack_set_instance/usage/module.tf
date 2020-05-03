@@ -1,5 +1,5 @@
 module "aws_cloudformation_stack_set_instance" {
-  source = "./aws/r/aws_cloudformation_stack_set_instance"
+  source = "./modules/aws/r/aws_cloudformation_stack_set_instance"
 
   account_id          = null
   parameter_overrides = {}

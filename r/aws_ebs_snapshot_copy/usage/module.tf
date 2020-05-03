@@ -1,5 +1,5 @@
 module "aws_ebs_snapshot_copy" {
-  source = "./aws/r/aws_ebs_snapshot_copy"
+  source = "./modules/aws/r/aws_ebs_snapshot_copy"
 
   description        = null
   encrypted          = null

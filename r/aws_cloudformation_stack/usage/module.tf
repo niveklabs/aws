@@ -1,5 +1,5 @@
 module "aws_cloudformation_stack" {
-  source = "./aws/r/aws_cloudformation_stack"
+  source = "./modules/aws/r/aws_cloudformation_stack"
 
   capabilities       = []
   disable_rollback   = null

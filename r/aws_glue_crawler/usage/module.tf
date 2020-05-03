@@ -1,5 +1,5 @@
 module "aws_glue_crawler" {
-  source = "./aws/r/aws_glue_crawler"
+  source = "./modules/aws/r/aws_glue_crawler"
 
   classifiers            = []
   configuration          = null

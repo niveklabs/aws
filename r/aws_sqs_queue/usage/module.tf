@@ -1,5 +1,5 @@
 module "aws_sqs_queue" {
-  source = "./aws/r/aws_sqs_queue"
+  source = "./modules/aws/r/aws_sqs_queue"
 
   content_based_deduplication       = null
   delay_seconds                     = null

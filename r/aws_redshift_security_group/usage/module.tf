@@ -1,5 +1,5 @@
 module "aws_redshift_security_group" {
-  source = "./aws/r/aws_redshift_security_group"
+  source = "./modules/aws/r/aws_redshift_security_group"
 
   description = null
   name        = null

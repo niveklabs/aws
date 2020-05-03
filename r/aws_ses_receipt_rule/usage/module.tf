@@ -1,5 +1,5 @@
 module "aws_ses_receipt_rule" {
-  source = "./aws/r/aws_ses_receipt_rule"
+  source = "./modules/aws/r/aws_ses_receipt_rule"
 
   after         = null
   enabled       = null

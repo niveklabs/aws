@@ -1,5 +1,5 @@
 module "aws_mq_broker" {
-  source = "./aws/r/aws_mq_broker"
+  source = "./modules/aws/r/aws_mq_broker"
 
   apply_immediately          = null
   auto_minor_version_upgrade = null

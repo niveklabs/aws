@@ -1,5 +1,5 @@
 module "aws_lambda_event_source_mapping" {
-  source = "./aws/r/aws_lambda_event_source_mapping"
+  source = "./modules/aws/r/aws_lambda_event_source_mapping"
 
   batch_size                         = null
   bisect_batch_on_function_error     = null

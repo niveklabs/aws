@@ -1,5 +1,5 @@
 module "aws_api_gateway_gateway_response" {
-  source = "./aws/r/aws_api_gateway_gateway_response"
+  source = "./modules/aws/r/aws_api_gateway_gateway_response"
 
   response_parameters = {}
   response_templates  = {}

@@ -1,5 +1,5 @@
 module "aws_cloudwatch_log_subscription_filter" {
-  source = "./aws/r/aws_cloudwatch_log_subscription_filter"
+  source = "./modules/aws/r/aws_cloudwatch_log_subscription_filter"
 
   destination_arn = null
   distribution    = null

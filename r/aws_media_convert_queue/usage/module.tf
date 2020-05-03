@@ -1,5 +1,5 @@
 module "aws_media_convert_queue" {
-  source = "./aws/r/aws_media_convert_queue"
+  source = "./modules/aws/r/aws_media_convert_queue"
 
   description  = null
   name         = null

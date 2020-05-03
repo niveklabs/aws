@@ -1,5 +1,5 @@
 module "aws_acmpca_certificate_authority" {
-  source = "./aws/r/aws_acmpca_certificate_authority"
+  source = "./modules/aws/r/aws_acmpca_certificate_authority"
 
   enabled                         = null
   permanent_deletion_time_in_days = null

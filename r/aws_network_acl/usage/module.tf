@@ -1,5 +1,5 @@
 module "aws_network_acl" {
-  source = "./aws/r/aws_network_acl"
+  source = "./modules/aws/r/aws_network_acl"
 
   egress = [{
     action          = null

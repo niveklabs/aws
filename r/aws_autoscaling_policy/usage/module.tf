@@ -1,5 +1,5 @@
 module "aws_autoscaling_policy" {
-  source = "./aws/r/aws_autoscaling_policy"
+  source = "./modules/aws/r/aws_autoscaling_policy"
 
   adjustment_type           = null
   autoscaling_group_name    = null

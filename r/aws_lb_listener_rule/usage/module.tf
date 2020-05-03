@@ -1,5 +1,5 @@
 module "aws_lb_listener_rule" {
-  source = "./aws/r/aws_lb_listener_rule"
+  source = "./modules/aws/r/aws_lb_listener_rule"
 
   listener_arn = null
   priority     = null

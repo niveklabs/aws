@@ -1,5 +1,5 @@
 module "aws_ec2_transit_gateway_vpc_attachment" {
-  source = "./aws/r/aws_ec2_transit_gateway_vpc_attachment"
+  source = "./modules/aws/r/aws_ec2_transit_gateway_vpc_attachment"
 
   dns_support                                     = null
   ipv6_support                                    = null

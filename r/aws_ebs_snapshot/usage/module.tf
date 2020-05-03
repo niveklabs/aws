@@ -1,5 +1,5 @@
 module "aws_ebs_snapshot" {
-  source = "./aws/r/aws_ebs_snapshot"
+  source = "./modules/aws/r/aws_ebs_snapshot"
 
   description = null
   tags        = {}

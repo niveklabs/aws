@@ -1,5 +1,5 @@
 module "aws_budgets_budget" {
-  source = "./aws/r/aws_budgets_budget"
+  source = "./modules/aws/r/aws_budgets_budget"
 
   account_id        = null
   budget_type       = null

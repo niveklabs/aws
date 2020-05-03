@@ -1,5 +1,5 @@
 module "aws_datasync_location_efs" {
-  source = "./aws/r/aws_datasync_location_efs"
+  source = "./modules/aws/r/aws_datasync_location_efs"
 
   efs_file_system_arn = null
   subdirectory        = null

@@ -1,5 +1,5 @@
 module "aws_vpc" {
-  source = "./aws/d/aws_vpc"
+  source = "./modules/aws/d/aws_vpc"
 
   cidr_block      = null
   default         = null

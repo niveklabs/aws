@@ -1,5 +1,5 @@
 module "aws_subnet" {
-  source = "./aws/r/aws_subnet"
+  source = "./modules/aws/r/aws_subnet"
 
   assign_ipv6_address_on_creation = null
   availability_zone               = null

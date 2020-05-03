@@ -1,5 +1,5 @@
 module "aws_ec2_capacity_reservation" {
-  source = "./aws/r/aws_ec2_capacity_reservation"
+  source = "./modules/aws/r/aws_ec2_capacity_reservation"
 
   availability_zone       = null
   ebs_optimized           = null

@@ -1,5 +1,5 @@
 module "aws_eks_node_group" {
-  source = "./aws/r/aws_eks_node_group"
+  source = "./modules/aws/r/aws_eks_node_group"
 
   ami_type        = null
   cluster_name    = null

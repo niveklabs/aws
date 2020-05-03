@@ -1,5 +1,5 @@
 module "aws_vpcs" {
-  source = "./aws/d/aws_vpcs"
+  source = "./modules/aws/d/aws_vpcs"
 
   tags = {}
 

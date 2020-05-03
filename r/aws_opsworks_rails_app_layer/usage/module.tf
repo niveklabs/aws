@@ -1,5 +1,5 @@
 module "aws_opsworks_rails_app_layer" {
-  source = "./aws/r/aws_opsworks_rails_app_layer"
+  source = "./modules/aws/r/aws_opsworks_rails_app_layer"
 
   app_server                  = null
   auto_assign_elastic_ips     = null

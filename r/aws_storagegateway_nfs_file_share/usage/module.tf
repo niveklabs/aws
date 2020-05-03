@@ -1,5 +1,5 @@
 module "aws_storagegateway_nfs_file_share" {
-  source = "./aws/r/aws_storagegateway_nfs_file_share"
+  source = "./modules/aws/r/aws_storagegateway_nfs_file_share"
 
   client_list             = []
   default_storage_class   = null

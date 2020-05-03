@@ -1,5 +1,5 @@
 module "aws_glacier_vault" {
-  source = "./aws/r/aws_glacier_vault"
+  source = "./modules/aws/r/aws_glacier_vault"
 
   access_policy = null
   name          = null

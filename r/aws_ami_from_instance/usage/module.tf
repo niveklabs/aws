@@ -1,5 +1,5 @@
 module "aws_ami_from_instance" {
-  source = "./aws/r/aws_ami_from_instance"
+  source = "./modules/aws/r/aws_ami_from_instance"
 
   description             = null
   name                    = null

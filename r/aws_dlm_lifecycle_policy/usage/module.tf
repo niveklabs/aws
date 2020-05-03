@@ -1,5 +1,5 @@
 module "aws_dlm_lifecycle_policy" {
-  source = "./aws/r/aws_dlm_lifecycle_policy"
+  source = "./modules/aws/r/aws_dlm_lifecycle_policy"
 
   description        = null
   execution_role_arn = null

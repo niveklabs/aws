@@ -1,5 +1,5 @@
 module "aws_globalaccelerator_accelerator" {
-  source = "./aws/r/aws_globalaccelerator_accelerator"
+  source = "./modules/aws/r/aws_globalaccelerator_accelerator"
 
   enabled         = null
   ip_address_type = null

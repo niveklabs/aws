@@ -1,5 +1,5 @@
 module "aws_api_gateway_rest_api" {
-  source = "./aws/r/aws_api_gateway_rest_api"
+  source = "./modules/aws/r/aws_api_gateway_rest_api"
 
   api_key_source           = null
   binary_media_types       = []

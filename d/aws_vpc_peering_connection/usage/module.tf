@@ -1,5 +1,5 @@
 module "aws_vpc_peering_connection" {
-  source = "./aws/d/aws_vpc_peering_connection"
+  source = "./modules/aws/d/aws_vpc_peering_connection"
 
   cidr_block      = null
   owner_id        = null

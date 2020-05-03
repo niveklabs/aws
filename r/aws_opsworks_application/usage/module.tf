@@ -1,5 +1,5 @@
 module "aws_opsworks_application" {
-  source = "./aws/r/aws_opsworks_application"
+  source = "./modules/aws/r/aws_opsworks_application"
 
   auto_bundle_on_deploy     = null
   aws_flow_ruby_settings    = null

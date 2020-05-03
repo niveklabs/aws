@@ -1,5 +1,5 @@
 module "aws_waf_regex_match_set" {
-  source = "./aws/r/aws_waf_regex_match_set"
+  source = "./modules/aws/r/aws_waf_regex_match_set"
 
   name = null
 

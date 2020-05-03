@@ -1,5 +1,5 @@
 module "aws_pinpoint_apns_sandbox_channel" {
-  source = "./aws/r/aws_pinpoint_apns_sandbox_channel"
+  source = "./modules/aws/r/aws_pinpoint_apns_sandbox_channel"
 
   application_id                = null
   bundle_id                     = null

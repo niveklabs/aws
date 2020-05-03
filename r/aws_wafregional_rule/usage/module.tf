@@ -1,5 +1,5 @@
 module "aws_wafregional_rule" {
-  source = "./aws/r/aws_wafregional_rule"
+  source = "./modules/aws/r/aws_wafregional_rule"
 
   metric_name = null
   name        = null

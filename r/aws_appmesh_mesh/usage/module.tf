@@ -1,5 +1,5 @@
 module "aws_appmesh_mesh" {
-  source = "./aws/r/aws_appmesh_mesh"
+  source = "./modules/aws/r/aws_appmesh_mesh"
 
   name = null
   tags = {}

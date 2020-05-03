@@ -1,5 +1,5 @@
 module "aws_launch_template" {
-  source = "./aws/r/aws_launch_template"
+  source = "./modules/aws/r/aws_launch_template"
 
   description                          = null
   disable_api_termination              = null

@@ -1,5 +1,5 @@
 module "aws_apigatewayv2_route" {
-  source = "./aws/r/aws_apigatewayv2_route"
+  source = "./modules/aws/r/aws_apigatewayv2_route"
 
   api_id                              = null
   api_key_required                    = null

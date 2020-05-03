@@ -1,5 +1,5 @@
 module "aws_gamelift_game_session_queue" {
-  source = "./aws/r/aws_gamelift_game_session_queue"
+  source = "./modules/aws/r/aws_gamelift_game_session_queue"
 
   destinations       = []
   name               = null

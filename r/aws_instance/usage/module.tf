@@ -1,5 +1,5 @@
 module "aws_instance" {
-  source = "./aws/r/aws_instance"
+  source = "./modules/aws/r/aws_instance"
 
   ami                                  = null
   associate_public_ip_address          = null

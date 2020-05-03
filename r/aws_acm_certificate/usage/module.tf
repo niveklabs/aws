@@ -1,5 +1,5 @@
 module "aws_acm_certificate" {
-  source = "./aws/r/aws_acm_certificate"
+  source = "./modules/aws/r/aws_acm_certificate"
 
   certificate_authority_arn = null
   certificate_body          = null

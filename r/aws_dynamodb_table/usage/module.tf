@@ -1,5 +1,5 @@
 module "aws_dynamodb_table" {
-  source = "./aws/r/aws_dynamodb_table"
+  source = "./modules/aws/r/aws_dynamodb_table"
 
   billing_mode     = null
   hash_key         = null

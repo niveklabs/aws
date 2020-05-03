@@ -1,5 +1,5 @@
 module "aws_route53_zone" {
-  source = "./aws/r/aws_route53_zone"
+  source = "./modules/aws/r/aws_route53_zone"
 
   comment           = null
   delegation_set_id = null

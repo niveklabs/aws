@@ -1,5 +1,5 @@
 module "aws_default_security_group" {
-  source = "./aws/r/aws_default_security_group"
+  source = "./modules/aws/r/aws_default_security_group"
 
   egress = [{
     cidr_blocks      = []

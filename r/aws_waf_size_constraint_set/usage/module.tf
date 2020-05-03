@@ -1,5 +1,5 @@
 module "aws_waf_size_constraint_set" {
-  source = "./aws/r/aws_waf_size_constraint_set"
+  source = "./modules/aws/r/aws_waf_size_constraint_set"
 
   name = null
 

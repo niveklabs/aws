@@ -1,5 +1,5 @@
 module "aws_opsworks_stack" {
-  source = "./aws/r/aws_opsworks_stack"
+  source = "./modules/aws/r/aws_opsworks_stack"
 
   agent_version                 = null
   berkshelf_version             = null

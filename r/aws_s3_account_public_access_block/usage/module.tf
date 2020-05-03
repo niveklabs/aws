@@ -1,5 +1,5 @@
 module "aws_s3_account_public_access_block" {
-  source = "./aws/r/aws_s3_account_public_access_block"
+  source = "./modules/aws/r/aws_s3_account_public_access_block"
 
   account_id              = null
   block_public_acls       = null

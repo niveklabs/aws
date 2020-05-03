@@ -1,5 +1,5 @@
 module "aws_api_gateway_method_settings" {
-  source = "./aws/r/aws_api_gateway_method_settings"
+  source = "./modules/aws/r/aws_api_gateway_method_settings"
 
   method_path = null
   rest_api_id = null

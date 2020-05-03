@@ -1,5 +1,5 @@
 module "aws_s3_bucket" {
-  source = "./aws/r/aws_s3_bucket"
+  source = "./modules/aws/r/aws_s3_bucket"
 
   acceleration_status = null
   acl                 = null

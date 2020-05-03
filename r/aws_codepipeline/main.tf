@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.58.0"
+    aws = ">= 2.59.0"
   }
 }
 
@@ -39,6 +39,7 @@ resource "aws_codepipeline" "this" {
           configuration    = action.value["configuration"]
           input_artifacts  = action.value["input_artifacts"]
           name             = action.value["name"]
+          namespace        = action.value["namespace"]
           output_artifacts = action.value["output_artifacts"]
           owner            = action.value["owner"]
           provider         = action.value["provider"]

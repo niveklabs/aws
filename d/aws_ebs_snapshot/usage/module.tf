@@ -1,5 +1,5 @@
 module "aws_ebs_snapshot" {
-  source = "./aws/d/aws_ebs_snapshot"
+  source = "./modules/aws/d/aws_ebs_snapshot"
 
   most_recent            = null
   owners                 = []

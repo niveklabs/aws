@@ -1,5 +1,5 @@
 module "aws_s3_access_point" {
-  source = "./aws/r/aws_s3_access_point"
+  source = "./modules/aws/r/aws_s3_access_point"
 
   account_id = null
   bucket     = null

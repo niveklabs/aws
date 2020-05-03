@@ -41,6 +41,7 @@ variable "stage" {
           configuration    = map(string)
           input_artifacts  = list(string)
           name             = string
+          namespace        = string
           output_artifacts = list(string)
           owner            = string
           provider         = string

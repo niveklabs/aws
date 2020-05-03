@@ -1,5 +1,5 @@
 module "aws_ec2_traffic_mirror_filter_rule" {
-  source = "./aws/r/aws_ec2_traffic_mirror_filter_rule"
+  source = "./modules/aws/r/aws_ec2_traffic_mirror_filter_rule"
 
   description              = null
   destination_cidr_block   = null

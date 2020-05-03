@@ -1,5 +1,5 @@
 module "aws_ec2_transit_gateway_route" {
-  source = "./aws/r/aws_ec2_transit_gateway_route"
+  source = "./modules/aws/r/aws_ec2_transit_gateway_route"
 
   blackhole                      = null
   destination_cidr_block         = null

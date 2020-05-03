@@ -1,5 +1,5 @@
 module "aws_api_gateway_usage_plan" {
-  source = "./aws/r/aws_api_gateway_usage_plan"
+  source = "./modules/aws/r/aws_api_gateway_usage_plan"
 
   description  = null
   name         = null

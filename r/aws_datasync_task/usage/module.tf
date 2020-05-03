@@ -1,5 +1,5 @@
 module "aws_datasync_task" {
-  source = "./aws/r/aws_datasync_task"
+  source = "./modules/aws/r/aws_datasync_task"
 
   cloudwatch_log_group_arn = null
   destination_location_arn = null

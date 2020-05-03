@@ -1,5 +1,5 @@
 module "aws_appmesh_route" {
-  source = "./aws/r/aws_appmesh_route"
+  source = "./modules/aws/r/aws_appmesh_route"
 
   mesh_name           = null
   name                = null

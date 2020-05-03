@@ -1,5 +1,5 @@
 module "aws_autoscaling_lifecycle_hook" {
-  source = "./aws/r/aws_autoscaling_lifecycle_hook"
+  source = "./modules/aws/r/aws_autoscaling_lifecycle_hook"
 
   autoscaling_group_name  = null
   default_result          = null

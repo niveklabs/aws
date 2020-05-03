@@ -1,5 +1,5 @@
 module "aws_kinesis_stream" {
-  source = "./aws/r/aws_kinesis_stream"
+  source = "./modules/aws/r/aws_kinesis_stream"
 
   arn                       = null
   encryption_type           = null

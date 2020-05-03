@@ -1,5 +1,5 @@
 module "aws_storagegateway_smb_file_share" {
-  source = "./aws/r/aws_storagegateway_smb_file_share"
+  source = "./modules/aws/r/aws_storagegateway_smb_file_share"
 
   authentication          = null
   default_storage_class   = null

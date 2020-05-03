@@ -1,5 +1,5 @@
 module "aws_cloudtrail" {
-  source = "./aws/r/aws_cloudtrail"
+  source = "./modules/aws/r/aws_cloudtrail"
 
   cloud_watch_logs_group_arn    = null
   cloud_watch_logs_role_arn     = null

@@ -1,5 +1,5 @@
 module "aws_directory_service_directory" {
-  source = "./aws/r/aws_directory_service_directory"
+  source = "./modules/aws/r/aws_directory_service_directory"
 
   alias       = null
   description = null

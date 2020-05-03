@@ -1,5 +1,5 @@
 module "aws_glue_classifier" {
-  source = "./aws/r/aws_glue_classifier"
+  source = "./modules/aws/r/aws_glue_classifier"
 
   name = null
 

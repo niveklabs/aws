@@ -1,5 +1,5 @@
 module "aws_ssm_document" {
-  source = "./aws/r/aws_ssm_document"
+  source = "./modules/aws/r/aws_ssm_document"
 
   content         = null
   document_format = null

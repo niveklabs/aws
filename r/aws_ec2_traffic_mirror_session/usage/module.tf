@@ -1,5 +1,5 @@
 module "aws_ec2_traffic_mirror_session" {
-  source = "./aws/r/aws_ec2_traffic_mirror_session"
+  source = "./modules/aws/r/aws_ec2_traffic_mirror_session"
 
   description              = null
   network_interface_id     = null

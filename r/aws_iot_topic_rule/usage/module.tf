@@ -1,5 +1,5 @@
 module "aws_iot_topic_rule" {
-  source = "./aws/r/aws_iot_topic_rule"
+  source = "./modules/aws/r/aws_iot_topic_rule"
 
   description = null
   enabled     = null

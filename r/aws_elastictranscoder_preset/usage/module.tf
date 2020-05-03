@@ -1,5 +1,5 @@
 module "aws_elastictranscoder_preset" {
-  source = "./aws/r/aws_elastictranscoder_preset"
+  source = "./modules/aws/r/aws_elastictranscoder_preset"
 
   container           = null
   description         = null

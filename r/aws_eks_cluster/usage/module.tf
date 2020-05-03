@@ -1,5 +1,5 @@
 module "aws_eks_cluster" {
-  source = "./aws/r/aws_eks_cluster"
+  source = "./modules/aws/r/aws_eks_cluster"
 
   enabled_cluster_log_types = []
   name                      = null

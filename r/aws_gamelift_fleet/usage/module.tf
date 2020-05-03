@@ -1,5 +1,5 @@
 module "aws_gamelift_fleet" {
-  source = "./aws/r/aws_gamelift_fleet"
+  source = "./modules/aws/r/aws_gamelift_fleet"
 
   build_id                           = null
   description                        = null

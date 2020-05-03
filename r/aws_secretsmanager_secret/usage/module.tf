@@ -1,5 +1,5 @@
 module "aws_secretsmanager_secret" {
-  source = "./aws/r/aws_secretsmanager_secret"
+  source = "./modules/aws/r/aws_secretsmanager_secret"
 
   description             = null
   kms_key_id              = null

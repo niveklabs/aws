@@ -1,5 +1,5 @@
 module "aws_db_instance" {
-  source = "./aws/r/aws_db_instance"
+  source = "./modules/aws/r/aws_db_instance"
 
   allocated_storage                     = null
   allow_major_version_upgrade           = null

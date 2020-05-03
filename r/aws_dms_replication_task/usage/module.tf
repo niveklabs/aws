@@ -1,5 +1,5 @@
 module "aws_dms_replication_task" {
-  source = "./aws/r/aws_dms_replication_task"
+  source = "./modules/aws/r/aws_dms_replication_task"
 
   cdc_start_time            = null
   migration_type            = null

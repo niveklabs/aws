@@ -1,5 +1,5 @@
 module "aws_security_group" {
-  source = "./aws/r/aws_security_group"
+  source = "./modules/aws/r/aws_security_group"
 
   description = null
   egress = [{

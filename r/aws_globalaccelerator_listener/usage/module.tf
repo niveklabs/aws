@@ -1,5 +1,5 @@
 module "aws_globalaccelerator_listener" {
-  source = "./aws/r/aws_globalaccelerator_listener"
+  source = "./modules/aws/r/aws_globalaccelerator_listener"
 
   accelerator_arn = null
   client_affinity = null

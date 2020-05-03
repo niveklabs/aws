@@ -1,5 +1,5 @@
 module "aws_cloudhsm_v2_hsm" {
-  source = "./aws/r/aws_cloudhsm_v2_hsm"
+  source = "./modules/aws/r/aws_cloudhsm_v2_hsm"
 
   availability_zone = null
   cluster_id        = null

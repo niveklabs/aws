@@ -1,5 +1,5 @@
 module "aws_ec2_fleet" {
-  source = "./aws/r/aws_ec2_fleet"
+  source = "./modules/aws/r/aws_ec2_fleet"
 
   excess_capacity_termination_policy  = null
   replace_unhealthy_instances         = null

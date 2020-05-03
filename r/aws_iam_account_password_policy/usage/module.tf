@@ -1,5 +1,5 @@
 module "aws_iam_account_password_policy" {
-  source = "./aws/r/aws_iam_account_password_policy"
+  source = "./modules/aws/r/aws_iam_account_password_policy"
 
   allow_users_to_change_password = null
   hard_expiry                    = null

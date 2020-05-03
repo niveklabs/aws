@@ -56,6 +56,7 @@ variable "log_config" {
   type = set(object(
     {
       cloudwatch_logs_role_arn = string
+      exclude_verbose_content  = bool
       field_log_level          = string
     }
   ))

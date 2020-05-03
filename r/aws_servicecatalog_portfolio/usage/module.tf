@@ -1,5 +1,5 @@
 module "aws_servicecatalog_portfolio" {
-  source = "./aws/r/aws_servicecatalog_portfolio"
+  source = "./modules/aws/r/aws_servicecatalog_portfolio"
 
   description   = null
   name          = null

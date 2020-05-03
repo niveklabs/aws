@@ -1,5 +1,5 @@
 module "aws_elastic_beanstalk_application_version" {
-  source = "./aws/r/aws_elastic_beanstalk_application_version"
+  source = "./modules/aws/r/aws_elastic_beanstalk_application_version"
 
   application  = null
   bucket       = null

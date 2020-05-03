@@ -1,5 +1,5 @@
 module "aws_spot_fleet_request" {
-  source = "./aws/r/aws_spot_fleet_request"
+  source = "./modules/aws/r/aws_spot_fleet_request"
 
   allocation_strategy                 = null
   excess_capacity_termination_policy  = null

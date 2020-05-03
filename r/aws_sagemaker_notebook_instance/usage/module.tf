@@ -1,5 +1,5 @@
 module "aws_sagemaker_notebook_instance" {
-  source = "./aws/r/aws_sagemaker_notebook_instance"
+  source = "./modules/aws/r/aws_sagemaker_notebook_instance"
 
   direct_internet_access = null
   instance_type          = null

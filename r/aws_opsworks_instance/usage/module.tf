@@ -1,5 +1,5 @@
 module "aws_opsworks_instance" {
-  source = "./aws/r/aws_opsworks_instance"
+  source = "./modules/aws/r/aws_opsworks_instance"
 
   agent_version                = null
   ami_id                       = null

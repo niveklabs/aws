@@ -1,5 +1,5 @@
 module "aws_codedeploy_deployment_config" {
-  source = "./aws/r/aws_codedeploy_deployment_config"
+  source = "./modules/aws/r/aws_codedeploy_deployment_config"
 
   compute_platform       = null
   deployment_config_name = null

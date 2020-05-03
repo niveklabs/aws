@@ -1,5 +1,5 @@
 module "aws_appsync_resolver" {
-  source = "./aws/r/aws_appsync_resolver"
+  source = "./modules/aws/r/aws_appsync_resolver"
 
   api_id            = null
   data_source       = null

@@ -1,5 +1,5 @@
 module "aws_gamelift_build" {
-  source = "./aws/r/aws_gamelift_build"
+  source = "./modules/aws/r/aws_gamelift_build"
 
   name             = null
   operating_system = null

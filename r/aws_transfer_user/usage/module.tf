@@ -1,5 +1,5 @@
 module "aws_transfer_user" {
-  source = "./aws/r/aws_transfer_user"
+  source = "./modules/aws/r/aws_transfer_user"
 
   home_directory = null
   policy         = null

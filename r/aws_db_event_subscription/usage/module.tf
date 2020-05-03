@@ -1,5 +1,5 @@
 module "aws_db_event_subscription" {
-  source = "./aws/r/aws_db_event_subscription"
+  source = "./modules/aws/r/aws_db_event_subscription"
 
   enabled          = null
   event_categories = []

@@ -1,5 +1,5 @@
 module "aws_api_gateway_integration" {
-  source = "./aws/r/aws_api_gateway_integration"
+  source = "./modules/aws/r/aws_api_gateway_integration"
 
   cache_key_parameters       = []
   cache_namespace            = null

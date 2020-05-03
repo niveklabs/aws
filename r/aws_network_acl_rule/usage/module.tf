@@ -1,5 +1,5 @@
 module "aws_network_acl_rule" {
-  source = "./aws/r/aws_network_acl_rule"
+  source = "./modules/aws/r/aws_network_acl_rule"
 
   cidr_block      = null
   egress          = null

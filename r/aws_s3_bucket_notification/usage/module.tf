@@ -1,5 +1,5 @@
 module "aws_s3_bucket_notification" {
-  source = "./aws/r/aws_s3_bucket_notification"
+  source = "./modules/aws/r/aws_s3_bucket_notification"
 
   bucket = null
 

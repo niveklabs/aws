@@ -1,5 +1,5 @@
 module "aws_emr_cluster" {
-  source = "./aws/r/aws_emr_cluster"
+  source = "./modules/aws/r/aws_emr_cluster"
 
   additional_info                   = null
   applications                      = []

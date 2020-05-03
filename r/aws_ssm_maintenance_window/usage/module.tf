@@ -1,5 +1,5 @@
 module "aws_ssm_maintenance_window" {
-  source = "./aws/r/aws_ssm_maintenance_window"
+  source = "./modules/aws/r/aws_ssm_maintenance_window"
 
   allow_unassociated_targets = null
   cutoff                     = null

@@ -1,5 +1,5 @@
 module "aws_rds_cluster_instance" {
-  source = "./aws/r/aws_rds_cluster_instance"
+  source = "./modules/aws/r/aws_rds_cluster_instance"
 
   apply_immediately               = null
   auto_minor_version_upgrade      = null

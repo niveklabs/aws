@@ -1,5 +1,5 @@
 module "aws_api_gateway_authorizer" {
-  source = "./aws/r/aws_api_gateway_authorizer"
+  source = "./modules/aws/r/aws_api_gateway_authorizer"
 
   authorizer_credentials           = null
   authorizer_result_ttl_in_seconds = null

@@ -1,5 +1,5 @@
 module "aws_appautoscaling_scheduled_action" {
-  source = "./aws/r/aws_appautoscaling_scheduled_action"
+  source = "./modules/aws/r/aws_appautoscaling_scheduled_action"
 
   end_time           = null
   name               = null

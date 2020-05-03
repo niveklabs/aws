@@ -1,5 +1,5 @@
 module "aws_autoscaling_schedule" {
-  source = "./aws/r/aws_autoscaling_schedule"
+  source = "./modules/aws/r/aws_autoscaling_schedule"
 
   autoscaling_group_name = null
   desired_capacity       = null

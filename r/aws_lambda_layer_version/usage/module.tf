@@ -1,5 +1,5 @@
 module "aws_lambda_layer_version" {
-  source = "./aws/r/aws_lambda_layer_version"
+  source = "./modules/aws/r/aws_lambda_layer_version"
 
   compatible_runtimes = []
   description         = null

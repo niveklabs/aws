@@ -1,5 +1,5 @@
 module "aws_route53_resolver_rule" {
-  source = "./aws/r/aws_route53_resolver_rule"
+  source = "./modules/aws/r/aws_route53_resolver_rule"
 
   domain_name          = null
   name                 = null

@@ -1,5 +1,5 @@
 module "aws_athena_workgroup" {
-  source = "./aws/r/aws_athena_workgroup"
+  source = "./modules/aws/r/aws_athena_workgroup"
 
   description   = null
   force_destroy = null

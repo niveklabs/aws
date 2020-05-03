@@ -1,5 +1,5 @@
 module "aws_vpc_peering_connection_accepter" {
-  source = "./aws/r/aws_vpc_peering_connection_accepter"
+  source = "./modules/aws/r/aws_vpc_peering_connection_accepter"
 
   auto_accept               = null
   tags                      = {}

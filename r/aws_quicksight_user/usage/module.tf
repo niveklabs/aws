@@ -1,5 +1,5 @@
 module "aws_quicksight_user" {
-  source = "./aws/r/aws_quicksight_user"
+  source = "./modules/aws/r/aws_quicksight_user"
 
   aws_account_id = null
   email          = null

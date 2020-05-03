@@ -1,5 +1,5 @@
 module "aws_vpn_connection" {
-  source = "./aws/r/aws_vpn_connection"
+  source = "./modules/aws/r/aws_vpn_connection"
 
   customer_gateway_id   = null
   static_routes_only    = null

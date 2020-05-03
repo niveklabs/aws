@@ -1,5 +1,5 @@
 module "aws_default_network_acl" {
-  source = "./aws/r/aws_default_network_acl"
+  source = "./modules/aws/r/aws_default_network_acl"
 
   default_network_acl_id = null
   subnet_ids             = []

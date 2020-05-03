@@ -1,5 +1,5 @@
 module "aws_appautoscaling_policy" {
-  source = "./aws/r/aws_appautoscaling_policy"
+  source = "./modules/aws/r/aws_appautoscaling_policy"
 
   adjustment_type          = null
   cooldown                 = null

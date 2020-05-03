@@ -1,5 +1,5 @@
 module "aws_api_gateway_domain_name" {
-  source = "./aws/r/aws_api_gateway_domain_name"
+  source = "./modules/aws/r/aws_api_gateway_domain_name"
 
   certificate_arn           = null
   certificate_body          = null

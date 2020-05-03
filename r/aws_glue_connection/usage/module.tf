@@ -1,5 +1,5 @@
 module "aws_glue_connection" {
-  source = "./aws/r/aws_glue_connection"
+  source = "./modules/aws/r/aws_glue_connection"
 
   catalog_id            = null
   connection_properties = {}

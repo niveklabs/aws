@@ -1,5 +1,5 @@
 module "aws_ssm_maintenance_window_task" {
-  source = "./aws/r/aws_ssm_maintenance_window_task"
+  source = "./modules/aws/r/aws_ssm_maintenance_window_task"
 
   description      = null
   max_concurrency  = null

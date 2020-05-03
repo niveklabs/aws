@@ -1,5 +1,5 @@
 module "aws_ec2_client_vpn_endpoint" {
-  source = "./aws/r/aws_ec2_client_vpn_endpoint"
+  source = "./modules/aws/r/aws_ec2_client_vpn_endpoint"
 
   client_cidr_block      = null
   description            = null

@@ -1,5 +1,5 @@
 module "aws_mq_configuration" {
-  source = "./aws/r/aws_mq_configuration"
+  source = "./modules/aws/r/aws_mq_configuration"
 
   data           = null
   description    = null

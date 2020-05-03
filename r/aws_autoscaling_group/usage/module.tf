@@ -1,5 +1,5 @@
 module "aws_autoscaling_group" {
-  source = "./aws/r/aws_autoscaling_group"
+  source = "./modules/aws/r/aws_autoscaling_group"
 
   availability_zones        = []
   default_cooldown          = null

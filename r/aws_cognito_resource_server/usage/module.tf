@@ -1,5 +1,5 @@
 module "aws_cognito_resource_server" {
-  source = "./aws/r/aws_cognito_resource_server"
+  source = "./modules/aws/r/aws_cognito_resource_server"
 
   identifier   = null
   name         = null

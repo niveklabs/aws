@@ -1,5 +1,5 @@
 module "aws_appsync_graphql_api" {
-  source = "./aws/r/aws_appsync_graphql_api"
+  source = "./modules/aws/r/aws_appsync_graphql_api"
 
   authentication_type = null
   name                = null
@@ -24,6 +24,7 @@ module "aws_appsync_graphql_api" {
 
   log_config = [{
     cloudwatch_logs_role_arn = null
+    exclude_verbose_content  = null
     field_log_level          = null
   }]
 

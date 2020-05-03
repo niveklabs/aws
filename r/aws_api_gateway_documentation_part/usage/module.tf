@@ -1,5 +1,5 @@
 module "aws_api_gateway_documentation_part" {
-  source = "./aws/r/aws_api_gateway_documentation_part"
+  source = "./modules/aws/r/aws_api_gateway_documentation_part"
 
   properties  = null
   rest_api_id = null

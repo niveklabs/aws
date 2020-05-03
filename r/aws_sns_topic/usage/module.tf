@@ -1,5 +1,5 @@
 module "aws_sns_topic" {
-  source = "./aws/r/aws_sns_topic"
+  source = "./modules/aws/r/aws_sns_topic"
 
   application_failure_feedback_role_arn    = null
   application_success_feedback_role_arn    = null

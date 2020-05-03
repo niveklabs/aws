@@ -1,5 +1,5 @@
 module "aws_docdb_cluster" {
-  source = "./aws/r/aws_docdb_cluster"
+  source = "./modules/aws/r/aws_docdb_cluster"
 
   apply_immediately               = null
   availability_zones              = []

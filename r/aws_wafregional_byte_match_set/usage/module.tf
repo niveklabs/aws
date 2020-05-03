@@ -1,5 +1,5 @@
 module "aws_wafregional_byte_match_set" {
-  source = "./aws/r/aws_wafregional_byte_match_set"
+  source = "./modules/aws/r/aws_wafregional_byte_match_set"
 
   name = null
 

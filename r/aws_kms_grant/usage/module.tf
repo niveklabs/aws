@@ -1,5 +1,5 @@
 module "aws_kms_grant" {
-  source = "./aws/r/aws_kms_grant"
+  source = "./modules/aws/r/aws_kms_grant"
 
   grant_creation_tokens = []
   grantee_principal     = null

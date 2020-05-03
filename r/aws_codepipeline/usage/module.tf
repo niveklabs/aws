@@ -1,5 +1,5 @@
 module "aws_codepipeline" {
-  source = "./aws/r/aws_codepipeline"
+  source = "./modules/aws/r/aws_codepipeline"
 
   name     = null
   role_arn = null
@@ -21,6 +21,7 @@ module "aws_codepipeline" {
       configuration    = {}
       input_artifacts  = []
       name             = null
+      namespace        = null
       output_artifacts = []
       owner            = null
       provider         = null

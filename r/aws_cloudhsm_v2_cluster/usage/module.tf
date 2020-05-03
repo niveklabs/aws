@@ -1,5 +1,5 @@
 module "aws_cloudhsm_v2_cluster" {
-  source = "./aws/r/aws_cloudhsm_v2_cluster"
+  source = "./modules/aws/r/aws_cloudhsm_v2_cluster"
 
   hsm_type                 = null
   source_backup_identifier = null

@@ -1,5 +1,5 @@
 module "aws_cloudformation_stack_set" {
-  source = "./aws/r/aws_cloudformation_stack_set"
+  source = "./modules/aws/r/aws_cloudformation_stack_set"
 
   administration_role_arn = null
   capabilities            = []

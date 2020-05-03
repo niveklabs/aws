@@ -1,5 +1,5 @@
 module "aws_storagegateway_gateway" {
-  source = "./aws/r/aws_storagegateway_gateway"
+  source = "./modules/aws/r/aws_storagegateway_gateway"
 
   activation_key           = null
   cloudwatch_log_group_arn = null

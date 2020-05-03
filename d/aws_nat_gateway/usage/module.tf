@@ -1,5 +1,5 @@
 module "aws_nat_gateway" {
-  source = "./aws/d/aws_nat_gateway"
+  source = "./modules/aws/d/aws_nat_gateway"
 
   state     = null
   subnet_id = null

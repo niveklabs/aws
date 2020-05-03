@@ -1,5 +1,5 @@
 module "aws_network_interface" {
-  source = "./aws/r/aws_network_interface"
+  source = "./modules/aws/r/aws_network_interface"
 
   description       = null
   private_ip        = null

@@ -1,5 +1,5 @@
 module "aws_service_discovery_service" {
-  source = "./aws/r/aws_service_discovery_service"
+  source = "./modules/aws/r/aws_service_discovery_service"
 
   description  = null
   name         = null

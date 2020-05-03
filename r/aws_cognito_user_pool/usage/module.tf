@@ -1,5 +1,5 @@
 module "aws_cognito_user_pool" {
-  source = "./aws/r/aws_cognito_user_pool"
+  source = "./modules/aws/r/aws_cognito_user_pool"
 
   alias_attributes           = []
   auto_verified_attributes   = []

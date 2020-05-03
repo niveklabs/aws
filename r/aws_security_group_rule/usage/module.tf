@@ -1,5 +1,5 @@
 module "aws_security_group_rule" {
-  source = "./aws/r/aws_security_group_rule"
+  source = "./modules/aws/r/aws_security_group_rule"
 
   cidr_blocks              = []
   description              = null

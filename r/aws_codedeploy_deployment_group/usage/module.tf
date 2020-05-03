@@ -1,5 +1,5 @@
 module "aws_codedeploy_deployment_group" {
-  source = "./aws/r/aws_codedeploy_deployment_group"
+  source = "./modules/aws/r/aws_codedeploy_deployment_group"
 
   app_name               = null
   autoscaling_groups     = []

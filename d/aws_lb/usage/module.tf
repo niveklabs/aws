@@ -1,5 +1,5 @@
 module "aws_lb" {
-  source = "./aws/d/aws_lb"
+  source = "./modules/aws/d/aws_lb"
 
   arn  = null
   name = null

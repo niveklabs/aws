@@ -1,5 +1,5 @@
 module "aws_elb" {
-  source = "./aws/r/aws_elb"
+  source = "./modules/aws/r/aws_elb"
 
   availability_zones          = []
   connection_draining         = null

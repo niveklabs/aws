@@ -1,5 +1,5 @@
 module "aws_gamelift_alias" {
-  source = "./aws/r/aws_gamelift_alias"
+  source = "./modules/aws/r/aws_gamelift_alias"
 
   description = null
   name        = null

@@ -1,5 +1,5 @@
 module "aws_opsworks_java_app_layer" {
-  source = "./aws/r/aws_opsworks_java_app_layer"
+  source = "./modules/aws/r/aws_opsworks_java_app_layer"
 
   app_server                  = null
   app_server_version          = null

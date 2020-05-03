@@ -1,5 +1,5 @@
 module "aws_dms_endpoint" {
-  source = "./aws/r/aws_dms_endpoint"
+  source = "./modules/aws/r/aws_dms_endpoint"
 
   certificate_arn             = null
   database_name               = null

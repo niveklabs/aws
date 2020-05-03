@@ -1,5 +1,5 @@
 module "aws_cognito_user_group" {
-  source = "./aws/r/aws_cognito_user_group"
+  source = "./modules/aws/r/aws_cognito_user_group"
 
   description  = null
   name         = null

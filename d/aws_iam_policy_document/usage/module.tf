@@ -1,5 +1,5 @@
 module "aws_iam_policy_document" {
-  source = "./aws/d/aws_iam_policy_document"
+  source = "./modules/aws/d/aws_iam_policy_document"
 
   override_json = null
   policy_id     = null

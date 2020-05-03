@@ -1,5 +1,5 @@
 module "aws_vpn_gateway" {
-  source = "./aws/d/aws_vpn_gateway"
+  source = "./modules/aws/d/aws_vpn_gateway"
 
   amazon_side_asn   = null
   attached_vpc_id   = null

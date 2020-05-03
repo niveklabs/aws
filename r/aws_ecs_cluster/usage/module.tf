@@ -1,5 +1,5 @@
 module "aws_ecs_cluster" {
-  source = "./aws/r/aws_ecs_cluster"
+  source = "./modules/aws/r/aws_ecs_cluster"
 
   capacity_providers = []
   name               = null

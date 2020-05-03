@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.58.0"
+    aws = ">= 2.59.0"
   }
 }
 
@@ -42,6 +42,7 @@ resource "aws_appsync_graphql_api" "this" {
     for_each = var.log_config
     content {
       cloudwatch_logs_role_arn = log_config.value["cloudwatch_logs_role_arn"]
+      exclude_verbose_content  = log_config.value["exclude_verbose_content"]
       field_log_level          = log_config.value["field_log_level"]
     }
   }

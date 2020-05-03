@@ -1,5 +1,5 @@
 module "aws_ecs_task_definition" {
-  source = "./aws/r/aws_ecs_task_definition"
+  source = "./modules/aws/r/aws_ecs_task_definition"
 
   container_definitions    = null
   cpu                      = null

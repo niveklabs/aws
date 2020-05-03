@@ -1,5 +1,5 @@
 module "aws_elastic_beanstalk_configuration_template" {
-  source = "./aws/r/aws_elastic_beanstalk_configuration_template"
+  source = "./modules/aws/r/aws_elastic_beanstalk_configuration_template"
 
   application         = null
   description         = null

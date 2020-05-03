@@ -1,5 +1,5 @@
 module "aws_ses_identity_notification_topic" {
-  source = "./aws/r/aws_ses_identity_notification_topic"
+  source = "./modules/aws/r/aws_ses_identity_notification_topic"
 
   identity                 = null
   include_original_headers = null

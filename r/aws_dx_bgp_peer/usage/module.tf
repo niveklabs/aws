@@ -1,5 +1,5 @@
 module "aws_dx_bgp_peer" {
-  source = "./aws/r/aws_dx_bgp_peer"
+  source = "./modules/aws/r/aws_dx_bgp_peer"
 
   address_family       = null
   amazon_address       = null

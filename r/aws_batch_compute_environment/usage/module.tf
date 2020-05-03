@@ -1,5 +1,5 @@
 module "aws_batch_compute_environment" {
-  source = "./aws/r/aws_batch_compute_environment"
+  source = "./modules/aws/r/aws_batch_compute_environment"
 
   compute_environment_name        = null
   compute_environment_name_prefix = null

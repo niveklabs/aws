@@ -1,5 +1,5 @@
 module "aws_dax_cluster" {
-  source = "./aws/r/aws_dax_cluster"
+  source = "./modules/aws/r/aws_dax_cluster"
 
   availability_zones     = []
   cluster_name           = null

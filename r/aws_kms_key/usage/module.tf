@@ -1,5 +1,5 @@
 module "aws_kms_key" {
-  source = "./aws/r/aws_kms_key"
+  source = "./modules/aws/r/aws_kms_key"
 
   customer_master_key_spec = null
   deletion_window_in_days  = null

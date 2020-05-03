@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= v2.58.0"
+    aws = ">= 2.59.0"
   }
 }
 
@@ -9,6 +9,7 @@ data "aws_acm_certificate" "this" {
   key_types   = var.key_types
   most_recent = var.most_recent
   statuses    = var.statuses
+  tags        = var.tags
   types       = var.types
 }
 

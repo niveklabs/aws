@@ -1,5 +1,5 @@
 module "aws_db_parameter_group" {
-  source = "./aws/r/aws_db_parameter_group"
+  source = "./modules/aws/r/aws_db_parameter_group"
 
   description = null
   family      = null

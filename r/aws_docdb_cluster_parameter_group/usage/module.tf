@@ -1,5 +1,5 @@
 module "aws_docdb_cluster_parameter_group" {
-  source = "./aws/r/aws_docdb_cluster_parameter_group"
+  source = "./modules/aws/r/aws_docdb_cluster_parameter_group"
 
   description = null
   family      = null

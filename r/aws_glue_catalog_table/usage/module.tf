@@ -1,5 +1,5 @@
 module "aws_glue_catalog_table" {
-  source = "./aws/r/aws_glue_catalog_table"
+  source = "./modules/aws/r/aws_glue_catalog_table"
 
   catalog_id         = null
   database_name      = null

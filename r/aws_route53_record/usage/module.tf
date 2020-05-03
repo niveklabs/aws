@@ -1,5 +1,5 @@
 module "aws_route53_record" {
-  source = "./aws/r/aws_route53_record"
+  source = "./modules/aws/r/aws_route53_record"
 
   allow_overwrite                  = null
   health_check_id                  = null

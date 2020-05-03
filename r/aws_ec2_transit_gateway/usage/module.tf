@@ -1,5 +1,5 @@
 module "aws_ec2_transit_gateway" {
-  source = "./aws/r/aws_ec2_transit_gateway"
+  source = "./modules/aws/r/aws_ec2_transit_gateway"
 
   amazon_side_asn                 = null
   auto_accept_shared_attachments  = null

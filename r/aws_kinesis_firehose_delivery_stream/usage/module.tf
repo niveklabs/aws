@@ -1,5 +1,5 @@
 module "aws_kinesis_firehose_delivery_stream" {
-  source = "./aws/r/aws_kinesis_firehose_delivery_stream"
+  source = "./modules/aws/r/aws_kinesis_firehose_delivery_stream"
 
   arn            = null
   destination    = null

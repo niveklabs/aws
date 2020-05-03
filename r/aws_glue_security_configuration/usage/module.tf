@@ -1,5 +1,5 @@
 module "aws_glue_security_configuration" {
-  source = "./aws/r/aws_glue_security_configuration"
+  source = "./modules/aws/r/aws_glue_security_configuration"
 
   name = null
 

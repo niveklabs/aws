@@ -1,5 +1,5 @@
 module "aws_emr_instance_group" {
-  source = "./aws/r/aws_emr_instance_group"
+  source = "./modules/aws/r/aws_emr_instance_group"
 
   autoscaling_policy  = null
   bid_price           = null

@@ -1,5 +1,5 @@
 module "aws_ec2_transit_gateway_vpc_attachment_accepter" {
-  source = "./aws/r/aws_ec2_transit_gateway_vpc_attachment_accepter"
+  source = "./modules/aws/r/aws_ec2_transit_gateway_vpc_attachment_accepter"
 
   tags                                            = {}
   transit_gateway_attachment_id                   = null

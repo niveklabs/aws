@@ -1,5 +1,5 @@
 module "aws_glue_trigger" {
-  source = "./aws/r/aws_glue_trigger"
+  source = "./modules/aws/r/aws_glue_trigger"
 
   description   = null
   enabled       = null

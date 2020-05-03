@@ -1,5 +1,5 @@
 module "aws_msk_cluster" {
-  source = "./aws/r/aws_msk_cluster"
+  source = "./modules/aws/r/aws_msk_cluster"
 
   cluster_name           = null
   enhanced_monitoring    = null

@@ -1,5 +1,5 @@
 module "aws_route_table" {
-  source = "./aws/r/aws_route_table"
+  source = "./modules/aws/r/aws_route_table"
 
   propagating_vgws = []
   route = [{

@@ -1,5 +1,5 @@
 module "aws_codecommit_trigger" {
-  source = "./aws/r/aws_codecommit_trigger"
+  source = "./modules/aws/r/aws_codecommit_trigger"
 
   repository_name = null
 

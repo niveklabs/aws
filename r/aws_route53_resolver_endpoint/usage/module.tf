@@ -1,5 +1,5 @@
 module "aws_route53_resolver_endpoint" {
-  source = "./aws/r/aws_route53_resolver_endpoint"
+  source = "./modules/aws/r/aws_route53_resolver_endpoint"
 
   direction          = null
   name               = null

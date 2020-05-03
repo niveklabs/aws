@@ -1,5 +1,5 @@
 module "aws_spot_instance_request" {
-  source = "./aws/r/aws_spot_instance_request"
+  source = "./modules/aws/r/aws_spot_instance_request"
 
   ami                                  = null
   associate_public_ip_address          = null

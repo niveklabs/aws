@@ -1,5 +1,5 @@
 module "aws_appmesh_virtual_service" {
-  source = "./aws/r/aws_appmesh_virtual_service"
+  source = "./modules/aws/r/aws_appmesh_virtual_service"
 
   mesh_name = null
   name      = null

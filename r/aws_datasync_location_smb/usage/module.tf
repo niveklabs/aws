@@ -1,5 +1,5 @@
 module "aws_datasync_location_smb" {
-  source = "./aws/r/aws_datasync_location_smb"
+  source = "./modules/aws/r/aws_datasync_location_smb"
 
   agent_arns      = []
   domain          = null

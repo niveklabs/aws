@@ -1,5 +1,5 @@
 module "aws_xray_sampling_rule" {
-  source = "./aws/r/aws_xray_sampling_rule"
+  source = "./modules/aws/r/aws_xray_sampling_rule"
 
   attributes     = {}
   fixed_rate     = null

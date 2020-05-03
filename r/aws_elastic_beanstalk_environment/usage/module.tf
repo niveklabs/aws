@@ -1,5 +1,5 @@
 module "aws_elastic_beanstalk_environment" {
-  source = "./aws/r/aws_elastic_beanstalk_environment"
+  source = "./modules/aws/r/aws_elastic_beanstalk_environment"
 
   application            = null
   cname_prefix           = null

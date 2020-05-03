@@ -1,5 +1,5 @@
 module "aws_api_gateway_method" {
-  source = "./aws/r/aws_api_gateway_method"
+  source = "./modules/aws/r/aws_api_gateway_method"
 
   api_key_required           = null
   authorization              = null
