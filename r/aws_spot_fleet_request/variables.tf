@@ -93,7 +93,7 @@ variable "wait_for_fulfillment" {
 }
 
 variable "launch_specification" {
-  description = "nested mode: NestingSet, min items: 1, max items: 0"
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(
     {
       ami                         = string
@@ -143,6 +143,33 @@ variable "launch_specification" {
       weighted_capacity      = string
     }
   ))
+  default = []
+}
+
+variable "launch_template_config" {
+  description = "nested mode: NestingSet, min items: 0, max items: 0"
+  type = set(object(
+    {
+      launch_template_specification = list(object(
+        {
+          id      = string
+          name    = string
+          version = string
+        }
+      ))
+      overrides = set(object(
+        {
+          availability_zone = string
+          instance_type     = string
+          priority          = number
+          spot_price        = string
+          subnet_id         = string
+          weighted_capacity = number
+        }
+      ))
+    }
+  ))
+  default = []
 }
 
 variable "timeouts" {

@@ -127,6 +127,16 @@ variable "snapshot_options" {
   default = []
 }
 
+variable "timeouts" {
+  description = "nested mode: NestingSingle, min items: 0, max items: 0"
+  type = set(object(
+    {
+      update = string
+    }
+  ))
+  default = []
+}
+
 variable "vpc_options" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

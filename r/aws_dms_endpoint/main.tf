@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.59.0"
+    aws = ">= 2.60.0"
   }
 }
 
@@ -27,6 +27,14 @@ resource "aws_dms_endpoint" "this" {
       error_retry_duration       = elasticsearch_settings.value["error_retry_duration"]
       full_load_error_percentage = elasticsearch_settings.value["full_load_error_percentage"]
       service_access_role_arn    = elasticsearch_settings.value["service_access_role_arn"]
+    }
+  }
+
+  dynamic "kafka_settings" {
+    for_each = var.kafka_settings
+    content {
+      broker = kafka_settings.value["broker"]
+      topic  = kafka_settings.value["topic"]
     }
   }
 

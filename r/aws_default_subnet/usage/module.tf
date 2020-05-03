@@ -3,6 +3,7 @@ module "aws_default_subnet" {
 
   availability_zone       = null
   map_public_ip_on_launch = null
+  outpost_arn             = null
   tags                    = {}
 
   timeouts = [{

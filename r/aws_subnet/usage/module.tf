@@ -7,6 +7,7 @@ module "aws_subnet" {
   cidr_block                      = null
   ipv6_cidr_block                 = null
   map_public_ip_on_launch         = null
+  outpost_arn                     = null
   tags                            = {}
   vpc_id                          = null
 

@@ -57,6 +57,10 @@ module "aws_elasticsearch_domain" {
     automated_snapshot_start_hour = null
   }]
 
+  timeouts = [{
+    update = null
+  }]
+
   vpc_options = [{
     availability_zones = []
     security_group_ids = []

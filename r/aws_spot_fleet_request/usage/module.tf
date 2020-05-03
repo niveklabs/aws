@@ -60,6 +60,22 @@ module "aws_spot_fleet_request" {
     weighted_capacity      = null
   }]
 
+  launch_template_config = [{
+    launch_template_specification = [{
+      id      = null
+      name    = null
+      version = null
+    }]
+    overrides = [{
+      availability_zone = null
+      instance_type     = null
+      priority          = null
+      spot_price        = null
+      subnet_id         = null
+      weighted_capacity = null
+    }]
+  }]
+
   timeouts = [{
     create = null
     delete = null

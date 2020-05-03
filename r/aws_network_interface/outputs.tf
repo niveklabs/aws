@@ -8,6 +8,11 @@ output "mac_address" {
   value       = aws_network_interface.this.mac_address
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = aws_network_interface.this.outpost_arn
+}
+
 output "private_dns_name" {
   description = "returns a string"
   value       = aws_network_interface.this.private_dns_name

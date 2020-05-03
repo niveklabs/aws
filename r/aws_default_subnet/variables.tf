@@ -9,6 +9,12 @@ variable "map_public_ip_on_launch" {
   default     = null
 }
 
+variable "outpost_arn" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "tags" {
   description = "(optional)"
   type        = map(string)

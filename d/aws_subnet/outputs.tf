@@ -48,6 +48,11 @@ output "map_public_ip_on_launch" {
   value       = data.aws_subnet.this.map_public_ip_on_launch
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = data.aws_subnet.this.outpost_arn
+}
+
 output "owner_id" {
   description = "returns a string"
   value       = data.aws_subnet.this.owner_id

@@ -7,6 +7,7 @@ module "aws_storagegateway_gateway" {
   gateway_name             = null
   gateway_timezone         = null
   gateway_type             = null
+  gateway_vpc_endpoint     = null
   medium_changer_type      = null
   smb_guest_password       = null
   tags                     = {}

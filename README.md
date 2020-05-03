@@ -3,7 +3,7 @@
 [embedmd]:# (aws.tf)
 ```tf
 provider "aws" {
-  version = "2.59.0"
+  version = "2.60.0"
 
   access_key                  = null
   allowed_account_ids         = []

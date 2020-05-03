@@ -28,6 +28,11 @@ output "kms_key_id" {
   value       = data.aws_ebs_volume.this.kms_key_id
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = data.aws_ebs_volume.this.outpost_arn
+}
+
 output "size" {
   description = "returns a number"
   value       = data.aws_ebs_volume.this.size

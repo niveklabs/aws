@@ -38,6 +38,11 @@ output "mac_address" {
   value       = data.aws_network_interface.this.mac_address
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = data.aws_network_interface.this.outpost_arn
+}
+
 output "owner_id" {
   description = "returns a string"
   value       = data.aws_network_interface.this.owner_id

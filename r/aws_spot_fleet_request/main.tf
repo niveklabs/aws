@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.59.0"
+    aws = ">= 2.60.0"
   }
 }
 
@@ -74,6 +74,34 @@ resource "aws_spot_fleet_request" "this" {
           kms_key_id            = root_block_device.value["kms_key_id"]
           volume_size           = root_block_device.value["volume_size"]
           volume_type           = root_block_device.value["volume_type"]
+        }
+      }
+
+    }
+  }
+
+  dynamic "launch_template_config" {
+    for_each = var.launch_template_config
+    content {
+
+      dynamic "launch_template_specification" {
+        for_each = launch_template_config.value.launch_template_specification
+        content {
+          id      = launch_template_specification.value["id"]
+          name    = launch_template_specification.value["name"]
+          version = launch_template_specification.value["version"]
+        }
+      }
+
+      dynamic "overrides" {
+        for_each = launch_template_config.value.overrides
+        content {
+          availability_zone = overrides.value["availability_zone"]
+          instance_type     = overrides.value["instance_type"]
+          priority          = overrides.value["priority"]
+          spot_price        = overrides.value["spot_price"]
+          subnet_id         = overrides.value["subnet_id"]
+          weighted_capacity = overrides.value["weighted_capacity"]
         }
       }
 

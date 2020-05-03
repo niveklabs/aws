@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.59.0"
+    aws = ">= 2.60.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "aws_subnet" "this" {
   cidr_block                      = var.cidr_block
   ipv6_cidr_block                 = var.ipv6_cidr_block
   map_public_ip_on_launch         = var.map_public_ip_on_launch
+  outpost_arn                     = var.outpost_arn
   tags                            = var.tags
   vpc_id                          = var.vpc_id
 

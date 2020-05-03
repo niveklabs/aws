@@ -21,6 +21,12 @@ variable "kms_key_id" {
   default     = null
 }
 
+variable "outpost_arn" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "size" {
   description = "(optional)"
   type        = number

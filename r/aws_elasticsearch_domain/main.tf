@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.59.0"
+    aws = ">= 2.60.0"
   }
 }
 
@@ -87,6 +87,13 @@ resource "aws_elasticsearch_domain" "this" {
     for_each = var.snapshot_options
     content {
       automated_snapshot_start_hour = snapshot_options.value["automated_snapshot_start_hour"]
+    }
+  }
+
+  dynamic "timeouts" {
+    for_each = var.timeouts
+    content {
+      update = timeouts.value["update"]
     }
   }
 

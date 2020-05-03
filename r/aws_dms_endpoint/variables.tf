@@ -92,6 +92,17 @@ variable "elasticsearch_settings" {
   default = []
 }
 
+variable "kafka_settings" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      broker = string
+      topic  = string
+    }
+  ))
+  default = []
+}
+
 variable "kinesis_settings" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

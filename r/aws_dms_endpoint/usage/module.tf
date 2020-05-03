@@ -23,6 +23,11 @@ module "aws_dms_endpoint" {
     service_access_role_arn    = null
   }]
 
+  kafka_settings = [{
+    broker = null
+    topic  = null
+  }]
+
   kinesis_settings = [{
     message_format          = null
     service_access_role_arn = null

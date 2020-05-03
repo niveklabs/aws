@@ -5,6 +5,7 @@ module "aws_ebs_volume" {
   encrypted         = null
   iops              = null
   kms_key_id        = null
+  outpost_arn       = null
   size              = null
   snapshot_id       = null
   tags              = {}

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.59.0"
+    aws = ">= 2.60.0"
   }
 }
 
@@ -11,6 +11,7 @@ resource "aws_storagegateway_gateway" "this" {
   gateway_name             = var.gateway_name
   gateway_timezone         = var.gateway_timezone
   gateway_type             = var.gateway_type
+  gateway_vpc_endpoint     = var.gateway_vpc_endpoint
   medium_changer_type      = var.medium_changer_type
   smb_guest_password       = var.smb_guest_password
   tags                     = var.tags

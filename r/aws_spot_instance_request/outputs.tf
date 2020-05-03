@@ -58,6 +58,11 @@ output "network_interface_id" {
   value       = aws_spot_instance_request.this.network_interface_id
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = aws_spot_instance_request.this.outpost_arn
+}
+
 output "password_data" {
   description = "returns a string"
   value       = aws_spot_instance_request.this.password_data

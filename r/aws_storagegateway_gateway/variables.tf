@@ -32,6 +32,12 @@ variable "gateway_type" {
   default     = null
 }
 
+variable "gateway_vpc_endpoint" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "medium_changer_type" {
   description = "(optional)"
   type        = string

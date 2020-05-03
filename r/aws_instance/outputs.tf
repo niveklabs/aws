@@ -58,6 +58,11 @@ output "network_interface_id" {
   value       = aws_instance.this.network_interface_id
 }
 
+output "outpost_arn" {
+  description = "returns a string"
+  value       = aws_instance.this.outpost_arn
+}
+
 output "password_data" {
   description = "returns a string"
   value       = aws_instance.this.password_data
