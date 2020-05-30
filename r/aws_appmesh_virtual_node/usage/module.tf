@@ -1,9 +1,12 @@
 module "aws_appmesh_virtual_node" {
   source = "./modules/aws/r/aws_appmesh_virtual_node"
 
+  # mesh_name - (required) is a type of string
   mesh_name = null
-  name      = null
-  tags      = {}
+  # name - (required) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   spec = [{
     backend = [{

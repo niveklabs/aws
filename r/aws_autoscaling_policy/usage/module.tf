@@ -1,16 +1,26 @@
 module "aws_autoscaling_policy" {
   source = "./modules/aws/r/aws_autoscaling_policy"
 
-  adjustment_type           = null
-  autoscaling_group_name    = null
-  cooldown                  = null
+  # adjustment_type - (optional) is a type of string
+  adjustment_type = null
+  # autoscaling_group_name - (required) is a type of string
+  autoscaling_group_name = null
+  # cooldown - (optional) is a type of number
+  cooldown = null
+  # estimated_instance_warmup - (optional) is a type of number
   estimated_instance_warmup = null
-  metric_aggregation_type   = null
-  min_adjustment_magnitude  = null
-  min_adjustment_step       = null
-  name                      = null
-  policy_type               = null
-  scaling_adjustment        = null
+  # metric_aggregation_type - (optional) is a type of string
+  metric_aggregation_type = null
+  # min_adjustment_magnitude - (optional) is a type of number
+  min_adjustment_magnitude = null
+  # min_adjustment_step - (optional) is a type of number
+  min_adjustment_step = null
+  # name - (required) is a type of string
+  name = null
+  # policy_type - (optional) is a type of string
+  policy_type = null
+  # scaling_adjustment - (optional) is a type of number
+  scaling_adjustment = null
 
   step_adjustment = [{
     metric_interval_lower_bound = null

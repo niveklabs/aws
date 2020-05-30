@@ -1,13 +1,20 @@
 module "aws_ses_receipt_rule" {
   source = "./modules/aws/r/aws_ses_receipt_rule"
 
-  after         = null
-  enabled       = null
-  name          = null
-  recipients    = []
+  # after - (optional) is a type of string
+  after = null
+  # enabled - (optional) is a type of bool
+  enabled = null
+  # name - (required) is a type of string
+  name = null
+  # recipients - (optional) is a type of set of string
+  recipients = []
+  # rule_set_name - (required) is a type of string
   rule_set_name = null
-  scan_enabled  = null
-  tls_policy    = null
+  # scan_enabled - (optional) is a type of bool
+  scan_enabled = null
+  # tls_policy - (optional) is a type of string
+  tls_policy = null
 
   add_header_action = [{
     header_name  = null

@@ -9,3 +9,9 @@ variable "description" {
   default     = null
 }
 
+variable "triggers" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+

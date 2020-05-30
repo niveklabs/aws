@@ -1,8 +1,10 @@
 module "aws_cognito_identity_pool_roles_attachment" {
   source = "./modules/aws/r/aws_cognito_identity_pool_roles_attachment"
 
+  # identity_pool_id - (required) is a type of string
   identity_pool_id = null
-  roles            = {}
+  # roles - (required) is a type of map of string
+  roles = {}
 
   role_mapping = [{
     ambiguous_role_resolution = null

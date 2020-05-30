@@ -1,11 +1,16 @@
 module "aws_eks_cluster" {
   source = "./modules/aws/r/aws_eks_cluster"
 
+  # enabled_cluster_log_types - (optional) is a type of set of string
   enabled_cluster_log_types = []
-  name                      = null
-  role_arn                  = null
-  tags                      = {}
-  version                   = null
+  # name - (required) is a type of string
+  name = null
+  # role_arn - (required) is a type of string
+  role_arn = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # version - (optional) is a type of string
+  version = null
 
   encryption_config = [{
     provider = [{

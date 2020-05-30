@@ -1,15 +1,24 @@
 module "aws_ssm_maintenance_window_task" {
   source = "./modules/aws/r/aws_ssm_maintenance_window_task"
 
-  description      = null
-  max_concurrency  = null
-  max_errors       = null
-  name             = null
-  priority         = null
+  # description - (optional) is a type of string
+  description = null
+  # max_concurrency - (required) is a type of string
+  max_concurrency = null
+  # max_errors - (required) is a type of string
+  max_errors = null
+  # name - (optional) is a type of string
+  name = null
+  # priority - (optional) is a type of number
+  priority = null
+  # service_role_arn - (required) is a type of string
   service_role_arn = null
-  task_arn         = null
-  task_type        = null
-  window_id        = null
+  # task_arn - (required) is a type of string
+  task_arn = null
+  # task_type - (required) is a type of string
+  task_type = null
+  # window_id - (required) is a type of string
+  window_id = null
 
   logging_info = [{
     s3_bucket_name   = null

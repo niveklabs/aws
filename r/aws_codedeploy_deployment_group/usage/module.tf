@@ -1,11 +1,16 @@
 module "aws_codedeploy_deployment_group" {
   source = "./modules/aws/r/aws_codedeploy_deployment_group"
 
-  app_name               = null
-  autoscaling_groups     = []
+  # app_name - (required) is a type of string
+  app_name = null
+  # autoscaling_groups - (optional) is a type of set of string
+  autoscaling_groups = []
+  # deployment_config_name - (optional) is a type of string
   deployment_config_name = null
-  deployment_group_name  = null
-  service_role_arn       = null
+  # deployment_group_name - (required) is a type of string
+  deployment_group_name = null
+  # service_role_arn - (required) is a type of string
+  service_role_arn = null
 
   alarm_configuration = [{
     alarms                    = []

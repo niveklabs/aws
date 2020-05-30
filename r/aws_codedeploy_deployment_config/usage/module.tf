@@ -1,7 +1,9 @@
 module "aws_codedeploy_deployment_config" {
   source = "./modules/aws/r/aws_codedeploy_deployment_config"
 
-  compute_platform       = null
+  # compute_platform - (optional) is a type of string
+  compute_platform = null
+  # deployment_config_name - (required) is a type of string
   deployment_config_name = null
 
   minimum_healthy_hosts = [{

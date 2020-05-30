@@ -1,7 +1,9 @@
 module "aws_acmpca_certificate_authority" {
   source = "./modules/aws/d/aws_acmpca_certificate_authority"
 
-  arn  = null
+  # arn - (required) is a type of string
+  arn = null
+  # tags - (optional) is a type of map of string
   tags = {}
 
   revocation_configuration = [{

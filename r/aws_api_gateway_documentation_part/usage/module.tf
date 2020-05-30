@@ -1,7 +1,9 @@
 module "aws_api_gateway_documentation_part" {
   source = "./modules/aws/r/aws_api_gateway_documentation_part"
 
-  properties  = null
+  # properties - (required) is a type of string
+  properties = null
+  # rest_api_id - (required) is a type of string
   rest_api_id = null
 
   location = [{

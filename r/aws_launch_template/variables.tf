@@ -268,6 +268,7 @@ variable "placement" {
       availability_zone = string
       group_name        = string
       host_id           = string
+      partition_number  = number
       spread_domain     = string
       tenancy           = string
     }

@@ -1,6 +1,7 @@
 module "aws_s3_bucket_notification" {
   source = "./modules/aws/r/aws_s3_bucket_notification"
 
+  # bucket - (required) is a type of string
   bucket = null
 
   lambda_function = [{

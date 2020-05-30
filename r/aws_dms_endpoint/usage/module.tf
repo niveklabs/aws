@@ -1,20 +1,34 @@
 module "aws_dms_endpoint" {
   source = "./modules/aws/r/aws_dms_endpoint"
 
-  certificate_arn             = null
-  database_name               = null
-  endpoint_id                 = null
-  endpoint_type               = null
-  engine_name                 = null
+  # certificate_arn - (optional) is a type of string
+  certificate_arn = null
+  # database_name - (optional) is a type of string
+  database_name = null
+  # endpoint_id - (required) is a type of string
+  endpoint_id = null
+  # endpoint_type - (required) is a type of string
+  endpoint_type = null
+  # engine_name - (required) is a type of string
+  engine_name = null
+  # extra_connection_attributes - (optional) is a type of string
   extra_connection_attributes = null
-  kms_key_arn                 = null
-  password                    = null
-  port                        = null
-  server_name                 = null
-  service_access_role         = null
-  ssl_mode                    = null
-  tags                        = {}
-  username                    = null
+  # kms_key_arn - (optional) is a type of string
+  kms_key_arn = null
+  # password - (optional) is a type of string
+  password = null
+  # port - (optional) is a type of number
+  port = null
+  # server_name - (optional) is a type of string
+  server_name = null
+  # service_access_role - (optional) is a type of string
+  service_access_role = null
+  # ssl_mode - (optional) is a type of string
+  ssl_mode = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # username - (optional) is a type of string
+  username = null
 
   elasticsearch_settings = [{
     endpoint_uri               = null

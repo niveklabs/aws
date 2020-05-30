@@ -1,11 +1,16 @@
 module "aws_appsync_graphql_api" {
   source = "./modules/aws/r/aws_appsync_graphql_api"
 
+  # authentication_type - (required) is a type of string
   authentication_type = null
-  name                = null
-  schema              = null
-  tags                = {}
-  xray_enabled        = null
+  # name - (required) is a type of string
+  name = null
+  # schema - (optional) is a type of string
+  schema = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # xray_enabled - (optional) is a type of bool
+  xray_enabled = null
 
   additional_authentication_provider = [{
     authentication_type = null

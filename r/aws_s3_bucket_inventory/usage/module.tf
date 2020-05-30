@@ -1,11 +1,16 @@
 module "aws_s3_bucket_inventory" {
   source = "./modules/aws/r/aws_s3_bucket_inventory"
 
-  bucket                   = null
-  enabled                  = null
+  # bucket - (required) is a type of string
+  bucket = null
+  # enabled - (optional) is a type of bool
+  enabled = null
+  # included_object_versions - (required) is a type of string
   included_object_versions = null
-  name                     = null
-  optional_fields          = []
+  # name - (required) is a type of string
+  name = null
+  # optional_fields - (optional) is a type of set of string
+  optional_fields = []
 
   destination = [{
     bucket = [{

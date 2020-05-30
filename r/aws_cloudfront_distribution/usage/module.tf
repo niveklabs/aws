@@ -1,17 +1,28 @@
 module "aws_cloudfront_distribution" {
   source = "./modules/aws/r/aws_cloudfront_distribution"
 
-  aliases             = []
-  comment             = null
+  # aliases - (optional) is a type of set of string
+  aliases = []
+  # comment - (optional) is a type of string
+  comment = null
+  # default_root_object - (optional) is a type of string
   default_root_object = null
-  enabled             = null
-  http_version        = null
-  is_ipv6_enabled     = null
-  price_class         = null
-  retain_on_delete    = null
-  tags                = {}
+  # enabled - (required) is a type of bool
+  enabled = null
+  # http_version - (optional) is a type of string
+  http_version = null
+  # is_ipv6_enabled - (optional) is a type of bool
+  is_ipv6_enabled = null
+  # price_class - (optional) is a type of string
+  price_class = null
+  # retain_on_delete - (optional) is a type of bool
+  retain_on_delete = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # wait_for_deployment - (optional) is a type of bool
   wait_for_deployment = null
-  web_acl_id          = null
+  # web_acl_id - (optional) is a type of string
+  web_acl_id = null
 
   cache_behavior = [{
     allowed_methods           = []

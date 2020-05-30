@@ -1,6 +1,7 @@
 module "aws_waf_byte_match_set" {
   source = "./modules/aws/r/aws_waf_byte_match_set"
 
+  # name - (required) is a type of string
   name = null
 
   byte_match_tuples = [{

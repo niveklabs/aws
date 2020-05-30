@@ -1,11 +1,16 @@
 module "aws_batch_compute_environment" {
   source = "./modules/aws/r/aws_batch_compute_environment"
 
-  compute_environment_name        = null
+  # compute_environment_name - (optional) is a type of string
+  compute_environment_name = null
+  # compute_environment_name_prefix - (optional) is a type of string
   compute_environment_name_prefix = null
-  service_role                    = null
-  state                           = null
-  type                            = null
+  # service_role - (required) is a type of string
+  service_role = null
+  # state - (optional) is a type of string
+  state = null
+  # type - (required) is a type of string
+  type = null
 
   compute_resources = [{
     allocation_strategy = null

@@ -1,12 +1,18 @@
 module "aws_ec2_fleet" {
   source = "./modules/aws/r/aws_ec2_fleet"
 
-  excess_capacity_termination_policy  = null
-  replace_unhealthy_instances         = null
-  tags                                = {}
-  terminate_instances                 = null
+  # excess_capacity_termination_policy - (optional) is a type of string
+  excess_capacity_termination_policy = null
+  # replace_unhealthy_instances - (optional) is a type of bool
+  replace_unhealthy_instances = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # terminate_instances - (optional) is a type of bool
+  terminate_instances = null
+  # terminate_instances_with_expiration - (optional) is a type of bool
   terminate_instances_with_expiration = null
-  type                                = null
+  # type - (optional) is a type of string
+  type = null
 
   launch_template_config = [{
     launch_template_specification = [{

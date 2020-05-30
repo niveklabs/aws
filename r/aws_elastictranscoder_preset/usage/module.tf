@@ -1,10 +1,15 @@
 module "aws_elastictranscoder_preset" {
   source = "./modules/aws/r/aws_elastictranscoder_preset"
 
-  container           = null
-  description         = null
-  name                = null
-  type                = null
+  # container - (required) is a type of string
+  container = null
+  # description - (optional) is a type of string
+  description = null
+  # name - (optional) is a type of string
+  name = null
+  # type - (optional) is a type of string
+  type = null
+  # video_codec_options - (optional) is a type of map of string
   video_codec_options = {}
 
   audio = [{

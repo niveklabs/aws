@@ -1,11 +1,16 @@
 module "aws_ami_from_instance" {
   source = "./modules/aws/r/aws_ami_from_instance"
 
-  description             = null
-  name                    = null
+  # description - (optional) is a type of string
+  description = null
+  # name - (required) is a type of string
+  name = null
+  # snapshot_without_reboot - (optional) is a type of bool
   snapshot_without_reboot = null
-  source_instance_id      = null
-  tags                    = {}
+  # source_instance_id - (required) is a type of string
+  source_instance_id = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   ebs_block_device = [{
     delete_on_termination = null

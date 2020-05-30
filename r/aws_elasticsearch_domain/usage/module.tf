@@ -1,11 +1,16 @@
 module "aws_elasticsearch_domain" {
   source = "./modules/aws/r/aws_elasticsearch_domain"
 
-  access_policies       = null
-  advanced_options      = {}
-  domain_name           = null
+  # access_policies - (optional) is a type of string
+  access_policies = null
+  # advanced_options - (optional) is a type of map of string
+  advanced_options = {}
+  # domain_name - (required) is a type of string
+  domain_name = null
+  # elasticsearch_version - (optional) is a type of string
   elasticsearch_version = null
-  tags                  = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   cluster_config = [{
     dedicated_master_count   = null

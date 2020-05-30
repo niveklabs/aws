@@ -1,7 +1,9 @@
 module "aws_config_configuration_recorder" {
   source = "./modules/aws/r/aws_config_configuration_recorder"
 
-  name     = null
+  # name - (optional) is a type of string
+  name = null
+  # role_arn - (required) is a type of string
   role_arn = null
 
   recording_group = [{

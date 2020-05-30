@@ -1,23 +1,41 @@
 module "aws_emr_cluster" {
   source = "./modules/aws/r/aws_emr_cluster"
 
-  additional_info                   = null
-  applications                      = []
-  autoscaling_role                  = null
-  configurations                    = null
-  configurations_json               = null
-  core_instance_count               = null
-  core_instance_type                = null
-  custom_ami_id                     = null
-  ebs_root_volume_size              = null
+  # additional_info - (optional) is a type of string
+  additional_info = null
+  # applications - (optional) is a type of set of string
+  applications = []
+  # autoscaling_role - (optional) is a type of string
+  autoscaling_role = null
+  # configurations - (optional) is a type of string
+  configurations = null
+  # configurations_json - (optional) is a type of string
+  configurations_json = null
+  # core_instance_count - (optional) is a type of number
+  core_instance_count = null
+  # core_instance_type - (optional) is a type of string
+  core_instance_type = null
+  # custom_ami_id - (optional) is a type of string
+  custom_ami_id = null
+  # ebs_root_volume_size - (optional) is a type of number
+  ebs_root_volume_size = null
+  # keep_job_flow_alive_when_no_steps - (optional) is a type of bool
   keep_job_flow_alive_when_no_steps = null
-  log_uri                           = null
-  master_instance_type              = null
-  name                              = null
-  release_label                     = null
-  scale_down_behavior               = null
-  security_configuration            = null
-  service_role                      = null
+  # log_uri - (optional) is a type of string
+  log_uri = null
+  # master_instance_type - (optional) is a type of string
+  master_instance_type = null
+  # name - (required) is a type of string
+  name = null
+  # release_label - (required) is a type of string
+  release_label = null
+  # scale_down_behavior - (optional) is a type of string
+  scale_down_behavior = null
+  # security_configuration - (optional) is a type of string
+  security_configuration = null
+  # service_role - (required) is a type of string
+  service_role = null
+  # step - (optional) is a type of list of object
   step = [{
     action_on_failure = null
     hadoop_jar_step = [{
@@ -28,10 +46,14 @@ module "aws_emr_cluster" {
     }]
     name = null
   }]
+  # step_concurrency_level - (optional) is a type of number
   step_concurrency_level = null
-  tags                   = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # termination_protection - (optional) is a type of bool
   termination_protection = null
-  visible_to_all_users   = null
+  # visible_to_all_users - (optional) is a type of bool
+  visible_to_all_users = null
 
   bootstrap_action = [{
     args = []

@@ -1,11 +1,16 @@
 module "aws_lb_listener" {
   source = "./modules/aws/r/aws_lb_listener"
 
-  certificate_arn   = null
+  # certificate_arn - (optional) is a type of string
+  certificate_arn = null
+  # load_balancer_arn - (required) is a type of string
   load_balancer_arn = null
-  port              = null
-  protocol          = null
-  ssl_policy        = null
+  # port - (required) is a type of number
+  port = null
+  # protocol - (optional) is a type of string
+  protocol = null
+  # ssl_policy - (optional) is a type of string
+  ssl_policy = null
 
   default_action = [{
     authenticate_cognito = [{

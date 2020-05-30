@@ -4,6 +4,12 @@ variable "associate_with_private_ip" {
   default     = null
 }
 
+variable "customer_owned_ipv4_pool" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "instance" {
   description = "(optional)"
   type        = string

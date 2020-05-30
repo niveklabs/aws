@@ -1,7 +1,9 @@
 module "aws_route_table" {
   source = "./modules/aws/r/aws_route_table"
 
+  # propagating_vgws - (optional) is a type of set of string
   propagating_vgws = []
+  # route - (optional) is a type of set of object
   route = [{
     cidr_block                = null
     egress_only_gateway_id    = null
@@ -13,6 +15,8 @@ module "aws_route_table" {
     transit_gateway_id        = null
     vpc_peering_connection_id = null
   }]
-  tags   = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # vpc_id - (required) is a type of string
   vpc_id = null
 }

@@ -1,7 +1,10 @@
 module "aws_lb_listener" {
   source = "./modules/aws/d/aws_lb_listener"
 
-  arn               = null
+  # arn - (optional) is a type of string
+  arn = null
+  # load_balancer_arn - (optional) is a type of string
   load_balancer_arn = null
-  port              = null
+  # port - (optional) is a type of number
+  port = null
 }

@@ -1,31 +1,57 @@
 module "aws_opsworks_rails_app_layer" {
   source = "./modules/aws/r/aws_opsworks_rails_app_layer"
 
-  app_server                  = null
-  auto_assign_elastic_ips     = null
-  auto_assign_public_ips      = null
-  auto_healing                = null
-  bundler_version             = null
-  custom_configure_recipes    = []
-  custom_deploy_recipes       = []
+  # app_server - (optional) is a type of string
+  app_server = null
+  # auto_assign_elastic_ips - (optional) is a type of bool
+  auto_assign_elastic_ips = null
+  # auto_assign_public_ips - (optional) is a type of bool
+  auto_assign_public_ips = null
+  # auto_healing - (optional) is a type of bool
+  auto_healing = null
+  # bundler_version - (optional) is a type of string
+  bundler_version = null
+  # custom_configure_recipes - (optional) is a type of list of string
+  custom_configure_recipes = []
+  # custom_deploy_recipes - (optional) is a type of list of string
+  custom_deploy_recipes = []
+  # custom_instance_profile_arn - (optional) is a type of string
   custom_instance_profile_arn = null
-  custom_json                 = null
-  custom_security_group_ids   = []
-  custom_setup_recipes        = []
-  custom_shutdown_recipes     = []
-  custom_undeploy_recipes     = []
-  drain_elb_on_shutdown       = null
-  elastic_load_balancer       = null
-  install_updates_on_boot     = null
-  instance_shutdown_timeout   = null
-  manage_bundler              = null
-  name                        = null
-  passenger_version           = null
-  ruby_version                = null
-  rubygems_version            = null
-  stack_id                    = null
-  system_packages             = []
-  tags                        = {}
+  # custom_json - (optional) is a type of string
+  custom_json = null
+  # custom_security_group_ids - (optional) is a type of set of string
+  custom_security_group_ids = []
+  # custom_setup_recipes - (optional) is a type of list of string
+  custom_setup_recipes = []
+  # custom_shutdown_recipes - (optional) is a type of list of string
+  custom_shutdown_recipes = []
+  # custom_undeploy_recipes - (optional) is a type of list of string
+  custom_undeploy_recipes = []
+  # drain_elb_on_shutdown - (optional) is a type of bool
+  drain_elb_on_shutdown = null
+  # elastic_load_balancer - (optional) is a type of string
+  elastic_load_balancer = null
+  # install_updates_on_boot - (optional) is a type of bool
+  install_updates_on_boot = null
+  # instance_shutdown_timeout - (optional) is a type of number
+  instance_shutdown_timeout = null
+  # manage_bundler - (optional) is a type of bool
+  manage_bundler = null
+  # name - (optional) is a type of string
+  name = null
+  # passenger_version - (optional) is a type of string
+  passenger_version = null
+  # ruby_version - (optional) is a type of string
+  ruby_version = null
+  # rubygems_version - (optional) is a type of string
+  rubygems_version = null
+  # stack_id - (required) is a type of string
+  stack_id = null
+  # system_packages - (optional) is a type of set of string
+  system_packages = []
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # use_ebs_optimized_instances - (optional) is a type of bool
   use_ebs_optimized_instances = null
 
   ebs_volume = [{

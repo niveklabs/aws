@@ -1,8 +1,11 @@
 module "aws_service_discovery_service" {
   source = "./modules/aws/r/aws_service_discovery_service"
 
-  description  = null
-  name         = null
+  # description - (optional) is a type of string
+  description = null
+  # name - (required) is a type of string
+  name = null
+  # namespace_id - (optional) is a type of string
   namespace_id = null
 
   dns_config = [{

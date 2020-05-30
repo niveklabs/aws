@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.60.0"
+    aws = ">= 2.61.0"
   }
 }
 
@@ -170,6 +170,7 @@ resource "aws_launch_template" "this" {
       availability_zone = placement.value["availability_zone"]
       group_name        = placement.value["group_name"]
       host_id           = placement.value["host_id"]
+      partition_number  = placement.value["partition_number"]
       spread_domain     = placement.value["spread_domain"]
       tenancy           = placement.value["tenancy"]
     }

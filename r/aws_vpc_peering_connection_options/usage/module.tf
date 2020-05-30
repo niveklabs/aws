@@ -1,6 +1,7 @@
 module "aws_vpc_peering_connection_options" {
   source = "./modules/aws/r/aws_vpc_peering_connection_options"
 
+  # vpc_peering_connection_id - (required) is a type of string
   vpc_peering_connection_id = null
 
   accepter = [{

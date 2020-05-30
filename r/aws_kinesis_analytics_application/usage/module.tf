@@ -1,10 +1,14 @@
 module "aws_kinesis_analytics_application" {
   source = "./modules/aws/r/aws_kinesis_analytics_application"
 
-  code        = null
+  # code - (optional) is a type of string
+  code = null
+  # description - (optional) is a type of string
   description = null
-  name        = null
-  tags        = {}
+  # name - (required) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   cloudwatch_logging_options = [{
     id             = null

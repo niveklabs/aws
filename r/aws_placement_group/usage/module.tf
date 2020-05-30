@@ -1,7 +1,10 @@
 module "aws_placement_group" {
   source = "./modules/aws/r/aws_placement_group"
 
-  name     = null
+  # name - (required) is a type of string
+  name = null
+  # strategy - (required) is a type of string
   strategy = null
-  tags     = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 }

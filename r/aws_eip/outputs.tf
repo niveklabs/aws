@@ -8,6 +8,11 @@ output "association_id" {
   value       = aws_eip.this.association_id
 }
 
+output "customer_owned_ip" {
+  description = "returns a string"
+  value       = aws_eip.this.customer_owned_ip
+}
+
 output "domain" {
   description = "returns a string"
   value       = aws_eip.this.domain

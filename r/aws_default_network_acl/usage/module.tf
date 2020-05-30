@@ -1,9 +1,12 @@
 module "aws_default_network_acl" {
   source = "./modules/aws/r/aws_default_network_acl"
 
+  # default_network_acl_id - (required) is a type of string
   default_network_acl_id = null
-  subnet_ids             = []
-  tags                   = {}
+  # subnet_ids - (optional) is a type of set of string
+  subnet_ids = []
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   egress = [{
     action          = null

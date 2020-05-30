@@ -1,8 +1,10 @@
 module "aws_alb_listener_rule" {
   source = "./modules/aws/r/aws_alb_listener_rule"
 
+  # listener_arn - (required) is a type of string
   listener_arn = null
-  priority     = null
+  # priority - (optional) is a type of number
+  priority = null
 
   action = [{
     authenticate_cognito = [{

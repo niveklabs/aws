@@ -1,9 +1,13 @@
 module "aws_appmesh_route" {
   source = "./modules/aws/r/aws_appmesh_route"
 
-  mesh_name           = null
-  name                = null
-  tags                = {}
+  # mesh_name - (required) is a type of string
+  mesh_name = null
+  # name - (required) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # virtual_router_name - (required) is a type of string
   virtual_router_name = null
 
   spec = [{

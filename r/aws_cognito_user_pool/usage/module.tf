@@ -1,16 +1,26 @@
 module "aws_cognito_user_pool" {
   source = "./modules/aws/r/aws_cognito_user_pool"
 
-  alias_attributes           = []
-  auto_verified_attributes   = []
+  # alias_attributes - (optional) is a type of set of string
+  alias_attributes = []
+  # auto_verified_attributes - (optional) is a type of set of string
+  auto_verified_attributes = []
+  # email_verification_message - (optional) is a type of string
   email_verification_message = null
+  # email_verification_subject - (optional) is a type of string
   email_verification_subject = null
-  mfa_configuration          = null
-  name                       = null
+  # mfa_configuration - (optional) is a type of string
+  mfa_configuration = null
+  # name - (required) is a type of string
+  name = null
+  # sms_authentication_message - (optional) is a type of string
   sms_authentication_message = null
-  sms_verification_message   = null
-  tags                       = {}
-  username_attributes        = []
+  # sms_verification_message - (optional) is a type of string
+  sms_verification_message = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # username_attributes - (optional) is a type of list of string
+  username_attributes = []
 
   admin_create_user_config = [{
     allow_admin_create_user_only = null

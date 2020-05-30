@@ -21,6 +21,12 @@ variable "kms_key_id" {
   default     = null
 }
 
+variable "multi_attach_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "outpost_arn" {
   description = "(optional)"
   type        = string

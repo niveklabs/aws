@@ -1,12 +1,18 @@
 module "aws_cloudwatch_event_target" {
   source = "./modules/aws/r/aws_cloudwatch_event_target"
 
-  arn        = null
-  input      = null
+  # arn - (required) is a type of string
+  arn = null
+  # input - (optional) is a type of string
+  input = null
+  # input_path - (optional) is a type of string
   input_path = null
-  role_arn   = null
-  rule       = null
-  target_id  = null
+  # role_arn - (optional) is a type of string
+  role_arn = null
+  # rule - (required) is a type of string
+  rule = null
+  # target_id - (optional) is a type of string
+  target_id = null
 
   batch_target = [{
     array_size     = null

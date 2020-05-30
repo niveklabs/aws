@@ -1,11 +1,16 @@
 module "aws_athena_workgroup" {
   source = "./modules/aws/r/aws_athena_workgroup"
 
-  description   = null
+  # description - (optional) is a type of string
+  description = null
+  # force_destroy - (optional) is a type of bool
   force_destroy = null
-  name          = null
-  state         = null
-  tags          = {}
+  # name - (required) is a type of string
+  name = null
+  # state - (optional) is a type of string
+  state = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   configuration = [{
     bytes_scanned_cutoff_per_query     = null

@@ -48,6 +48,11 @@ output "provisioned_throughput_in_mibps" {
   value       = data.aws_efs_file_system.this.provisioned_throughput_in_mibps
 }
 
+output "size_in_bytes" {
+  description = "returns a number"
+  value       = data.aws_efs_file_system.this.size_in_bytes
+}
+
 output "tags" {
   description = "returns a map of string"
   value       = data.aws_efs_file_system.this.tags

@@ -1,19 +1,32 @@
 module "aws_s3_bucket" {
   source = "./modules/aws/r/aws_s3_bucket"
 
+  # acceleration_status - (optional) is a type of string
   acceleration_status = null
-  acl                 = null
-  arn                 = null
-  bucket              = null
-  bucket_prefix       = null
-  force_destroy       = null
-  hosted_zone_id      = null
-  policy              = null
-  region              = null
-  request_payer       = null
-  tags                = {}
-  website_domain      = null
-  website_endpoint    = null
+  # acl - (optional) is a type of string
+  acl = null
+  # arn - (optional) is a type of string
+  arn = null
+  # bucket - (optional) is a type of string
+  bucket = null
+  # bucket_prefix - (optional) is a type of string
+  bucket_prefix = null
+  # force_destroy - (optional) is a type of bool
+  force_destroy = null
+  # hosted_zone_id - (optional) is a type of string
+  hosted_zone_id = null
+  # policy - (optional) is a type of string
+  policy = null
+  # region - (optional) is a type of string
+  region = null
+  # request_payer - (optional) is a type of string
+  request_payer = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # website_domain - (optional) is a type of string
+  website_domain = null
+  # website_endpoint - (optional) is a type of string
+  website_endpoint = null
 
   cors_rule = [{
     allowed_headers = []

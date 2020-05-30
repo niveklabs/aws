@@ -1,11 +1,16 @@
 module "aws_msk_cluster" {
   source = "./modules/aws/r/aws_msk_cluster"
 
-  cluster_name           = null
-  enhanced_monitoring    = null
-  kafka_version          = null
+  # cluster_name - (required) is a type of string
+  cluster_name = null
+  # enhanced_monitoring - (optional) is a type of string
+  enhanced_monitoring = null
+  # kafka_version - (required) is a type of string
+  kafka_version = null
+  # number_of_broker_nodes - (required) is a type of number
   number_of_broker_nodes = null
-  tags                   = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   broker_node_group_info = [{
     az_distribution = null

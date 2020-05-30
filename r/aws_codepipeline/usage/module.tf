@@ -1,9 +1,12 @@
 module "aws_codepipeline" {
   source = "./modules/aws/r/aws_codepipeline"
 
-  name     = null
+  # name - (required) is a type of string
+  name = null
+  # role_arn - (required) is a type of string
   role_arn = null
-  tags     = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   artifact_store = [{
     encryption_key = [{

@@ -1,15 +1,24 @@
 module "aws_appautoscaling_policy" {
   source = "./modules/aws/r/aws_appautoscaling_policy"
 
-  adjustment_type          = null
-  cooldown                 = null
-  metric_aggregation_type  = null
+  # adjustment_type - (optional) is a type of string
+  adjustment_type = null
+  # cooldown - (optional) is a type of number
+  cooldown = null
+  # metric_aggregation_type - (optional) is a type of string
+  metric_aggregation_type = null
+  # min_adjustment_magnitude - (optional) is a type of number
   min_adjustment_magnitude = null
-  name                     = null
-  policy_type              = null
-  resource_id              = null
-  scalable_dimension       = null
-  service_namespace        = null
+  # name - (required) is a type of string
+  name = null
+  # policy_type - (optional) is a type of string
+  policy_type = null
+  # resource_id - (required) is a type of string
+  resource_id = null
+  # scalable_dimension - (required) is a type of string
+  scalable_dimension = null
+  # service_namespace - (required) is a type of string
+  service_namespace = null
 
   step_adjustment = [{
     metric_interval_lower_bound = null

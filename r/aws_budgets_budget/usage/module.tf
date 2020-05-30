@@ -1,16 +1,26 @@
 module "aws_budgets_budget" {
   source = "./modules/aws/r/aws_budgets_budget"
 
-  account_id        = null
-  budget_type       = null
-  cost_filters      = {}
-  limit_amount      = null
-  limit_unit        = null
-  name              = null
-  name_prefix       = null
-  time_period_end   = null
+  # account_id - (optional) is a type of string
+  account_id = null
+  # budget_type - (required) is a type of string
+  budget_type = null
+  # cost_filters - (optional) is a type of map of string
+  cost_filters = {}
+  # limit_amount - (required) is a type of string
+  limit_amount = null
+  # limit_unit - (required) is a type of string
+  limit_unit = null
+  # name - (optional) is a type of string
+  name = null
+  # name_prefix - (optional) is a type of string
+  name_prefix = null
+  # time_period_end - (optional) is a type of string
+  time_period_end = null
+  # time_period_start - (required) is a type of string
   time_period_start = null
-  time_unit         = null
+  # time_unit - (required) is a type of string
+  time_unit = null
 
   cost_types = [{
     include_credit             = null

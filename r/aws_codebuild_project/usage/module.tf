@@ -15,15 +15,24 @@ module "aws_codebuild_project" {
     type                = null
   }]
 
-  badge_enabled  = null
-  build_timeout  = null
-  description    = null
+  # badge_enabled - (optional) is a type of bool
+  badge_enabled = null
+  # build_timeout - (optional) is a type of number
+  build_timeout = null
+  # description - (optional) is a type of string
+  description = null
+  # encryption_key - (optional) is a type of string
   encryption_key = null
-  name           = null
+  # name - (required) is a type of string
+  name = null
+  # queued_timeout - (optional) is a type of number
   queued_timeout = null
-  service_role   = null
+  # service_role - (required) is a type of string
+  service_role = null
+  # source_version - (optional) is a type of string
   source_version = null
-  tags           = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   artifacts = [{
     artifact_identifier    = null

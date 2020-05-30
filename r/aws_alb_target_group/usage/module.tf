@@ -1,18 +1,30 @@
 module "aws_alb_target_group" {
   source = "./modules/aws/r/aws_alb_target_group"
 
-  deregistration_delay               = null
+  # deregistration_delay - (optional) is a type of number
+  deregistration_delay = null
+  # lambda_multi_value_headers_enabled - (optional) is a type of bool
   lambda_multi_value_headers_enabled = null
-  load_balancing_algorithm_type      = null
-  name                               = null
-  name_prefix                        = null
-  port                               = null
-  protocol                           = null
-  proxy_protocol_v2                  = null
-  slow_start                         = null
-  tags                               = {}
-  target_type                        = null
-  vpc_id                             = null
+  # load_balancing_algorithm_type - (optional) is a type of string
+  load_balancing_algorithm_type = null
+  # name - (optional) is a type of string
+  name = null
+  # name_prefix - (optional) is a type of string
+  name_prefix = null
+  # port - (optional) is a type of number
+  port = null
+  # protocol - (optional) is a type of string
+  protocol = null
+  # proxy_protocol_v2 - (optional) is a type of bool
+  proxy_protocol_v2 = null
+  # slow_start - (optional) is a type of number
+  slow_start = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # target_type - (optional) is a type of string
+  target_type = null
+  # vpc_id - (optional) is a type of string
+  vpc_id = null
 
   health_check = [{
     enabled             = null

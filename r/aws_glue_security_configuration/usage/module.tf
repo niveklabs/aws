@@ -1,6 +1,7 @@
 module "aws_glue_security_configuration" {
   source = "./modules/aws/r/aws_glue_security_configuration"
 
+  # name - (required) is a type of string
   name = null
 
   encryption_configuration = [{

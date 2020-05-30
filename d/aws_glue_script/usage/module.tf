@@ -1,6 +1,7 @@
 module "aws_glue_script" {
   source = "./modules/aws/d/aws_glue_script"
 
+  # language - (optional) is a type of string
   language = null
 
   dag_edge = [{

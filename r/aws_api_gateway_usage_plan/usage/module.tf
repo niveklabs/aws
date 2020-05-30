@@ -1,10 +1,14 @@
 module "aws_api_gateway_usage_plan" {
   source = "./modules/aws/r/aws_api_gateway_usage_plan"
 
-  description  = null
-  name         = null
+  # description - (optional) is a type of string
+  description = null
+  # name - (required) is a type of string
+  name = null
+  # product_code - (optional) is a type of string
   product_code = null
-  tags         = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   api_stages = [{
     api_id = null

@@ -1,8 +1,10 @@
 module "aws_redshift_security_group" {
   source = "./modules/aws/r/aws_redshift_security_group"
 
+  # description - (optional) is a type of string
   description = null
-  name        = null
+  # name - (required) is a type of string
+  name = null
 
   ingress = [{
     cidr                    = null

@@ -1,6 +1,7 @@
 module "aws_glue_classifier" {
   source = "./modules/aws/r/aws_glue_classifier"
 
+  # name - (required) is a type of string
   name = null
 
   csv_classifier = [{

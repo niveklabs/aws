@@ -3,6 +3,16 @@ output "association_id" {
   value       = data.aws_eip.this.association_id
 }
 
+output "customer_owned_ip" {
+  description = "returns a string"
+  value       = data.aws_eip.this.customer_owned_ip
+}
+
+output "customer_owned_ipv4_pool" {
+  description = "returns a string"
+  value       = data.aws_eip.this.customer_owned_ipv4_pool
+}
+
 output "domain" {
   description = "returns a string"
   value       = data.aws_eip.this.domain

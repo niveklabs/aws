@@ -21,6 +21,12 @@ variable "stage_name" {
   default     = null
 }
 
+variable "triggers" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "variables" {
   description = "(optional)"
   type        = map(string)

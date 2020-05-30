@@ -1,21 +1,36 @@
 module "aws_launch_template" {
   source = "./modules/aws/r/aws_launch_template"
 
-  description                          = null
-  disable_api_termination              = null
-  ebs_optimized                        = null
-  image_id                             = null
+  # description - (optional) is a type of string
+  description = null
+  # disable_api_termination - (optional) is a type of bool
+  disable_api_termination = null
+  # ebs_optimized - (optional) is a type of string
+  ebs_optimized = null
+  # image_id - (optional) is a type of string
+  image_id = null
+  # instance_initiated_shutdown_behavior - (optional) is a type of string
   instance_initiated_shutdown_behavior = null
-  instance_type                        = null
-  kernel_id                            = null
-  key_name                             = null
-  name                                 = null
-  name_prefix                          = null
-  ram_disk_id                          = null
-  security_group_names                 = []
-  tags                                 = {}
-  user_data                            = null
-  vpc_security_group_ids               = []
+  # instance_type - (optional) is a type of string
+  instance_type = null
+  # kernel_id - (optional) is a type of string
+  kernel_id = null
+  # key_name - (optional) is a type of string
+  key_name = null
+  # name - (optional) is a type of string
+  name = null
+  # name_prefix - (optional) is a type of string
+  name_prefix = null
+  # ram_disk_id - (optional) is a type of string
+  ram_disk_id = null
+  # security_group_names - (optional) is a type of set of string
+  security_group_names = []
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # user_data - (optional) is a type of string
+  user_data = null
+  # vpc_security_group_ids - (optional) is a type of set of string
+  vpc_security_group_ids = []
 
   block_device_mappings = [{
     device_name = null
@@ -110,6 +125,7 @@ module "aws_launch_template" {
     availability_zone = null
     group_name        = null
     host_id           = null
+    partition_number  = null
     spread_domain     = null
     tenancy           = null
   }]

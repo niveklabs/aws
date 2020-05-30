@@ -1,10 +1,14 @@
 module "aws_s3_access_point" {
   source = "./modules/aws/r/aws_s3_access_point"
 
+  # account_id - (optional) is a type of string
   account_id = null
-  bucket     = null
-  name       = null
-  policy     = null
+  # bucket - (required) is a type of string
+  bucket = null
+  # name - (required) is a type of string
+  name = null
+  # policy - (optional) is a type of string
+  policy = null
 
   public_access_block_configuration = [{
     block_public_acls       = null

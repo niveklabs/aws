@@ -1,6 +1,7 @@
 module "aws_wafregional_size_constraint_set" {
   source = "./modules/aws/r/aws_wafregional_size_constraint_set"
 
+  # name - (required) is a type of string
   name = null
 
   size_constraints = [{

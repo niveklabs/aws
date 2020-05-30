@@ -1,9 +1,12 @@
 module "aws_pinpoint_app" {
   source = "./modules/aws/r/aws_pinpoint_app"
 
-  name        = null
+  # name - (optional) is a type of string
+  name = null
+  # name_prefix - (optional) is a type of string
   name_prefix = null
-  tags        = {}
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   campaign_hook = [{
     lambda_function_name = null

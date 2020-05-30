@@ -1,12 +1,19 @@
 module "aws_glue_trigger" {
   source = "./modules/aws/r/aws_glue_trigger"
 
-  description   = null
-  enabled       = null
-  name          = null
-  schedule      = null
-  tags          = {}
-  type          = null
+  # description - (optional) is a type of string
+  description = null
+  # enabled - (optional) is a type of bool
+  enabled = null
+  # name - (required) is a type of string
+  name = null
+  # schedule - (optional) is a type of string
+  schedule = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # type - (required) is a type of string
+  type = null
+  # workflow_name - (optional) is a type of string
   workflow_name = null
 
   actions = [{

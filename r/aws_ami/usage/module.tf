@@ -1,16 +1,27 @@
 module "aws_ami" {
   source = "./modules/aws/r/aws_ami"
 
-  architecture        = null
-  description         = null
-  ena_support         = null
-  image_location      = null
-  kernel_id           = null
-  name                = null
-  ramdisk_id          = null
-  root_device_name    = null
-  sriov_net_support   = null
-  tags                = {}
+  # architecture - (optional) is a type of string
+  architecture = null
+  # description - (optional) is a type of string
+  description = null
+  # ena_support - (optional) is a type of bool
+  ena_support = null
+  # image_location - (optional) is a type of string
+  image_location = null
+  # kernel_id - (optional) is a type of string
+  kernel_id = null
+  # name - (required) is a type of string
+  name = null
+  # ramdisk_id - (optional) is a type of string
+  ramdisk_id = null
+  # root_device_name - (optional) is a type of string
+  root_device_name = null
+  # sriov_net_support - (optional) is a type of string
+  sriov_net_support = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # virtualization_type - (optional) is a type of string
   virtualization_type = null
 
   ebs_block_device = [{

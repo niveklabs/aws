@@ -28,6 +28,11 @@ output "kms_key_id" {
   value       = data.aws_ebs_volume.this.kms_key_id
 }
 
+output "multi_attach_enabled" {
+  description = "returns a bool"
+  value       = data.aws_ebs_volume.this.multi_attach_enabled
+}
+
 output "outpost_arn" {
   description = "returns a string"
   value       = data.aws_ebs_volume.this.outpost_arn

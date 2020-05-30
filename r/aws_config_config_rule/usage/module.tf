@@ -9,11 +9,16 @@ module "aws_config_config_rule" {
     source_identifier = null
   }]
 
-  description                 = null
-  input_parameters            = null
+  # description - (optional) is a type of string
+  description = null
+  # input_parameters - (optional) is a type of string
+  input_parameters = null
+  # maximum_execution_frequency - (optional) is a type of string
   maximum_execution_frequency = null
-  name                        = null
-  tags                        = {}
+  # name - (required) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   scope = [{
     compliance_resource_id    = null

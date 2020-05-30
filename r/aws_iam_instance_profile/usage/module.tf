@@ -1,9 +1,14 @@
 module "aws_iam_instance_profile" {
   source = "./modules/aws/r/aws_iam_instance_profile"
 
-  name        = null
+  # name - (optional) is a type of string
+  name = null
+  # name_prefix - (optional) is a type of string
   name_prefix = null
-  path        = null
-  role        = null
-  roles       = []
+  # path - (optional) is a type of string
+  path = null
+  # role - (optional) is a type of string
+  role = null
+  # roles - (optional) is a type of set of string
+  roles = []
 }

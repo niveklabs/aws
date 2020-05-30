@@ -1,9 +1,12 @@
 module "aws_sagemaker_endpoint_configuration" {
   source = "./modules/aws/r/aws_sagemaker_endpoint_configuration"
 
+  # kms_key_arn - (optional) is a type of string
   kms_key_arn = null
-  name        = null
-  tags        = {}
+  # name - (optional) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   production_variants = [{
     accelerator_type       = null

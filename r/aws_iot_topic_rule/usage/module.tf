@@ -1,10 +1,15 @@
 module "aws_iot_topic_rule" {
   source = "./modules/aws/r/aws_iot_topic_rule"
 
+  # description - (optional) is a type of string
   description = null
-  enabled     = null
-  name        = null
-  sql         = null
+  # enabled - (required) is a type of bool
+  enabled = null
+  # name - (required) is a type of string
+  name = null
+  # sql - (required) is a type of string
+  sql = null
+  # sql_version - (required) is a type of string
   sql_version = null
 
   cloudwatch_alarm = [{

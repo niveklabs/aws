@@ -1,7 +1,9 @@
 module "aws_ecs_capacity_provider" {
   source = "./modules/aws/r/aws_ecs_capacity_provider"
 
+  # name - (required) is a type of string
   name = null
+  # tags - (optional) is a type of map of string
   tags = {}
 
   auto_scaling_group_provider = [{

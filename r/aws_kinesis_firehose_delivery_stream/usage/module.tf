@@ -1,12 +1,18 @@
 module "aws_kinesis_firehose_delivery_stream" {
   source = "./modules/aws/r/aws_kinesis_firehose_delivery_stream"
 
-  arn            = null
-  destination    = null
+  # arn - (optional) is a type of string
+  arn = null
+  # destination - (required) is a type of string
+  destination = null
+  # destination_id - (optional) is a type of string
   destination_id = null
-  name           = null
-  tags           = {}
-  version_id     = null
+  # name - (required) is a type of string
+  name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # version_id - (optional) is a type of string
+  version_id = null
 
   elasticsearch_configuration = [{
     buffering_interval = null

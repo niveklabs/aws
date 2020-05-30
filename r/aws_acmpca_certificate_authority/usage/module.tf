@@ -1,10 +1,14 @@
 module "aws_acmpca_certificate_authority" {
   source = "./modules/aws/r/aws_acmpca_certificate_authority"
 
-  enabled                         = null
+  # enabled - (optional) is a type of bool
+  enabled = null
+  # permanent_deletion_time_in_days - (optional) is a type of number
   permanent_deletion_time_in_days = null
-  tags                            = {}
-  type                            = null
+  # tags - (optional) is a type of map of string
+  tags = {}
+  # type - (optional) is a type of string
+  type = null
 
   certificate_authority_configuration = [{
     key_algorithm     = null
