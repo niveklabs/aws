@@ -19,7 +19,7 @@ output "id" {
 }
 
 output "instance_types" {
-  description = "returns a set of string"
+  description = "returns a list of string"
   value       = aws_eks_node_group.this.instance_types
 }
 

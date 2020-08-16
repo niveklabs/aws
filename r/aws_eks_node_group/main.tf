@@ -1,21 +1,22 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
 resource "aws_eks_node_group" "this" {
-  ami_type        = var.ami_type
-  cluster_name    = var.cluster_name
-  disk_size       = var.disk_size
-  instance_types  = var.instance_types
-  labels          = var.labels
-  node_group_name = var.node_group_name
-  node_role_arn   = var.node_role_arn
-  release_version = var.release_version
-  subnet_ids      = var.subnet_ids
-  tags            = var.tags
-  version         = var.version
+  ami_type             = var.ami_type
+  cluster_name         = var.cluster_name
+  disk_size            = var.disk_size
+  force_update_version = var.force_update_version
+  instance_types       = var.instance_types
+  labels               = var.labels
+  node_group_name      = var.node_group_name
+  node_role_arn        = var.node_role_arn
+  release_version      = var.release_version
+  subnet_ids           = var.subnet_ids
+  tags                 = var.tags
+  version              = var.version
 
   dynamic "remote_access" {
     for_each = var.remote_access

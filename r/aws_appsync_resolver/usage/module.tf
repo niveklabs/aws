@@ -16,6 +16,11 @@ module "aws_appsync_resolver" {
   # type - (required) is a type of string
   type = null
 
+  caching_config = [{
+    caching_keys = []
+    ttl          = null
+  }]
+
   pipeline_config = [{
     functions = []
   }]

@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = data.aws_ebs_snapshot.this.arn
+}
+
 output "data_encryption_key_id" {
   description = "returns a string"
   value       = data.aws_ebs_snapshot.this.data_encryption_key_id

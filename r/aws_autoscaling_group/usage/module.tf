@@ -41,7 +41,7 @@ module "aws_autoscaling_group" {
   service_linked_role_arn = null
   # suspended_processes - (optional) is a type of set of string
   suspended_processes = []
-  # tags - (optional) is a type of list of map of string
+  # tags - (optional) is a type of set of map of string
   tags = [{}]
   # target_group_arns - (optional) is a type of set of string
   target_group_arns = []

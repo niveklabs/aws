@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_sfn_state_machine.this.arn
+}
+
 output "creation_date" {
   description = "returns a string"
   value       = aws_sfn_state_machine.this.creation_date

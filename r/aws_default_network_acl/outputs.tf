@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_default_network_acl.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_default_network_acl.this.id

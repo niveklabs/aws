@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -8,6 +8,7 @@ resource "aws_service_discovery_service" "this" {
   description  = var.description
   name         = var.name
   namespace_id = var.namespace_id
+  tags         = var.tags
 
   dynamic "dns_config" {
     for_each = var.dns_config

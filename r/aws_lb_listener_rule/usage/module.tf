@@ -35,6 +35,16 @@ module "aws_lb_listener_rule" {
       message_body = null
       status_code  = null
     }]
+    forward = [{
+      stickiness = [{
+        duration = null
+        enabled  = null
+      }]
+      target_group = [{
+        arn    = null
+        weight = null
+      }]
+    }]
     order = null
     redirect = [{
       host        = null

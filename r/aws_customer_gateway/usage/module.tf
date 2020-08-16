@@ -1,7 +1,7 @@
 module "aws_customer_gateway" {
   source = "./modules/aws/r/aws_customer_gateway"
 
-  # bgp_asn - (required) is a type of number
+  # bgp_asn - (required) is a type of string
   bgp_asn = null
   # ip_address - (required) is a type of string
   ip_address = null

@@ -72,9 +72,9 @@ variable "cache_behavior" {
       compress                  = bool
       default_ttl               = number
       field_level_encryption_id = string
-      forwarded_values = set(object(
+      forwarded_values = list(object(
         {
-          cookies = set(object(
+          cookies = list(object(
             {
               forward           = string
               whitelisted_names = set(string)

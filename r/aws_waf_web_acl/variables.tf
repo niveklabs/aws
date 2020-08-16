@@ -15,7 +15,7 @@ variable "tags" {
 }
 
 variable "default_action" {
-  description = "nested mode: NestingSet, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(
     {
       type = string

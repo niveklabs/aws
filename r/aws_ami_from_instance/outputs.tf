@@ -3,6 +3,11 @@ output "architecture" {
   value       = aws_ami_from_instance.this.architecture
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = aws_ami_from_instance.this.arn
+}
+
 output "ena_support" {
   description = "returns a bool"
   value       = aws_ami_from_instance.this.ena_support

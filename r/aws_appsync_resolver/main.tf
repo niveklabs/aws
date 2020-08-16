@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -12,6 +12,14 @@ resource "aws_appsync_resolver" "this" {
   request_template  = var.request_template
   response_template = var.response_template
   type              = var.type
+
+  dynamic "caching_config" {
+    for_each = var.caching_config
+    content {
+      caching_keys = caching_config.value["caching_keys"]
+      ttl          = caching_config.value["ttl"]
+    }
+  }
 
   dynamic "pipeline_config" {
     for_each = var.pipeline_config

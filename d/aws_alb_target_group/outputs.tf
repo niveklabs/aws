@@ -28,6 +28,11 @@ output "lambda_multi_value_headers_enabled" {
   value       = data.aws_alb_target_group.this.lambda_multi_value_headers_enabled
 }
 
+output "load_balancing_algorithm_type" {
+  description = "returns a string"
+  value       = data.aws_alb_target_group.this.load_balancing_algorithm_type
+}
+
 output "name" {
   description = "returns a string"
   value       = data.aws_alb_target_group.this.name

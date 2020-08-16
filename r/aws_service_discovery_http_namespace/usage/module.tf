@@ -5,4 +5,6 @@ module "aws_service_discovery_http_namespace" {
   description = null
   # name - (required) is a type of string
   name = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 }

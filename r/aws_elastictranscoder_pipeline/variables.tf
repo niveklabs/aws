@@ -27,7 +27,7 @@ variable "role" {
 }
 
 variable "content_config" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       bucket        = string
@@ -50,7 +50,7 @@ variable "content_config_permissions" {
 }
 
 variable "notifications" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       completed   = string
@@ -63,7 +63,7 @@ variable "notifications" {
 }
 
 variable "thumbnail_config" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       bucket        = string

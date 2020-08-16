@@ -15,9 +15,15 @@ variable "disk_size" {
   default     = null
 }
 
+variable "force_update_version" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "instance_types" {
   description = "(optional)"
-  type        = set(string)
+  type        = list(string)
   default     = null
 }
 

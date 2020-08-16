@@ -38,7 +38,7 @@ variable "elasticsearch_configuration" {
     {
       buffering_interval = number
       buffering_size     = number
-      cloudwatch_logging_options = set(object(
+      cloudwatch_logging_options = list(object(
         {
           enabled         = bool
           log_group_name  = string
@@ -80,7 +80,7 @@ variable "extended_s3_configuration" {
       bucket_arn      = string
       buffer_interval = number
       buffer_size     = number
-      cloudwatch_logging_options = set(object(
+      cloudwatch_logging_options = list(object(
         {
           enabled         = bool
           log_group_name  = string
@@ -180,7 +180,7 @@ variable "extended_s3_configuration" {
           bucket_arn      = string
           buffer_interval = number
           buffer_size     = number
-          cloudwatch_logging_options = set(object(
+          cloudwatch_logging_options = list(object(
             {
               enabled         = bool
               log_group_name  = string
@@ -214,7 +214,7 @@ variable "redshift_configuration" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
-      cloudwatch_logging_options = set(object(
+      cloudwatch_logging_options = list(object(
         {
           enabled         = bool
           log_group_name  = string
@@ -249,7 +249,7 @@ variable "redshift_configuration" {
           bucket_arn      = string
           buffer_interval = number
           buffer_size     = number
-          cloudwatch_logging_options = set(object(
+          cloudwatch_logging_options = list(object(
             {
               enabled         = bool
               log_group_name  = string
@@ -276,7 +276,7 @@ variable "s3_configuration" {
       bucket_arn      = string
       buffer_interval = number
       buffer_size     = number
-      cloudwatch_logging_options = set(object(
+      cloudwatch_logging_options = list(object(
         {
           enabled         = bool
           log_group_name  = string
@@ -306,7 +306,7 @@ variable "splunk_configuration" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
-      cloudwatch_logging_options = set(object(
+      cloudwatch_logging_options = list(object(
         {
           enabled         = bool
           log_group_name  = string

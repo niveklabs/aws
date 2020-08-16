@@ -1,6 +1,6 @@
 variable "bgp_asn" {
   description = "(required)"
-  type        = number
+  type        = string
 }
 
 variable "ip_address" {

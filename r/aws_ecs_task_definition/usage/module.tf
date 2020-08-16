@@ -49,8 +49,14 @@ module "aws_ecs_task_definition" {
       scope         = null
     }]
     efs_volume_configuration = [{
-      file_system_id = null
-      root_directory = null
+      authorization_config = [{
+        access_point_id = null
+        iam             = null
+      }]
+      file_system_id          = null
+      root_directory          = null
+      transit_encryption      = null
+      transit_encryption_port = null
     }]
     host_path = null
     name      = null

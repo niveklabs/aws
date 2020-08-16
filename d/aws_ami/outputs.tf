@@ -3,6 +3,11 @@ output "architecture" {
   value       = data.aws_ami.this.architecture
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = data.aws_ami.this.arn
+}
+
 output "block_device_mappings" {
   description = "returns a set of object"
   value       = data.aws_ami.this.block_device_mappings

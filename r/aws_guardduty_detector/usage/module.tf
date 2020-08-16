@@ -5,4 +5,6 @@ module "aws_guardduty_detector" {
   enable = null
   # finding_publishing_frequency - (optional) is a type of string
   finding_publishing_frequency = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 }

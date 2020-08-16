@@ -8,6 +8,11 @@ output "availability_zones" {
   value       = data.aws_rds_cluster.this.availability_zones
 }
 
+output "backtrack_window" {
+  description = "returns a number"
+  value       = data.aws_rds_cluster.this.backtrack_window
+}
+
 output "backup_retention_period" {
   description = "returns a number"
   value       = data.aws_rds_cluster.this.backup_retention_period

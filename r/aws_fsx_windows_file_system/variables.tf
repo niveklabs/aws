@@ -47,7 +47,7 @@ variable "storage_capacity" {
 
 variable "subnet_ids" {
   description = "(required)"
-  type        = set(string)
+  type        = list(string)
 }
 
 variable "tags" {

@@ -11,7 +11,7 @@ module "aws_fsx_lustre_file_system" {
   security_group_ids = []
   # storage_capacity - (required) is a type of number
   storage_capacity = null
-  # subnet_ids - (required) is a type of set of string
+  # subnet_ids - (required) is a type of list of string
   subnet_ids = []
   # tags - (optional) is a type of map of string
   tags = {}

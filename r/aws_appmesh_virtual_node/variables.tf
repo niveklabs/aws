@@ -28,7 +28,7 @@ variable "spec" {
         }
       ))
       backends = set(string)
-      listener = set(object(
+      listener = list(object(
         {
           health_check = list(object(
             {

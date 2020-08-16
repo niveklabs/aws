@@ -18,6 +18,11 @@ output "id" {
   value       = aws_acm_certificate.this.id
 }
 
+output "status" {
+  description = "returns a string"
+  value       = aws_acm_certificate.this.status
+}
+
 output "subject_alternative_names" {
   description = "returns a list of string"
   value       = aws_acm_certificate.this.subject_alternative_names

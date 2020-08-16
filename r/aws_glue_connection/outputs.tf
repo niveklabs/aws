@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_glue_connection.this.arn
+}
+
 output "catalog_id" {
   description = "returns a string"
   value       = aws_glue_connection.this.catalog_id

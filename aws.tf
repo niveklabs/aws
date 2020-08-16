@@ -1,5 +1,5 @@
 provider "aws" {
-  version = "2.61.0"
+  version = "2.70.0"
 
   # access_key - (optional) is a type of string
   access_key = null
@@ -34,7 +34,7 @@ provider "aws" {
   # token - (optional) is a type of string
   token = null
 
-  # NestingSet
+  # NestingList
   assume_role {
     # external_id - (optional) is a type of string
     external_id = null
@@ -98,6 +98,8 @@ provider "aws" {
     cloudwatchevents = null
     # cloudwatchlogs - (optional) is a type of string
     cloudwatchlogs = null
+    # codeartifact - (optional) is a type of string
+    codeartifact = null
     # codebuild - (optional) is a type of string
     codebuild = null
     # codecommit - (optional) is a type of string
@@ -236,10 +238,14 @@ provider "aws" {
     mq = null
     # neptune - (optional) is a type of string
     neptune = null
+    # networkmanager - (optional) is a type of string
+    networkmanager = null
     # opsworks - (optional) is a type of string
     opsworks = null
     # organizations - (optional) is a type of string
     organizations = null
+    # outposts - (optional) is a type of string
+    outposts = null
     # personalize - (optional) is a type of string
     personalize = null
     # pinpoint - (optional) is a type of string
@@ -260,6 +266,8 @@ provider "aws" {
     redshift = null
     # resourcegroups - (optional) is a type of string
     resourcegroups = null
+    # resourcegroupstaggingapi - (optional) is a type of string
+    resourcegroupstaggingapi = null
     # route53 - (optional) is a type of string
     route53 = null
     # route53domains - (optional) is a type of string
@@ -304,6 +312,8 @@ provider "aws" {
     sts = null
     # swf - (optional) is a type of string
     swf = null
+    # synthetics - (optional) is a type of string
+    synthetics = null
     # transfer - (optional) is a type of string
     transfer = null
     # waf - (optional) is a type of string

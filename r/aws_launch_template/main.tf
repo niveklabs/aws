@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
 resource "aws_launch_template" "this" {
+  default_version                      = var.default_version
   description                          = var.description
   disable_api_termination              = var.disable_api_termination
   ebs_optimized                        = var.ebs_optimized
@@ -18,6 +19,7 @@ resource "aws_launch_template" "this" {
   ram_disk_id                          = var.ram_disk_id
   security_group_names                 = var.security_group_names
   tags                                 = var.tags
+  update_default_version               = var.update_default_version
   user_data                            = var.user_data
   vpc_security_group_ids               = var.vpc_security_group_ids
 

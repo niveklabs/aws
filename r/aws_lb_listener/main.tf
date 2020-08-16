@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -55,6 +55,29 @@ resource "aws_lb_listener" "this" {
           content_type = fixed_response.value["content_type"]
           message_body = fixed_response.value["message_body"]
           status_code  = fixed_response.value["status_code"]
+        }
+      }
+
+      dynamic "forward" {
+        for_each = default_action.value.forward
+        content {
+
+          dynamic "stickiness" {
+            for_each = forward.value.stickiness
+            content {
+              duration = stickiness.value["duration"]
+              enabled  = stickiness.value["enabled"]
+            }
+          }
+
+          dynamic "target_group" {
+            for_each = forward.value.target_group
+            content {
+              arn    = target_group.value["arn"]
+              weight = target_group.value["weight"]
+            }
+          }
+
         }
       }
 

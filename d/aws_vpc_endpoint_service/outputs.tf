@@ -3,6 +3,11 @@ output "acceptance_required" {
   value       = data.aws_vpc_endpoint_service.this.acceptance_required
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = data.aws_vpc_endpoint_service.this.arn
+}
+
 output "availability_zones" {
   description = "returns a set of string"
   value       = data.aws_vpc_endpoint_service.this.availability_zones

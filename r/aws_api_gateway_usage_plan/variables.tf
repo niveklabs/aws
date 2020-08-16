@@ -33,7 +33,7 @@ variable "api_stages" {
 }
 
 variable "quota_settings" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       limit  = number
@@ -45,7 +45,7 @@ variable "quota_settings" {
 }
 
 variable "throttle_settings" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       burst_limit = number

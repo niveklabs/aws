@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = data.aws_customer_gateway.this.arn
+}
+
 output "bgp_asn" {
   description = "returns a number"
   value       = data.aws_customer_gateway.this.bgp_asn

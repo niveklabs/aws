@@ -18,6 +18,11 @@ output "environment" {
   value       = data.aws_lambda_function.this.environment
 }
 
+output "file_system_config" {
+  description = "returns a list of object"
+  value       = data.aws_lambda_function.this.file_system_config
+}
+
 output "handler" {
   description = "returns a string"
   value       = data.aws_lambda_function.this.handler

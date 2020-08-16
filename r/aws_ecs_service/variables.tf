@@ -28,6 +28,12 @@ variable "enable_ecs_managed_tags" {
   default     = null
 }
 
+variable "force_new_deployment" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "health_check_grace_period_seconds" {
   description = "(optional)"
   type        = number
@@ -76,8 +82,9 @@ variable "tags" {
 }
 
 variable "task_definition" {
-  description = "(required)"
+  description = "(optional)"
   type        = string
+  default     = null
 }
 
 variable "capacity_provider_strategy" {
@@ -161,13 +168,23 @@ variable "placement_strategy" {
 }
 
 variable "service_registries" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       container_name = string
       container_port = number
       port           = number
       registry_arn   = string
+    }
+  ))
+  default = []
+}
+
+variable "timeouts" {
+  description = "nested mode: NestingSingle, min items: 0, max items: 0"
+  type = set(object(
+    {
+      delete = string
     }
   ))
   default = []

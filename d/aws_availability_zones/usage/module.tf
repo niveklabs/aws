@@ -7,6 +7,10 @@ module "aws_availability_zones" {
   blacklisted_names = []
   # blacklisted_zone_ids - (optional) is a type of set of string
   blacklisted_zone_ids = []
+  # exclude_names - (optional) is a type of set of string
+  exclude_names = []
+  # exclude_zone_ids - (optional) is a type of set of string
+  exclude_zone_ids = []
   # group_names - (optional) is a type of set of string
   group_names = []
   # state - (optional) is a type of string

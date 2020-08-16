@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_vpc_endpoint.this.arn
+}
+
 output "cidr_blocks" {
   description = "returns a list of string"
   value       = aws_vpc_endpoint.this.cidr_blocks

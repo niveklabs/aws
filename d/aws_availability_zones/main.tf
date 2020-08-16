@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -8,6 +8,8 @@ data "aws_availability_zones" "this" {
   all_availability_zones = var.all_availability_zones
   blacklisted_names      = var.blacklisted_names
   blacklisted_zone_ids   = var.blacklisted_zone_ids
+  exclude_names          = var.exclude_names
+  exclude_zone_ids       = var.exclude_zone_ids
   group_names            = var.group_names
   state                  = var.state
 

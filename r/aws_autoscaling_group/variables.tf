@@ -118,7 +118,7 @@ variable "suspended_processes" {
 
 variable "tags" {
   description = "(optional)"
-  type        = list(map(string))
+  type        = set(map(string))
   default     = null
 }
 

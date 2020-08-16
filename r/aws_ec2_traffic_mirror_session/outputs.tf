@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_ec2_traffic_mirror_session.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_ec2_traffic_mirror_session.this.id

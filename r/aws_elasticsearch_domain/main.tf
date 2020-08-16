@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -11,6 +11,24 @@ resource "aws_elasticsearch_domain" "this" {
   elasticsearch_version = var.elasticsearch_version
   tags                  = var.tags
 
+  dynamic "advanced_security_options" {
+    for_each = var.advanced_security_options
+    content {
+      enabled                        = advanced_security_options.value["enabled"]
+      internal_user_database_enabled = advanced_security_options.value["internal_user_database_enabled"]
+
+      dynamic "master_user_options" {
+        for_each = advanced_security_options.value.master_user_options
+        content {
+          master_user_arn      = master_user_options.value["master_user_arn"]
+          master_user_name     = master_user_options.value["master_user_name"]
+          master_user_password = master_user_options.value["master_user_password"]
+        }
+      }
+
+    }
+  }
+
   dynamic "cluster_config" {
     for_each = var.cluster_config
     content {
@@ -19,6 +37,9 @@ resource "aws_elasticsearch_domain" "this" {
       dedicated_master_type    = cluster_config.value["dedicated_master_type"]
       instance_count           = cluster_config.value["instance_count"]
       instance_type            = cluster_config.value["instance_type"]
+      warm_count               = cluster_config.value["warm_count"]
+      warm_enabled             = cluster_config.value["warm_enabled"]
+      warm_type                = cluster_config.value["warm_type"]
       zone_awareness_enabled   = cluster_config.value["zone_awareness_enabled"]
 
       dynamic "zone_awareness_config" {

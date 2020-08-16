@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_internet_gateway.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_internet_gateway.this.id

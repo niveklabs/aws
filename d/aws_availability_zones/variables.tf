@@ -16,6 +16,18 @@ variable "blacklisted_zone_ids" {
   default     = null
 }
 
+variable "exclude_names" {
+  description = "(optional)"
+  type        = set(string)
+  default     = null
+}
+
+variable "exclude_zone_ids" {
+  description = "(optional)"
+  type        = set(string)
+  default     = null
+}
+
 variable "group_names" {
   description = "(optional)"
   type        = set(string)

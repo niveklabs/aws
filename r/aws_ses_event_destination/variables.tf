@@ -32,7 +32,7 @@ variable "cloudwatch_destination" {
 }
 
 variable "kinesis_destination" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       role_arn   = string
@@ -43,7 +43,7 @@ variable "kinesis_destination" {
 }
 
 variable "sns_destination" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       topic_arn = string

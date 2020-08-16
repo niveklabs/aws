@@ -3,6 +3,11 @@ output "allowed_principals" {
   value       = aws_vpc_endpoint_service.this.allowed_principals
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = aws_vpc_endpoint_service.this.arn
+}
+
 output "availability_zones" {
   description = "returns a set of string"
   value       = aws_vpc_endpoint_service.this.availability_zones

@@ -12,12 +12,25 @@ module "aws_elasticsearch_domain" {
   # tags - (optional) is a type of map of string
   tags = {}
 
+  advanced_security_options = [{
+    enabled                        = null
+    internal_user_database_enabled = null
+    master_user_options = [{
+      master_user_arn      = null
+      master_user_name     = null
+      master_user_password = null
+    }]
+  }]
+
   cluster_config = [{
     dedicated_master_count   = null
     dedicated_master_enabled = null
     dedicated_master_type    = null
     instance_count           = null
     instance_type            = null
+    warm_count               = null
+    warm_enabled             = null
+    warm_type                = null
     zone_awareness_config = [{
       availability_zone_count = null
     }]

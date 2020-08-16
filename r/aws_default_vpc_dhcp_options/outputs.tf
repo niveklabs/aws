@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_default_vpc_dhcp_options.this.arn
+}
+
 output "domain_name" {
   description = "returns a string"
   value       = aws_default_vpc_dhcp_options.this.domain_name

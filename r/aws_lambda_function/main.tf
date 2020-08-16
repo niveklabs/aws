@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -34,6 +34,14 @@ resource "aws_lambda_function" "this" {
     for_each = var.environment
     content {
       variables = environment.value["variables"]
+    }
+  }
+
+  dynamic "file_system_config" {
+    for_each = var.file_system_config
+    content {
+      arn              = file_system_config.value["arn"]
+      local_mount_path = file_system_config.value["local_mount_path"]
     }
   }
 

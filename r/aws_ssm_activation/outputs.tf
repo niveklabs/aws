@@ -9,7 +9,7 @@ output "expiration_date" {
 }
 
 output "expired" {
-  description = "returns a string"
+  description = "returns a bool"
   value       = aws_ssm_activation.this.expired
 }
 

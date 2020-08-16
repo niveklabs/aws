@@ -1,3 +1,9 @@
+variable "default_version" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
 variable "description" {
   description = "(optional)"
   type        = string
@@ -73,6 +79,12 @@ variable "security_group_names" {
 variable "tags" {
   description = "(optional)"
   type        = map(string)
+  default     = null
+}
+
+variable "update_default_version" {
+  description = "(optional)"
+  type        = bool
   default     = null
 }
 

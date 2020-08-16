@@ -8,6 +8,11 @@ output "id" {
   value       = data.aws_ram_resource_share.this.id
 }
 
+output "owning_account_id" {
+  description = "returns a string"
+  value       = data.aws_ram_resource_share.this.owning_account_id
+}
+
 output "status" {
   description = "returns a string"
   value       = data.aws_ram_resource_share.this.status

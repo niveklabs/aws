@@ -3,6 +3,11 @@ output "amazon_side_asn" {
   value       = aws_vpn_gateway.this.amazon_side_asn
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = aws_vpn_gateway.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_vpn_gateway.this.id

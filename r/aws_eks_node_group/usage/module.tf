@@ -7,7 +7,9 @@ module "aws_eks_node_group" {
   cluster_name = null
   # disk_size - (optional) is a type of number
   disk_size = null
-  # instance_types - (optional) is a type of set of string
+  # force_update_version - (optional) is a type of bool
+  force_update_version = null
+  # instance_types - (optional) is a type of list of string
   instance_types = []
   # labels - (optional) is a type of map of string
   labels = {}

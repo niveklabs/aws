@@ -10,3 +10,9 @@ variable "finding_publishing_frequency" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+

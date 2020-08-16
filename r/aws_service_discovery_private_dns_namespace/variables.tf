@@ -9,6 +9,12 @@ variable "name" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "vpc" {
   description = "(required)"
   type        = string

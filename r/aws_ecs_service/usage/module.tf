@@ -11,6 +11,8 @@ module "aws_ecs_service" {
   desired_count = null
   # enable_ecs_managed_tags - (optional) is a type of bool
   enable_ecs_managed_tags = null
+  # force_new_deployment - (optional) is a type of bool
+  force_new_deployment = null
   # health_check_grace_period_seconds - (optional) is a type of number
   health_check_grace_period_seconds = null
   # iam_role - (optional) is a type of string
@@ -27,7 +29,7 @@ module "aws_ecs_service" {
   scheduling_strategy = null
   # tags - (optional) is a type of map of string
   tags = {}
-  # task_definition - (required) is a type of string
+  # task_definition - (optional) is a type of string
   task_definition = null
 
   capacity_provider_strategy = [{
@@ -73,5 +75,9 @@ module "aws_ecs_service" {
     container_port = null
     port           = null
     registry_arn   = null
+  }]
+
+  timeouts = [{
+    delete = null
   }]
 }

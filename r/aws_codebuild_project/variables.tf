@@ -80,7 +80,7 @@ variable "cache" {
 }
 
 variable "environment" {
-  description = "nested mode: NestingSet, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(
     {
       certificate  = string
@@ -151,7 +151,7 @@ variable "secondary_sources" {
   description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(
     {
-      auth = set(object(
+      auth = list(object(
         {
           resource = string
           type     = string
@@ -175,10 +175,10 @@ variable "secondary_sources" {
 }
 
 variable "source" {
-  description = "nested mode: NestingSet, min items: 1, max items: 1"
+  description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(
     {
-      auth = set(object(
+      auth = list(object(
         {
           resource = string
           type     = string

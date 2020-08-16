@@ -41,6 +41,16 @@ module "aws_alb_listener" {
       message_body = null
       status_code  = null
     }]
+    forward = [{
+      stickiness = [{
+        duration = null
+        enabled  = null
+      }]
+      target_group = [{
+        arn    = null
+        weight = null
+      }]
+    }]
     order = null
     redirect = [{
       host        = null

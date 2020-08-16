@@ -43,6 +43,11 @@ output "internal" {
   value       = data.aws_lb.this.internal
 }
 
+output "ip_address_type" {
+  description = "returns a string"
+  value       = data.aws_lb.this.ip_address_type
+}
+
 output "load_balancer_type" {
   description = "returns a string"
   value       = data.aws_lb.this.load_balancer_type

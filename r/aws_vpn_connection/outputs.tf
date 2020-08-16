@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_vpn_connection.this.arn
+}
+
 output "customer_gateway_configuration" {
   description = "returns a string"
   value       = aws_vpn_connection.this.customer_gateway_configuration

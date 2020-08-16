@@ -44,6 +44,11 @@ module "aws_lambda_function" {
     variables = {}
   }]
 
+  file_system_config = [{
+    arn              = null
+    local_mount_path = null
+  }]
+
   timeouts = [{
     create = null
   }]

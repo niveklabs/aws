@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_key_pair.this.arn
+}
+
 output "fingerprint" {
   description = "returns a string"
   value       = aws_key_pair.this.fingerprint

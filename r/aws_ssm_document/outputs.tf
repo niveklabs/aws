@@ -18,6 +18,11 @@ output "description" {
   value       = aws_ssm_document.this.description
 }
 
+output "document_version" {
+  description = "returns a string"
+  value       = aws_ssm_document.this.document_version
+}
+
 output "hash" {
   description = "returns a string"
   value       = aws_ssm_document.this.hash

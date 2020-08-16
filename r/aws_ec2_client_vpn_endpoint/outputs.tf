@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_ec2_client_vpn_endpoint.this.arn
+}
+
 output "dns_name" {
   description = "returns a string"
   value       = aws_ec2_client_vpn_endpoint.this.dns_name

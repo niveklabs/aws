@@ -109,7 +109,7 @@ variable "lifecycle_rule" {
     {
       abort_incomplete_multipart_upload_days = number
       enabled                                = bool
-      expiration = set(object(
+      expiration = list(object(
         {
           date                         = string
           days                         = number
@@ -117,7 +117,7 @@ variable "lifecycle_rule" {
         }
       ))
       id = string
-      noncurrent_version_expiration = set(object(
+      noncurrent_version_expiration = list(object(
         {
           days = number
         }
@@ -181,7 +181,7 @@ variable "replication_configuration" {
       role = string
       rules = set(object(
         {
-          destination = set(object(
+          destination = list(object(
             {
               access_control_translation = list(object(
                 {
@@ -203,9 +203,9 @@ variable "replication_configuration" {
           id       = string
           prefix   = string
           priority = number
-          source_selection_criteria = set(object(
+          source_selection_criteria = list(object(
             {
-              sse_kms_encrypted_objects = set(object(
+              sse_kms_encrypted_objects = list(object(
                 {
                   enabled = bool
                 }

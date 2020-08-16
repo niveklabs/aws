@@ -23,6 +23,11 @@ output "rotation_enabled" {
   value       = aws_secretsmanager_secret.this.rotation_enabled
 }
 
+output "rotation_lambda_arn" {
+  description = "returns a string"
+  value       = aws_secretsmanager_secret.this.rotation_lambda_arn
+}
+
 output "this" {
   value = aws_secretsmanager_secret.this
 }

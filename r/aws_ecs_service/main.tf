@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -10,6 +10,7 @@ resource "aws_ecs_service" "this" {
   deployment_minimum_healthy_percent = var.deployment_minimum_healthy_percent
   desired_count                      = var.desired_count
   enable_ecs_managed_tags            = var.enable_ecs_managed_tags
+  force_new_deployment               = var.force_new_deployment
   health_check_grace_period_seconds  = var.health_check_grace_period_seconds
   iam_role                           = var.iam_role
   launch_type                        = var.launch_type
@@ -86,6 +87,13 @@ resource "aws_ecs_service" "this" {
       container_port = service_registries.value["container_port"]
       port           = service_registries.value["port"]
       registry_arn   = service_registries.value["registry_arn"]
+    }
+  }
+
+  dynamic "timeouts" {
+    for_each = var.timeouts
+    content {
+      delete = timeouts.value["delete"]
     }
   }
 

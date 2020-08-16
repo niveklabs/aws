@@ -18,7 +18,7 @@ variable "spec" {
   description = "nested mode: NestingList, min items: 1, max items: 1"
   type = set(object(
     {
-      listener = set(object(
+      listener = list(object(
         {
           port_mapping = list(object(
             {

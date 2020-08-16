@@ -111,8 +111,16 @@ variable "volume" {
       ))
       efs_volume_configuration = list(object(
         {
-          file_system_id = string
-          root_directory = string
+          authorization_config = list(object(
+            {
+              access_point_id = string
+              iam             = string
+            }
+          ))
+          file_system_id          = string
+          root_directory          = string
+          transit_encryption      = string
+          transit_encryption_port = number
         }
       ))
       host_path = string

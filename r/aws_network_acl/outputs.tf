@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_network_acl.this.arn
+}
+
 output "egress" {
   description = "returns a set of object"
   value       = aws_network_acl.this.egress

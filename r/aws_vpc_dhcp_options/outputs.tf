@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = aws_vpc_dhcp_options.this.arn
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_vpc_dhcp_options.this.id

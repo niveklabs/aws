@@ -17,6 +17,6 @@ variable "tags" {
 
 variable "target_arns" {
   description = "(required)"
-  type        = set(string)
+  type        = list(string)
 }
 

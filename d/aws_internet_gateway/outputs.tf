@@ -1,3 +1,8 @@
+output "arn" {
+  description = "returns a string"
+  value       = data.aws_internet_gateway.this.arn
+}
+
 output "attachments" {
   description = "returns a list of object"
   value       = data.aws_internet_gateway.this.attachments

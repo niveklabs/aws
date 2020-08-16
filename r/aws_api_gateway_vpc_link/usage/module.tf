@@ -7,6 +7,6 @@ module "aws_api_gateway_vpc_link" {
   name = null
   # tags - (optional) is a type of map of string
   tags = {}
-  # target_arns - (required) is a type of set of string
+  # target_arns - (required) is a type of list of string
   target_arns = []
 }

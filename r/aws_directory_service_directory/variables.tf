@@ -60,10 +60,12 @@ variable "connect_settings" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
-      customer_dns_ips  = set(string)
-      customer_username = string
-      subnet_ids        = set(string)
-      vpc_id            = string
+      availability_zones = set(string)
+      connect_ips        = set(string)
+      customer_dns_ips   = set(string)
+      customer_username  = string
+      subnet_ids         = set(string)
+      vpc_id             = string
     }
   ))
   default = []
@@ -73,8 +75,9 @@ variable "vpc_settings" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
-      subnet_ids = set(string)
-      vpc_id     = string
+      availability_zones = set(string)
+      subnet_ids         = set(string)
+      vpc_id             = string
     }
   ))
   default = []

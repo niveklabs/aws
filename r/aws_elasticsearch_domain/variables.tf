@@ -27,6 +27,24 @@ variable "tags" {
   default     = null
 }
 
+variable "advanced_security_options" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      enabled                        = bool
+      internal_user_database_enabled = bool
+      master_user_options = list(object(
+        {
+          master_user_arn      = string
+          master_user_name     = string
+          master_user_password = string
+        }
+      ))
+    }
+  ))
+  default = []
+}
+
 variable "cluster_config" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
@@ -36,6 +54,9 @@ variable "cluster_config" {
       dedicated_master_type    = string
       instance_count           = number
       instance_type            = string
+      warm_count               = number
+      warm_enabled             = bool
+      warm_type                = string
       zone_awareness_config = list(object(
         {
           availability_zone_count = number

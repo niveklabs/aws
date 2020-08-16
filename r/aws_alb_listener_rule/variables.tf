@@ -47,6 +47,22 @@ variable "action" {
           status_code  = string
         }
       ))
+      forward = list(object(
+        {
+          stickiness = list(object(
+            {
+              duration = number
+              enabled  = bool
+            }
+          ))
+          target_group = set(object(
+            {
+              arn    = string
+              weight = number
+            }
+          ))
+        }
+      ))
       order = number
       redirect = list(object(
         {

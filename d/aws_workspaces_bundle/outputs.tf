@@ -13,16 +13,6 @@ output "id" {
   value       = data.aws_workspaces_bundle.this.id
 }
 
-output "name" {
-  description = "returns a string"
-  value       = data.aws_workspaces_bundle.this.name
-}
-
-output "owner" {
-  description = "returns a string"
-  value       = data.aws_workspaces_bundle.this.owner
-}
-
 output "root_storage" {
   description = "returns a list of object"
   value       = data.aws_workspaces_bundle.this.root_storage

@@ -23,14 +23,17 @@ module "aws_directory_service_directory" {
   type = null
 
   connect_settings = [{
-    customer_dns_ips  = []
-    customer_username = null
-    subnet_ids        = []
-    vpc_id            = null
+    availability_zones = []
+    connect_ips        = []
+    customer_dns_ips   = []
+    customer_username  = null
+    subnet_ids         = []
+    vpc_id             = null
   }]
 
   vpc_settings = [{
-    subnet_ids = []
-    vpc_id     = null
+    availability_zones = []
+    subnet_ids         = []
+    vpc_id             = null
   }]
 }

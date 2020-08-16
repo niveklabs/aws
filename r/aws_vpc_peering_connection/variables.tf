@@ -33,7 +33,7 @@ variable "vpc_id" {
 }
 
 variable "accepter" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       allow_classic_link_to_remote_vpc = bool
@@ -45,7 +45,7 @@ variable "accepter" {
 }
 
 variable "requester" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       allow_classic_link_to_remote_vpc = bool

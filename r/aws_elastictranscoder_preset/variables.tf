@@ -28,7 +28,7 @@ variable "video_codec_options" {
 }
 
 variable "audio" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       audio_packing_mode = string
@@ -42,7 +42,7 @@ variable "audio" {
 }
 
 variable "audio_codec_options" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       bit_depth = string
@@ -55,7 +55,7 @@ variable "audio_codec_options" {
 }
 
 variable "thumbnails" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       aspect_ratio   = string
@@ -72,7 +72,7 @@ variable "thumbnails" {
 }
 
 variable "video" {
-  description = "nested mode: NestingSet, min items: 0, max items: 1"
+  description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(
     {
       aspect_ratio         = string

@@ -116,6 +116,17 @@ variable "environment" {
   default = []
 }
 
+variable "file_system_config" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      arn              = string
+      local_mount_path = string
+    }
+  ))
+  default = []
+}
+
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(

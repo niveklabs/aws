@@ -7,6 +7,8 @@ module "aws_service_discovery_service" {
   name = null
   # namespace_id - (optional) is a type of string
   namespace_id = null
+  # tags - (optional) is a type of map of string
+  tags = {}
 
   dns_config = [{
     dns_records = [{

@@ -8,7 +8,7 @@ variable "size_constraints" {
   type = set(object(
     {
       comparison_operator = string
-      field_to_match = set(object(
+      field_to_match = list(object(
         {
           data = string
           type = string

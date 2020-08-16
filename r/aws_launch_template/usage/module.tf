@@ -1,6 +1,8 @@
 module "aws_launch_template" {
   source = "./modules/aws/r/aws_launch_template"
 
+  # default_version - (optional) is a type of number
+  default_version = null
   # description - (optional) is a type of string
   description = null
   # disable_api_termination - (optional) is a type of bool
@@ -27,6 +29,8 @@ module "aws_launch_template" {
   security_group_names = []
   # tags - (optional) is a type of map of string
   tags = {}
+  # update_default_version - (optional) is a type of bool
+  update_default_version = null
   # user_data - (optional) is a type of string
   user_data = null
   # vpc_security_group_ids - (optional) is a type of set of string

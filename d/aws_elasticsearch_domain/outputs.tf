@@ -8,6 +8,11 @@ output "advanced_options" {
   value       = data.aws_elasticsearch_domain.this.advanced_options
 }
 
+output "advanced_security_options" {
+  description = "returns a list of object"
+  value       = data.aws_elasticsearch_domain.this.advanced_security_options
+}
+
 output "arn" {
   description = "returns a string"
   value       = data.aws_elasticsearch_domain.this.arn
@@ -79,7 +84,7 @@ output "node_to_node_encryption" {
 }
 
 output "processing" {
-  description = "returns a string"
+  description = "returns a bool"
   value       = data.aws_elasticsearch_domain.this.processing
 }
 

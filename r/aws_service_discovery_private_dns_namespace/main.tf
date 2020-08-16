@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
 resource "aws_service_discovery_private_dns_namespace" "this" {
   description = var.description
   name        = var.name
+  tags        = var.tags
   vpc         = var.vpc
 }
 

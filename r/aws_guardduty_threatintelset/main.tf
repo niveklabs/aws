@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.61.0"
+    aws = ">= 2.70.0"
   }
 }
 
@@ -10,5 +10,6 @@ resource "aws_guardduty_threatintelset" "this" {
   format      = var.format
   location    = var.location
   name        = var.name
+  tags        = var.tags
 }
 

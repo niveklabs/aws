@@ -15,6 +15,12 @@ variable "namespace_id" {
   default     = null
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "dns_config" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

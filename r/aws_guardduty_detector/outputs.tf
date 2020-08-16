@@ -3,6 +3,11 @@ output "account_id" {
   value       = aws_guardduty_detector.this.account_id
 }
 
+output "arn" {
+  description = "returns a string"
+  value       = aws_guardduty_detector.this.arn
+}
+
 output "finding_publishing_frequency" {
   description = "returns a string"
   value       = aws_guardduty_detector.this.finding_publishing_frequency
