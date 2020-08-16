@@ -1,8 +1,6 @@
 module "aws_glue_job" {
   source = "./modules/aws/r/aws_glue_job"
 
-  # allocated_capacity - (optional) is a type of number
-  allocated_capacity = null
   # connections - (optional) is a type of list of string
   connections = []
   # default_arguments - (optional) is a type of map of string

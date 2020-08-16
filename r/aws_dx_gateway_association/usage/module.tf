@@ -11,8 +11,6 @@ module "aws_dx_gateway_association" {
   dx_gateway_id = null
   # proposal_id - (optional) is a type of string
   proposal_id = null
-  # vpn_gateway_id - (optional) is a type of string
-  vpn_gateway_id = null
 
   timeouts = [{
     create = null

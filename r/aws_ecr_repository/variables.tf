@@ -15,6 +15,17 @@ variable "tags" {
   default     = null
 }
 
+variable "encryption_configuration" {
+  description = "nested mode: NestingList, min items: 0, max items: 0"
+  type = set(object(
+    {
+      encryption_type = string
+      kms_key         = string
+    }
+  ))
+  default = []
+}
+
 variable "image_scanning_configuration" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

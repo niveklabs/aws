@@ -8,9 +8,19 @@ output "description" {
   value       = aws_default_security_group.this.description
 }
 
+output "egress" {
+  description = "returns a set of object"
+  value       = aws_default_security_group.this.egress
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_default_security_group.this.id
+}
+
+output "ingress" {
+  description = "returns a set of object"
+  value       = aws_default_security_group.this.ingress
 }
 
 output "name" {

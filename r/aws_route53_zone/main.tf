@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -10,8 +10,6 @@ resource "aws_route53_zone" "this" {
   force_destroy     = var.force_destroy
   name              = var.name
   tags              = var.tags
-  vpc_id            = var.vpc_id
-  vpc_region        = var.vpc_region
 
   dynamic "vpc" {
     for_each = var.vpc

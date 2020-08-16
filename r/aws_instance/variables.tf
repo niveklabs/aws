@@ -110,6 +110,12 @@ variable "private_ip" {
   default     = null
 }
 
+variable "secondary_private_ips" {
+  description = "(optional)"
+  type        = set(string)
+  default     = null
+}
+
 variable "security_groups" {
   description = "(optional)"
   type        = set(string)

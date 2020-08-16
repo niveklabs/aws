@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -69,14 +69,6 @@ resource "aws_ecs_service" "this" {
     content {
       expression = placement_constraints.value["expression"]
       type       = placement_constraints.value["type"]
-    }
-  }
-
-  dynamic "placement_strategy" {
-    for_each = var.placement_strategy
-    content {
-      field = placement_strategy.value["field"]
-      type  = placement_strategy.value["type"]
     }
   }
 

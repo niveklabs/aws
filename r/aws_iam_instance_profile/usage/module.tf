@@ -9,6 +9,4 @@ module "aws_iam_instance_profile" {
   path = null
   # role - (optional) is a type of string
   role = null
-  # roles - (optional) is a type of set of string
-  roles = []
 }

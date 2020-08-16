@@ -1,8 +1,3 @@
-output "allocated_capacity" {
-  description = "returns a number"
-  value       = aws_glue_job.this.allocated_capacity
-}
-
 output "arn" {
   description = "returns a string"
   value       = aws_glue_job.this.arn

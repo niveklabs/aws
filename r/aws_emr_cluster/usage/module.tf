@@ -11,10 +11,6 @@ module "aws_emr_cluster" {
   configurations = null
   # configurations_json - (optional) is a type of string
   configurations_json = null
-  # core_instance_count - (optional) is a type of number
-  core_instance_count = null
-  # core_instance_type - (optional) is a type of string
-  core_instance_type = null
   # custom_ami_id - (optional) is a type of string
   custom_ami_id = null
   # ebs_root_volume_size - (optional) is a type of number
@@ -23,8 +19,6 @@ module "aws_emr_cluster" {
   keep_job_flow_alive_when_no_steps = null
   # log_uri - (optional) is a type of string
   log_uri = null
-  # master_instance_type - (optional) is a type of string
-  master_instance_type = null
   # name - (required) is a type of string
   name = null
   # release_label - (required) is a type of string
@@ -85,22 +79,6 @@ module "aws_emr_cluster" {
     key_name                          = null
     service_access_security_group     = null
     subnet_id                         = null
-  }]
-
-  instance_group = [{
-    autoscaling_policy = null
-    bid_price          = null
-    ebs_config = [{
-      iops                 = null
-      size                 = null
-      type                 = null
-      volumes_per_instance = null
-    }]
-    id             = null
-    instance_count = null
-    instance_role  = null
-    instance_type  = null
-    name           = null
   }]
 
   kerberos_attributes = [{

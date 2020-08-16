@@ -46,18 +46,6 @@ variable "window_id" {
   type        = string
 }
 
-variable "logging_info" {
-  description = "nested mode: NestingList, min items: 0, max items: 1"
-  type = set(object(
-    {
-      s3_bucket_name   = string
-      s3_bucket_prefix = string
-      s3_region        = string
-    }
-  ))
-  default = []
-}
-
 variable "targets" {
   description = "nested mode: NestingList, min items: 1, max items: 0"
   type = set(object(
@@ -120,17 +108,6 @@ variable "task_invocation_parameters" {
           name  = string
         }
       ))
-    }
-  ))
-  default = []
-}
-
-variable "task_parameters" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      name   = string
-      values = list(string)
     }
   ))
   default = []

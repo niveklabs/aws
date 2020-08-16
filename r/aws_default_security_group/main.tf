@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -10,14 +10,5 @@ resource "aws_default_security_group" "this" {
   revoke_rules_on_delete = var.revoke_rules_on_delete
   tags                   = var.tags
   vpc_id                 = var.vpc_id
-
-  dynamic "timeouts" {
-    for_each = var.timeouts
-    content {
-      create = timeouts.value["create"]
-      delete = timeouts.value["delete"]
-    }
-  }
-
 }
 

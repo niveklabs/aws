@@ -11,8 +11,6 @@ module "aws_efs_file_system" {
   performance_mode = null
   # provisioned_throughput_in_mibps - (optional) is a type of number
   provisioned_throughput_in_mibps = null
-  # reference_name - (optional) is a type of string
-  reference_name = null
   # tags - (optional) is a type of map of string
   tags = {}
   # throughput_mode - (optional) is a type of string

@@ -24,35 +24,6 @@ module "aws_cloudfront_distribution" {
   # web_acl_id - (optional) is a type of string
   web_acl_id = null
 
-  cache_behavior = [{
-    allowed_methods           = []
-    cached_methods            = []
-    compress                  = null
-    default_ttl               = null
-    field_level_encryption_id = null
-    forwarded_values = [{
-      cookies = [{
-        forward           = null
-        whitelisted_names = []
-      }]
-      headers                 = []
-      query_string            = null
-      query_string_cache_keys = []
-    }]
-    lambda_function_association = [{
-      event_type   = null
-      include_body = null
-      lambda_arn   = null
-    }]
-    max_ttl                = null
-    min_ttl                = null
-    path_pattern           = null
-    smooth_streaming       = null
-    target_origin_id       = null
-    trusted_signers        = []
-    viewer_protocol_policy = null
-  }]
-
   custom_error_response = [{
     error_caching_min_ttl = null
     error_code            = null

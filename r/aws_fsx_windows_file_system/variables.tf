@@ -22,7 +22,19 @@ variable "daily_automatic_backup_start_time" {
   default     = null
 }
 
+variable "deployment_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "kms_key_id" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "preferred_subnet_id" {
   description = "(optional)"
   type        = string
   default     = null
@@ -43,6 +55,12 @@ variable "skip_final_backup" {
 variable "storage_capacity" {
   description = "(required)"
   type        = number
+}
+
+variable "storage_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "subnet_ids" {

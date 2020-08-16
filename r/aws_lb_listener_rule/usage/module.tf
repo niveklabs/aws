@@ -59,7 +59,6 @@ module "aws_lb_listener_rule" {
   }]
 
   condition = [{
-    field = null
     host_header = [{
       values = []
     }]
@@ -80,6 +79,5 @@ module "aws_lb_listener_rule" {
     source_ip = [{
       values = []
     }]
-    values = []
   }]
 }

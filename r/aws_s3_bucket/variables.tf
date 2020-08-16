@@ -46,12 +46,6 @@ variable "policy" {
   default     = null
 }
 
-variable "region" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "request_payer" {
   description = "(optional)"
   type        = string

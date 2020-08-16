@@ -1,9 +1,3 @@
-variable "allocated_capacity" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
 variable "connections" {
   description = "(optional)"
   type        = list(string)

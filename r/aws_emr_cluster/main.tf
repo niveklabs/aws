@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -10,13 +10,10 @@ resource "aws_emr_cluster" "this" {
   autoscaling_role                  = var.autoscaling_role
   configurations                    = var.configurations
   configurations_json               = var.configurations_json
-  core_instance_count               = var.core_instance_count
-  core_instance_type                = var.core_instance_type
   custom_ami_id                     = var.custom_ami_id
   ebs_root_volume_size              = var.ebs_root_volume_size
   keep_job_flow_alive_when_no_steps = var.keep_job_flow_alive_when_no_steps
   log_uri                           = var.log_uri
-  master_instance_type              = var.master_instance_type
   name                              = var.name
   release_label                     = var.release_label
   scale_down_behavior               = var.scale_down_behavior
@@ -70,29 +67,6 @@ resource "aws_emr_cluster" "this" {
       key_name                          = ec2_attributes.value["key_name"]
       service_access_security_group     = ec2_attributes.value["service_access_security_group"]
       subnet_id                         = ec2_attributes.value["subnet_id"]
-    }
-  }
-
-  dynamic "instance_group" {
-    for_each = var.instance_group
-    content {
-      autoscaling_policy = instance_group.value["autoscaling_policy"]
-      bid_price          = instance_group.value["bid_price"]
-      instance_count     = instance_group.value["instance_count"]
-      instance_role      = instance_group.value["instance_role"]
-      instance_type      = instance_group.value["instance_type"]
-      name               = instance_group.value["name"]
-
-      dynamic "ebs_config" {
-        for_each = instance_group.value.ebs_config
-        content {
-          iops                 = ebs_config.value["iops"]
-          size                 = ebs_config.value["size"]
-          type                 = ebs_config.value["type"]
-          volumes_per_instance = ebs_config.value["volumes_per_instance"]
-        }
-      }
-
     }
   }
 

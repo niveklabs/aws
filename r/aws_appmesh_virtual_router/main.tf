@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -12,7 +12,6 @@ resource "aws_appmesh_virtual_router" "this" {
   dynamic "spec" {
     for_each = var.spec
     content {
-      service_names = spec.value["service_names"]
 
       dynamic "listener" {
         for_each = spec.value.listener

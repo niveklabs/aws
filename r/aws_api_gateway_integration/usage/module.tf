@@ -21,8 +21,6 @@ module "aws_api_gateway_integration" {
   passthrough_behavior = null
   # request_parameters - (optional) is a type of map of string
   request_parameters = {}
-  # request_parameters_in_json - (optional) is a type of string
-  request_parameters_in_json = null
   # request_templates - (optional) is a type of map of string
   request_templates = {}
   # resource_id - (required) is a type of string

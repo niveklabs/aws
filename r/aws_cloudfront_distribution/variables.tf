@@ -63,47 +63,6 @@ variable "web_acl_id" {
   default     = null
 }
 
-variable "cache_behavior" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      allowed_methods           = list(string)
-      cached_methods            = list(string)
-      compress                  = bool
-      default_ttl               = number
-      field_level_encryption_id = string
-      forwarded_values = list(object(
-        {
-          cookies = list(object(
-            {
-              forward           = string
-              whitelisted_names = set(string)
-            }
-          ))
-          headers                 = set(string)
-          query_string            = bool
-          query_string_cache_keys = list(string)
-        }
-      ))
-      lambda_function_association = set(object(
-        {
-          event_type   = string
-          include_body = bool
-          lambda_arn   = string
-        }
-      ))
-      max_ttl                = number
-      min_ttl                = number
-      path_pattern           = string
-      smooth_streaming       = bool
-      target_origin_id       = string
-      trusted_signers        = list(string)
-      viewer_protocol_policy = string
-    }
-  ))
-  default = []
-}
-
 variable "custom_error_response" {
   description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(

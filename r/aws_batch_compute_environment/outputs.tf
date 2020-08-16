@@ -8,11 +8,6 @@ output "compute_environment_name" {
   value       = aws_batch_compute_environment.this.compute_environment_name
 }
 
-output "ecc_cluster_arn" {
-  description = "returns a string"
-  value       = aws_batch_compute_environment.this.ecc_cluster_arn
-}
-
 output "ecs_cluster_arn" {
   description = "returns a string"
   value       = aws_batch_compute_environment.this.ecs_cluster_arn

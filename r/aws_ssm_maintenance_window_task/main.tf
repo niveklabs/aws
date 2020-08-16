@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -14,15 +14,6 @@ resource "aws_ssm_maintenance_window_task" "this" {
   task_arn         = var.task_arn
   task_type        = var.task_type
   window_id        = var.window_id
-
-  dynamic "logging_info" {
-    for_each = var.logging_info
-    content {
-      s3_bucket_name   = logging_info.value["s3_bucket_name"]
-      s3_bucket_prefix = logging_info.value["s3_bucket_prefix"]
-      s3_region        = logging_info.value["s3_region"]
-    }
-  }
 
   dynamic "targets" {
     for_each = var.targets
@@ -100,14 +91,6 @@ resource "aws_ssm_maintenance_window_task" "this" {
         }
       }
 
-    }
-  }
-
-  dynamic "task_parameters" {
-    for_each = var.task_parameters
-    content {
-      name   = task_parameters.value["name"]
-      values = task_parameters.value["values"]
     }
   }
 

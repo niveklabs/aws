@@ -8,11 +8,6 @@ output "availability_zone" {
   value       = aws_redshift_cluster.this.availability_zone
 }
 
-output "bucket_name" {
-  description = "returns a string"
-  value       = aws_redshift_cluster.this.bucket_name
-}
-
 output "cluster_parameter_group_name" {
   description = "returns a string"
   value       = aws_redshift_cluster.this.cluster_parameter_group_name
@@ -53,11 +48,6 @@ output "dns_name" {
   value       = aws_redshift_cluster.this.dns_name
 }
 
-output "enable_logging" {
-  description = "returns a bool"
-  value       = aws_redshift_cluster.this.enable_logging
-}
-
 output "endpoint" {
   description = "returns a string"
   value       = aws_redshift_cluster.this.endpoint
@@ -86,11 +76,6 @@ output "kms_key_id" {
 output "preferred_maintenance_window" {
   description = "returns a string"
   value       = aws_redshift_cluster.this.preferred_maintenance_window
-}
-
-output "s3_key_prefix" {
-  description = "returns a string"
-  value       = aws_redshift_cluster.this.s3_key_prefix
 }
 
 output "vpc_security_group_ids" {

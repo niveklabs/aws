@@ -1,3 +1,9 @@
+variable "deployment_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "export_path" {
   description = "(optional)"
   type        = string
@@ -11,6 +17,12 @@ variable "import_path" {
 }
 
 variable "imported_file_chunk_size" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
+variable "per_unit_storage_throughput" {
   description = "(optional)"
   type        = number
   default     = null

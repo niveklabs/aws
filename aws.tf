@@ -1,5 +1,5 @@
 provider "aws" {
-  version = "2.70.0"
+  version = "3.2.0"
 
   # access_key - (optional) is a type of string
   access_key = null
@@ -36,14 +36,22 @@ provider "aws" {
 
   # NestingList
   assume_role {
+    # duration_seconds - (optional) is a type of number
+    duration_seconds = null
     # external_id - (optional) is a type of string
     external_id = null
     # policy - (optional) is a type of string
     policy = null
+    # policy_arns - (optional) is a type of set of string
+    policy_arns = []
     # role_arn - (optional) is a type of string
     role_arn = null
     # session_name - (optional) is a type of string
     session_name = null
+    # tags - (optional) is a type of map of string
+    tags = {}
+    # transitive_tag_keys - (optional) is a type of set of string
+    transitive_tag_keys = []
   }
 
   # NestingSet
@@ -196,8 +204,6 @@ provider "aws" {
     kafka = null
     # kinesis - (optional) is a type of string
     kinesis = null
-    # kinesis_analytics - (optional) is a type of string
-    kinesis_analytics = null
     # kinesisanalytics - (optional) is a type of string
     kinesisanalytics = null
     # kinesisanalyticsv2 - (optional) is a type of string
@@ -256,8 +262,6 @@ provider "aws" {
     qldb = null
     # quicksight - (optional) is a type of string
     quicksight = null
-    # r53 - (optional) is a type of string
-    r53 = null
     # ram - (optional) is a type of string
     ram = null
     # rds - (optional) is a type of string

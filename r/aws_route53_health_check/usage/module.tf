@@ -9,6 +9,8 @@ module "aws_route53_health_check" {
   cloudwatch_alarm_name = null
   # cloudwatch_alarm_region - (optional) is a type of string
   cloudwatch_alarm_region = null
+  # disabled - (optional) is a type of bool
+  disabled = null
   # enable_sni - (optional) is a type of bool
   enable_sni = null
   # failure_threshold - (optional) is a type of number

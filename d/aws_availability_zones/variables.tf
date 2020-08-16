@@ -4,18 +4,6 @@ variable "all_availability_zones" {
   default     = null
 }
 
-variable "blacklisted_names" {
-  description = "(optional)"
-  type        = set(string)
-  default     = null
-}
-
-variable "blacklisted_zone_ids" {
-  description = "(optional)"
-  type        = set(string)
-  default     = null
-}
-
 variable "exclude_names" {
   description = "(optional)"
   type        = set(string)
@@ -23,12 +11,6 @@ variable "exclude_names" {
 }
 
 variable "exclude_zone_ids" {
-  description = "(optional)"
-  type        = set(string)
-  default     = null
-}
-
-variable "group_names" {
   description = "(optional)"
   type        = set(string)
   default     = null

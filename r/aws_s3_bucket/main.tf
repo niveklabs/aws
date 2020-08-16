@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -13,7 +13,6 @@ resource "aws_s3_bucket" "this" {
   force_destroy       = var.force_destroy
   hosted_zone_id      = var.hosted_zone_id
   policy              = var.policy
-  region              = var.region
   request_payer       = var.request_payer
   tags                = var.tags
   website_domain      = var.website_domain

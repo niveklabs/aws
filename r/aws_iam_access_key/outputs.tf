@@ -19,12 +19,6 @@ output "secret" {
   sensitive   = true
 }
 
-output "ses_smtp_password" {
-  description = "returns a string"
-  value       = aws_iam_access_key.this.ses_smtp_password
-  sensitive   = true
-}
-
 output "ses_smtp_password_v4" {
   description = "returns a string"
   value       = aws_iam_access_key.this.ses_smtp_password_v4

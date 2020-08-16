@@ -9,7 +9,7 @@ output "domain_name" {
 }
 
 output "domain_validation_options" {
-  description = "returns a list of object"
+  description = "returns a set of object"
   value       = aws_acm_certificate.this.domain_validation_options
 }
 
@@ -24,7 +24,7 @@ output "status" {
 }
 
 output "subject_alternative_names" {
-  description = "returns a list of string"
+  description = "returns a set of string"
   value       = aws_acm_certificate.this.subject_alternative_names
 }
 

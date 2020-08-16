@@ -11,9 +11,4 @@ module "aws_api_gateway_api_key" {
   tags = {}
   # value - (optional) is a type of string
   value = null
-
-  stage_key = [{
-    rest_api_id = null
-    stage_name  = null
-  }]
 }

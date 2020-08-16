@@ -27,18 +27,6 @@ variable "tags" {
   default     = null
 }
 
-variable "vpc_id" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
-variable "vpc_region" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "vpc" {
   description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(

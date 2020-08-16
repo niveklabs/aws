@@ -18,11 +18,6 @@ output "jumbo_frame_capable" {
   value       = aws_dx_lag.this.jumbo_frame_capable
 }
 
-output "number_of_connections" {
-  description = "returns a number"
-  value       = aws_dx_lag.this.number_of_connections
-}
-
 output "this" {
   value = aws_dx_lag.this
 }

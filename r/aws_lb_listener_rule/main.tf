@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -96,8 +96,6 @@ resource "aws_lb_listener_rule" "this" {
   dynamic "condition" {
     for_each = var.condition
     content {
-      field  = condition.value["field"]
-      values = condition.value["values"]
 
       dynamic "host_header" {
         for_each = condition.value.host_header

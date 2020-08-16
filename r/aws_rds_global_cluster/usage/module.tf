@@ -9,8 +9,12 @@ module "aws_rds_global_cluster" {
   engine = null
   # engine_version - (optional) is a type of string
   engine_version = null
+  # force_destroy - (optional) is a type of bool
+  force_destroy = null
   # global_cluster_identifier - (required) is a type of string
   global_cluster_identifier = null
+  # source_db_cluster_identifier - (optional) is a type of string
+  source_db_cluster_identifier = null
   # storage_encrypted - (optional) is a type of bool
   storage_encrypted = null
 }

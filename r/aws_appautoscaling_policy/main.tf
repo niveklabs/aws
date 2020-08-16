@@ -1,28 +1,15 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
 resource "aws_appautoscaling_policy" "this" {
-  adjustment_type          = var.adjustment_type
-  cooldown                 = var.cooldown
-  metric_aggregation_type  = var.metric_aggregation_type
-  min_adjustment_magnitude = var.min_adjustment_magnitude
-  name                     = var.name
-  policy_type              = var.policy_type
-  resource_id              = var.resource_id
-  scalable_dimension       = var.scalable_dimension
-  service_namespace        = var.service_namespace
-
-  dynamic "step_adjustment" {
-    for_each = var.step_adjustment
-    content {
-      metric_interval_lower_bound = step_adjustment.value["metric_interval_lower_bound"]
-      metric_interval_upper_bound = step_adjustment.value["metric_interval_upper_bound"]
-      scaling_adjustment          = step_adjustment.value["scaling_adjustment"]
-    }
-  }
+  name               = var.name
+  policy_type        = var.policy_type
+  resource_id        = var.resource_id
+  scalable_dimension = var.scalable_dimension
+  service_namespace  = var.service_namespace
 
   dynamic "step_scaling_policy_configuration" {
     for_each = var.step_scaling_policy_configuration

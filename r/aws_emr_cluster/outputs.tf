@@ -8,16 +8,6 @@ output "cluster_state" {
   value       = aws_emr_cluster.this.cluster_state
 }
 
-output "core_instance_count" {
-  description = "returns a number"
-  value       = aws_emr_cluster.this.core_instance_count
-}
-
-output "core_instance_type" {
-  description = "returns a string"
-  value       = aws_emr_cluster.this.core_instance_type
-}
-
 output "id" {
   description = "returns a string"
   value       = aws_emr_cluster.this.id
@@ -26,11 +16,6 @@ output "id" {
 output "keep_job_flow_alive_when_no_steps" {
   description = "returns a bool"
   value       = aws_emr_cluster.this.keep_job_flow_alive_when_no_steps
-}
-
-output "master_instance_type" {
-  description = "returns a string"
-  value       = aws_emr_cluster.this.master_instance_type
 }
 
 output "master_public_dns" {

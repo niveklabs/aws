@@ -16,12 +16,6 @@ variable "availability_zone" {
   default     = null
 }
 
-variable "bucket_name" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "cluster_identifier" {
   description = "(required)"
   type        = string
@@ -78,12 +72,6 @@ variable "database_name" {
 variable "elastic_ip" {
   description = "(optional)"
   type        = string
-  default     = null
-}
-
-variable "enable_logging" {
-  description = "(optional)"
-  type        = bool
   default     = null
 }
 
@@ -167,12 +155,6 @@ variable "preferred_maintenance_window" {
 variable "publicly_accessible" {
   description = "(optional)"
   type        = bool
-  default     = null
-}
-
-variable "s3_key_prefix" {
-  description = "(optional)"
-  type        = string
   default     = null
 }
 

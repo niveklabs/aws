@@ -28,12 +28,6 @@ variable "provisioned_throughput_in_mibps" {
   default     = null
 }
 
-variable "reference_name" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "tags" {
   description = "(optional)"
   type        = map(string)

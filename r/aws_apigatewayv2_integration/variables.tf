@@ -62,6 +62,12 @@ variable "payload_format_version" {
   default     = null
 }
 
+variable "request_parameters" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "request_templates" {
   description = "(optional)"
   type        = map(string)
@@ -78,5 +84,15 @@ variable "timeout_milliseconds" {
   description = "(optional)"
   type        = number
   default     = null
+}
+
+variable "tls_config" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      server_name_to_verify = string
+    }
+  ))
+  default = []
 }
 

@@ -28,7 +28,6 @@ variable "spec" {
           ))
         }
       ))
-      service_names = set(string)
     }
   ))
 }

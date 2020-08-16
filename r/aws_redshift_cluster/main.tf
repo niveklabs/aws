@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -8,7 +8,6 @@ resource "aws_redshift_cluster" "this" {
   allow_version_upgrade               = var.allow_version_upgrade
   automated_snapshot_retention_period = var.automated_snapshot_retention_period
   availability_zone                   = var.availability_zone
-  bucket_name                         = var.bucket_name
   cluster_identifier                  = var.cluster_identifier
   cluster_parameter_group_name        = var.cluster_parameter_group_name
   cluster_public_key                  = var.cluster_public_key
@@ -19,7 +18,6 @@ resource "aws_redshift_cluster" "this" {
   cluster_version                     = var.cluster_version
   database_name                       = var.database_name
   elastic_ip                          = var.elastic_ip
-  enable_logging                      = var.enable_logging
   encrypted                           = var.encrypted
   endpoint                            = var.endpoint
   enhanced_vpc_routing                = var.enhanced_vpc_routing
@@ -34,7 +32,6 @@ resource "aws_redshift_cluster" "this" {
   port                                = var.port
   preferred_maintenance_window        = var.preferred_maintenance_window
   publicly_accessible                 = var.publicly_accessible
-  s3_key_prefix                       = var.s3_key_prefix
   skip_final_snapshot                 = var.skip_final_snapshot
   snapshot_cluster_identifier         = var.snapshot_cluster_identifier
   snapshot_identifier                 = var.snapshot_identifier

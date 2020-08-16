@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -9,6 +9,5 @@ resource "aws_dx_gateway_association_proposal" "this" {
   associated_gateway_id       = var.associated_gateway_id
   dx_gateway_id               = var.dx_gateway_id
   dx_gateway_owner_account_id = var.dx_gateway_owner_account_id
-  vpn_gateway_id              = var.vpn_gateway_id
 }
 

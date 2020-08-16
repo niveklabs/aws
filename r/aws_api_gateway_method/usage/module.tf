@@ -15,8 +15,6 @@ module "aws_api_gateway_method" {
   request_models = {}
   # request_parameters - (optional) is a type of map of bool
   request_parameters = {}
-  # request_parameters_in_json - (optional) is a type of string
-  request_parameters_in_json = null
   # request_validator_id - (optional) is a type of string
   request_validator_id = null
   # resource_id - (required) is a type of string

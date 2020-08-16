@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -20,7 +20,6 @@ resource "aws_cognito_user_pool" "this" {
     for_each = var.admin_create_user_config
     content {
       allow_admin_create_user_only = admin_create_user_config.value["allow_admin_create_user_only"]
-      unused_account_validity_days = admin_create_user_config.value["unused_account_validity_days"]
 
       dynamic "invite_message_template" {
         for_each = admin_create_user_config.value.invite_message_template

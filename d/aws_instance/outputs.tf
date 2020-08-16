@@ -133,6 +133,11 @@ output "root_block_device" {
   value       = data.aws_instance.this.root_block_device
 }
 
+output "secondary_private_ips" {
+  description = "returns a set of string"
+  value       = data.aws_instance.this.secondary_private_ips
+}
+
 output "security_groups" {
   description = "returns a set of string"
   value       = data.aws_instance.this.security_groups

@@ -92,8 +92,9 @@ variable "subnet_mapping" {
   description = "nested mode: NestingSet, min items: 0, max items: 0"
   type = set(object(
     {
-      allocation_id = string
-      subnet_id     = string
+      allocation_id        = string
+      private_ipv4_address = string
+      subnet_id            = string
     }
   ))
   default = []

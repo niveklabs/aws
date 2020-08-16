@@ -1,3 +1,8 @@
+output "group_names" {
+  description = "returns a set of string"
+  value       = data.aws_availability_zones.this.group_names
+}
+
 output "id" {
   description = "returns a string"
   value       = data.aws_availability_zones.this.id

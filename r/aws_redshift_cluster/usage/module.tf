@@ -7,8 +7,6 @@ module "aws_redshift_cluster" {
   automated_snapshot_retention_period = null
   # availability_zone - (optional) is a type of string
   availability_zone = null
-  # bucket_name - (optional) is a type of string
-  bucket_name = null
   # cluster_identifier - (required) is a type of string
   cluster_identifier = null
   # cluster_parameter_group_name - (optional) is a type of string
@@ -29,8 +27,6 @@ module "aws_redshift_cluster" {
   database_name = null
   # elastic_ip - (optional) is a type of string
   elastic_ip = null
-  # enable_logging - (optional) is a type of bool
-  enable_logging = null
   # encrypted - (optional) is a type of bool
   encrypted = null
   # endpoint - (optional) is a type of string
@@ -59,8 +55,6 @@ module "aws_redshift_cluster" {
   preferred_maintenance_window = null
   # publicly_accessible - (optional) is a type of bool
   publicly_accessible = null
-  # s3_key_prefix - (optional) is a type of string
-  s3_key_prefix = null
   # skip_final_snapshot - (optional) is a type of bool
   skip_final_snapshot = null
   # snapshot_cluster_identifier - (optional) is a type of string

@@ -28,6 +28,11 @@ output "enable_deletion_protection" {
   value       = data.aws_lb.this.enable_deletion_protection
 }
 
+output "enable_http2" {
+  description = "returns a bool"
+  value       = data.aws_lb.this.enable_http2
+}
+
 output "id" {
   description = "returns a string"
   value       = data.aws_lb.this.id

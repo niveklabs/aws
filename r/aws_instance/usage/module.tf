@@ -39,6 +39,8 @@ module "aws_instance" {
   placement_group = null
   # private_ip - (optional) is a type of string
   private_ip = null
+  # secondary_private_ips - (optional) is a type of set of string
+  secondary_private_ips = []
   # security_groups - (optional) is a type of set of string
   security_groups = []
   # source_dest_check - (optional) is a type of bool

@@ -31,9 +31,4 @@ module "aws_default_security_group" {
   tags = {}
   # vpc_id - (optional) is a type of string
   vpc_id = null
-
-  timeouts = [{
-    create = null
-    delete = null
-  }]
 }

@@ -69,7 +69,6 @@ variable "admin_create_user_config" {
           sms_message   = string
         }
       ))
-      unused_account_validity_days = number
     }
   ))
   default = []

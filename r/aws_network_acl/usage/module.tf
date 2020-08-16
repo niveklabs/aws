@@ -25,8 +25,6 @@ module "aws_network_acl" {
     rule_no         = null
     to_port         = null
   }]
-  # subnet_id - (optional) is a type of string
-  subnet_id = null
   # subnet_ids - (optional) is a type of set of string
   subnet_ids = []
   # tags - (optional) is a type of map of string

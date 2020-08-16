@@ -156,17 +156,6 @@ variable "placement_constraints" {
   default = []
 }
 
-variable "placement_strategy" {
-  description = "nested mode: NestingSet, min items: 0, max items: 5"
-  type = set(object(
-    {
-      field = string
-      type  = string
-    }
-  ))
-  default = []
-}
-
 variable "service_registries" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

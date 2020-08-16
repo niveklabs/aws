@@ -19,12 +19,6 @@ variable "name" {
   type        = string
 }
 
-variable "number_of_connections" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
 variable "tags" {
   description = "(optional)"
   type        = map(string)

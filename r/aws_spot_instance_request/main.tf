@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -27,6 +27,7 @@ resource "aws_spot_instance_request" "this" {
   monitoring                           = var.monitoring
   placement_group                      = var.placement_group
   private_ip                           = var.private_ip
+  secondary_private_ips                = var.secondary_private_ips
   security_groups                      = var.security_groups
   source_dest_check                    = var.source_dest_check
   spot_price                           = var.spot_price

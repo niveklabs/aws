@@ -20,12 +20,6 @@ module "aws_ssm_maintenance_window_task" {
   # window_id - (required) is a type of string
   window_id = null
 
-  logging_info = [{
-    s3_bucket_name   = null
-    s3_bucket_prefix = null
-    s3_region        = null
-  }]
-
   targets = [{
     key    = null
     values = []
@@ -66,10 +60,5 @@ module "aws_ssm_maintenance_window_task" {
       input = null
       name  = null
     }]
-  }]
-
-  task_parameters = [{
-    name   = null
-    values = []
   }]
 }

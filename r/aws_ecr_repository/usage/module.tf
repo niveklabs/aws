@@ -8,6 +8,11 @@ module "aws_ecr_repository" {
   # tags - (optional) is a type of map of string
   tags = {}
 
+  encryption_configuration = [{
+    encryption_type = null
+    kms_key         = null
+  }]
+
   image_scanning_configuration = [{
     scan_on_push = null
   }]

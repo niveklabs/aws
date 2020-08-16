@@ -27,12 +27,6 @@ variable "proposal_id" {
   default     = null
 }
 
-variable "vpn_gateway_id" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "timeouts" {
   description = "nested mode: NestingSingle, min items: 0, max items: 0"
   type = set(object(

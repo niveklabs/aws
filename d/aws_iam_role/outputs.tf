@@ -8,11 +8,6 @@ output "assume_role_policy" {
   value       = data.aws_iam_role.this.assume_role_policy
 }
 
-output "assume_role_policy_document" {
-  description = "returns a string"
-  value       = data.aws_iam_role.this.assume_role_policy_document
-}
-
 output "create_date" {
   description = "returns a string"
   value       = data.aws_iam_role.this.create_date
@@ -41,11 +36,6 @@ output "path" {
 output "permissions_boundary" {
   description = "returns a string"
   value       = data.aws_iam_role.this.permissions_boundary
-}
-
-output "role_id" {
-  description = "returns a string"
-  value       = data.aws_iam_role.this.role_id
 }
 
 output "tags" {

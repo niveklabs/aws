@@ -28,11 +28,6 @@ output "id" {
   value       = aws_autoscaling_group.this.id
 }
 
-output "load_balancers" {
-  description = "returns a set of string"
-  value       = aws_autoscaling_group.this.load_balancers
-}
-
 output "name" {
   description = "returns a string"
   value       = aws_autoscaling_group.this.name
@@ -41,11 +36,6 @@ output "name" {
 output "service_linked_role_arn" {
   description = "returns a string"
   value       = aws_autoscaling_group.this.service_linked_role_arn
-}
-
-output "target_group_arns" {
-  description = "returns a set of string"
-  value       = aws_autoscaling_group.this.target_group_arns
 }
 
 output "vpc_zone_identifier" {

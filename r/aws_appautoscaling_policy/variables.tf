@@ -1,27 +1,3 @@
-variable "adjustment_type" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
-variable "cooldown" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
-variable "metric_aggregation_type" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
-variable "min_adjustment_magnitude" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
 variable "name" {
   description = "(required)"
   type        = string
@@ -46,18 +22,6 @@ variable "scalable_dimension" {
 variable "service_namespace" {
   description = "(required)"
   type        = string
-}
-
-variable "step_adjustment" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      metric_interval_lower_bound = string
-      metric_interval_upper_bound = string
-      scaling_adjustment          = number
-    }
-  ))
-  default = []
 }
 
 variable "step_scaling_policy_configuration" {

@@ -22,9 +22,21 @@ variable "engine_version" {
   default     = null
 }
 
+variable "force_destroy" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "global_cluster_identifier" {
   description = "(required)"
   type        = string
+}
+
+variable "source_db_cluster_identifier" {
+  description = "(optional)"
+  type        = string
+  default     = null
 }
 
 variable "storage_encrypted" {

@@ -17,8 +17,6 @@ module "aws_s3_bucket" {
   hosted_zone_id = null
   # policy - (optional) is a type of string
   policy = null
-  # region - (optional) is a type of string
-  region = null
   # request_payer - (optional) is a type of string
   request_payer = null
   # tags - (optional) is a type of map of string

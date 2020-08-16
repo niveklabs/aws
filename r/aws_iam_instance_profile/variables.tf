@@ -22,9 +22,3 @@ variable "role" {
   default     = null
 }
 
-variable "roles" {
-  description = "(optional)"
-  type        = set(string)
-  default     = null
-}
-

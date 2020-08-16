@@ -256,7 +256,7 @@ variable "network_interfaces" {
   type = set(object(
     {
       associate_public_ip_address = string
-      delete_on_termination       = bool
+      delete_on_termination       = string
       description                 = string
       device_index                = number
       ipv4_address_count          = number

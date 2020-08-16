@@ -65,11 +65,6 @@ module "aws_ecs_service" {
     type       = null
   }]
 
-  placement_strategy = [{
-    field = null
-    type  = null
-  }]
-
   service_registries = [{
     container_name = null
     container_port = null

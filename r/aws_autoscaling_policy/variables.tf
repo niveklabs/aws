@@ -33,12 +33,6 @@ variable "min_adjustment_magnitude" {
   default     = null
 }
 
-variable "min_adjustment_step" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
 variable "name" {
   description = "(required)"
   type        = string

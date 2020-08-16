@@ -5,6 +5,8 @@ module "aws_ssm_parameter" {
   allowed_pattern = null
   # arn - (optional) is a type of string
   arn = null
+  # data_type - (optional) is a type of string
+  data_type = null
   # description - (optional) is a type of string
   description = null
   # key_id - (optional) is a type of string

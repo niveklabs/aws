@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -10,7 +10,6 @@ resource "aws_dx_gateway_association" "this" {
   associated_gateway_owner_account_id = var.associated_gateway_owner_account_id
   dx_gateway_id                       = var.dx_gateway_id
   proposal_id                         = var.proposal_id
-  vpn_gateway_id                      = var.vpn_gateway_id
 
   dynamic "timeouts" {
     for_each = var.timeouts

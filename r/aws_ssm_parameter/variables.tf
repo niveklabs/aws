@@ -10,6 +10,12 @@ variable "arn" {
   default     = null
 }
 
+variable "data_type" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "description" {
   description = "(optional)"
   type        = string

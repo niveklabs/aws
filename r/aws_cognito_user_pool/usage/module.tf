@@ -29,7 +29,6 @@ module "aws_cognito_user_pool" {
       email_subject = null
       sms_message   = null
     }]
-    unused_account_validity_days = null
   }]
 
   device_configuration = [{

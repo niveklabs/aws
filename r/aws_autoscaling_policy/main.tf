@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -11,7 +11,6 @@ resource "aws_autoscaling_policy" "this" {
   estimated_instance_warmup = var.estimated_instance_warmup
   metric_aggregation_type   = var.metric_aggregation_type
   min_adjustment_magnitude  = var.min_adjustment_magnitude
-  min_adjustment_step       = var.min_adjustment_step
   name                      = var.name
   policy_type               = var.policy_type
   scaling_adjustment        = var.scaling_adjustment

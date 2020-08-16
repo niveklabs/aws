@@ -23,10 +23,16 @@ module "aws_apigatewayv2_integration" {
   passthrough_behavior = null
   # payload_format_version - (optional) is a type of string
   payload_format_version = null
+  # request_parameters - (optional) is a type of map of string
+  request_parameters = {}
   # request_templates - (optional) is a type of map of string
   request_templates = {}
   # template_selection_expression - (optional) is a type of string
   template_selection_expression = null
   # timeout_milliseconds - (optional) is a type of number
   timeout_milliseconds = null
+
+  tls_config = [{
+    server_name_to_verify = null
+  }]
 }

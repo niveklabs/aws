@@ -5,9 +5,8 @@ variable "allowed_prefixes" {
 }
 
 variable "associated_gateway_id" {
-  description = "(optional)"
+  description = "(required)"
   type        = string
-  default     = null
 }
 
 variable "dx_gateway_id" {
@@ -18,11 +17,5 @@ variable "dx_gateway_id" {
 variable "dx_gateway_owner_account_id" {
   description = "(required)"
   type        = string
-}
-
-variable "vpn_gateway_id" {
-  description = "(optional)"
-  type        = string
-  default     = null
 }
 

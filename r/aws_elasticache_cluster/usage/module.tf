@@ -5,8 +5,6 @@ module "aws_elasticache_cluster" {
   apply_immediately = null
   # availability_zone - (optional) is a type of string
   availability_zone = null
-  # availability_zones - (optional) is a type of set of string
-  availability_zones = []
   # az_mode - (optional) is a type of string
   az_mode = null
   # cluster_id - (required) is a type of string

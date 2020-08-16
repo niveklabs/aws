@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -16,52 +16,6 @@ resource "aws_cloudfront_distribution" "this" {
   tags                = var.tags
   wait_for_deployment = var.wait_for_deployment
   web_acl_id          = var.web_acl_id
-
-  dynamic "cache_behavior" {
-    for_each = var.cache_behavior
-    content {
-      allowed_methods           = cache_behavior.value["allowed_methods"]
-      cached_methods            = cache_behavior.value["cached_methods"]
-      compress                  = cache_behavior.value["compress"]
-      default_ttl               = cache_behavior.value["default_ttl"]
-      field_level_encryption_id = cache_behavior.value["field_level_encryption_id"]
-      max_ttl                   = cache_behavior.value["max_ttl"]
-      min_ttl                   = cache_behavior.value["min_ttl"]
-      path_pattern              = cache_behavior.value["path_pattern"]
-      smooth_streaming          = cache_behavior.value["smooth_streaming"]
-      target_origin_id          = cache_behavior.value["target_origin_id"]
-      trusted_signers           = cache_behavior.value["trusted_signers"]
-      viewer_protocol_policy    = cache_behavior.value["viewer_protocol_policy"]
-
-      dynamic "forwarded_values" {
-        for_each = cache_behavior.value.forwarded_values
-        content {
-          headers                 = forwarded_values.value["headers"]
-          query_string            = forwarded_values.value["query_string"]
-          query_string_cache_keys = forwarded_values.value["query_string_cache_keys"]
-
-          dynamic "cookies" {
-            for_each = forwarded_values.value.cookies
-            content {
-              forward           = cookies.value["forward"]
-              whitelisted_names = cookies.value["whitelisted_names"]
-            }
-          }
-
-        }
-      }
-
-      dynamic "lambda_function_association" {
-        for_each = cache_behavior.value.lambda_function_association
-        content {
-          event_type   = lambda_function_association.value["event_type"]
-          include_body = lambda_function_association.value["include_body"]
-          lambda_arn   = lambda_function_association.value["lambda_arn"]
-        }
-      }
-
-    }
-  }
 
   dynamic "custom_error_response" {
     for_each = var.custom_error_response

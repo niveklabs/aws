@@ -84,7 +84,6 @@ variable "condition" {
   description = "nested mode: NestingSet, min items: 1, max items: 0"
   type = set(object(
     {
-      field = string
       host_header = list(object(
         {
           values = set(string)
@@ -117,7 +116,6 @@ variable "condition" {
           values = set(string)
         }
       ))
-      values = list(string)
     }
   ))
 }

@@ -1,8 +1,3 @@
-output "active_trusted_signers" {
-  description = "returns a map of string"
-  value       = aws_cloudfront_distribution.this.active_trusted_signers
-}
-
 output "arn" {
   description = "returns a string"
   value       = aws_cloudfront_distribution.this.arn
@@ -46,6 +41,11 @@ output "last_modified_time" {
 output "status" {
   description = "returns a string"
   value       = aws_cloudfront_distribution.this.status
+}
+
+output "trusted_signers" {
+  description = "returns a list of object"
+  value       = aws_cloudfront_distribution.this.trusted_signers
 }
 
 output "this" {

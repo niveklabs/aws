@@ -33,11 +33,6 @@ output "performance_mode" {
   value       = aws_efs_file_system.this.performance_mode
 }
 
-output "reference_name" {
-  description = "returns a string"
-  value       = aws_efs_file_system.this.reference_name
-}
-
 output "this" {
   value = aws_efs_file_system.this
 }

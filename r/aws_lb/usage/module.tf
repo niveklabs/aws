@@ -35,8 +35,9 @@ module "aws_lb" {
   }]
 
   subnet_mapping = [{
-    allocation_id = null
-    subnet_id     = null
+    allocation_id        = null
+    private_ipv4_address = null
+    subnet_id            = null
   }]
 
   timeouts = [{

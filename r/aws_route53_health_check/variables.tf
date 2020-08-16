@@ -22,6 +22,12 @@ variable "cloudwatch_alarm_region" {
   default     = null
 }
 
+variable "disabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "enable_sni" {
   description = "(optional)"
   type        = bool

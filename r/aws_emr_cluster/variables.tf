@@ -28,18 +28,6 @@ variable "configurations_json" {
   default     = null
 }
 
-variable "core_instance_count" {
-  description = "(optional)"
-  type        = number
-  default     = null
-}
-
-variable "core_instance_type" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "custom_ami_id" {
   description = "(optional)"
   type        = string
@@ -59,12 +47,6 @@ variable "keep_job_flow_alive_when_no_steps" {
 }
 
 variable "log_uri" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
-variable "master_instance_type" {
   description = "(optional)"
   type        = string
   default     = null
@@ -187,30 +169,6 @@ variable "ec2_attributes" {
       key_name                          = string
       service_access_security_group     = string
       subnet_id                         = string
-    }
-  ))
-  default = []
-}
-
-variable "instance_group" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      autoscaling_policy = string
-      bid_price          = string
-      ebs_config = set(object(
-        {
-          iops                 = number
-          size                 = number
-          type                 = string
-          volumes_per_instance = number
-        }
-      ))
-      id             = string
-      instance_count = number
-      instance_role  = string
-      instance_type  = string
-      name           = string
     }
   ))
   default = []

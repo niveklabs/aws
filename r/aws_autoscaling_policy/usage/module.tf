@@ -13,8 +13,6 @@ module "aws_autoscaling_policy" {
   metric_aggregation_type = null
   # min_adjustment_magnitude - (optional) is a type of number
   min_adjustment_magnitude = null
-  # min_adjustment_step - (optional) is a type of number
-  min_adjustment_step = null
   # name - (required) is a type of string
   name = null
   # policy_type - (optional) is a type of string

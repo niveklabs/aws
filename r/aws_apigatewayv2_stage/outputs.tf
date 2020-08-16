@@ -3,6 +3,11 @@ output "arn" {
   value       = aws_apigatewayv2_stage.this.arn
 }
 
+output "deployment_id" {
+  description = "returns a string"
+  value       = aws_apigatewayv2_stage.this.deployment_id
+}
+
 output "execution_arn" {
   description = "returns a string"
   value       = aws_apigatewayv2_stage.this.execution_arn

@@ -1,8 +1,3 @@
-output "current" {
-  description = "returns a bool"
-  value       = data.aws_region.this.current
-}
-
 output "description" {
   description = "returns a string"
   value       = data.aws_region.this.description

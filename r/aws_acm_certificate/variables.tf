@@ -30,7 +30,7 @@ variable "private_key" {
 
 variable "subject_alternative_names" {
   description = "(optional)"
-  type        = list(string)
+  type        = set(string)
   default     = null
 }
 

@@ -53,11 +53,6 @@ output "key_name" {
   value       = aws_spot_instance_request.this.key_name
 }
 
-output "network_interface_id" {
-  description = "returns a string"
-  value       = aws_spot_instance_request.this.network_interface_id
-}
-
 output "outpost_arn" {
   description = "returns a string"
   value       = aws_spot_instance_request.this.outpost_arn
@@ -96,6 +91,11 @@ output "public_dns" {
 output "public_ip" {
   description = "returns a string"
   value       = aws_spot_instance_request.this.public_ip
+}
+
+output "secondary_private_ips" {
+  description = "returns a set of string"
+  value       = aws_spot_instance_request.this.secondary_private_ips
 }
 
 output "security_groups" {

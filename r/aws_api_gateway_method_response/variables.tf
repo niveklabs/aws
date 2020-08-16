@@ -20,12 +20,6 @@ variable "response_parameters" {
   default     = null
 }
 
-variable "response_parameters_in_json" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "rest_api_id" {
   description = "(required)"
   type        = string

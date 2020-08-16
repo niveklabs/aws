@@ -10,12 +10,6 @@ variable "availability_zone" {
   default     = null
 }
 
-variable "availability_zones" {
-  description = "(optional)"
-  type        = set(string)
-  default     = null
-}
-
 variable "az_mode" {
   description = "(optional)"
   type        = string

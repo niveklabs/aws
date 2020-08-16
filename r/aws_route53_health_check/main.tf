@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -9,6 +9,7 @@ resource "aws_route53_health_check" "this" {
   child_healthchecks              = var.child_healthchecks
   cloudwatch_alarm_name           = var.cloudwatch_alarm_name
   cloudwatch_alarm_region         = var.cloudwatch_alarm_region
+  disabled                        = var.disabled
   enable_sni                      = var.enable_sni
   failure_threshold               = var.failure_threshold
   fqdn                            = var.fqdn

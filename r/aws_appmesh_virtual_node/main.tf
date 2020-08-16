@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -12,7 +12,6 @@ resource "aws_appmesh_virtual_node" "this" {
   dynamic "spec" {
     for_each = var.spec
     content {
-      backends = spec.value["backends"]
 
       dynamic "backend" {
         for_each = spec.value.backend
@@ -93,8 +92,7 @@ resource "aws_appmesh_virtual_node" "this" {
           dynamic "dns" {
             for_each = service_discovery.value.dns
             content {
-              hostname     = dns.value["hostname"]
-              service_name = dns.value["service_name"]
+              hostname = dns.value["hostname"]
             }
           }
 

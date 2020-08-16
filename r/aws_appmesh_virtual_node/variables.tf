@@ -27,7 +27,6 @@ variable "spec" {
           ))
         }
       ))
-      backends = set(string)
       listener = list(object(
         {
           health_check = list(object(
@@ -73,8 +72,7 @@ variable "spec" {
           ))
           dns = list(object(
             {
-              hostname     = string
-              service_name = string
+              hostname = string
             }
           ))
         }

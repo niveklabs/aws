@@ -57,12 +57,6 @@ variable "request_parameters" {
   default     = null
 }
 
-variable "request_parameters_in_json" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "request_templates" {
   description = "(optional)"
   type        = map(string)

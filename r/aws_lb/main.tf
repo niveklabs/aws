@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -31,8 +31,9 @@ resource "aws_lb" "this" {
   dynamic "subnet_mapping" {
     for_each = var.subnet_mapping
     content {
-      allocation_id = subnet_mapping.value["allocation_id"]
-      subnet_id     = subnet_mapping.value["subnet_id"]
+      allocation_id        = subnet_mapping.value["allocation_id"]
+      private_ipv4_address = subnet_mapping.value["private_ipv4_address"]
+      subnet_id            = subnet_mapping.value["subnet_id"]
     }
   }
 

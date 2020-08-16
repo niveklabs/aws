@@ -27,14 +27,3 @@ variable "value" {
   default     = null
 }
 
-variable "stage_key" {
-  description = "nested mode: NestingSet, min items: 0, max items: 0"
-  type = set(object(
-    {
-      rest_api_id = string
-      stage_name  = string
-    }
-  ))
-  default = []
-}
-

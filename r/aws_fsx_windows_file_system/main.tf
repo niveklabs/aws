@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -9,10 +9,13 @@ resource "aws_fsx_windows_file_system" "this" {
   automatic_backup_retention_days   = var.automatic_backup_retention_days
   copy_tags_to_backups              = var.copy_tags_to_backups
   daily_automatic_backup_start_time = var.daily_automatic_backup_start_time
+  deployment_type                   = var.deployment_type
   kms_key_id                        = var.kms_key_id
+  preferred_subnet_id               = var.preferred_subnet_id
   security_group_ids                = var.security_group_ids
   skip_final_backup                 = var.skip_final_backup
   storage_capacity                  = var.storage_capacity
+  storage_type                      = var.storage_type
   subnet_ids                        = var.subnet_ids
   tags                              = var.tags
   throughput_capacity               = var.throughput_capacity

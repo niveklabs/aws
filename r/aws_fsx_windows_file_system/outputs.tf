@@ -33,6 +33,21 @@ output "owner_id" {
   value       = aws_fsx_windows_file_system.this.owner_id
 }
 
+output "preferred_file_server_ip" {
+  description = "returns a string"
+  value       = aws_fsx_windows_file_system.this.preferred_file_server_ip
+}
+
+output "preferred_subnet_id" {
+  description = "returns a string"
+  value       = aws_fsx_windows_file_system.this.preferred_subnet_id
+}
+
+output "remote_administration_endpoint" {
+  description = "returns a string"
+  value       = aws_fsx_windows_file_system.this.remote_administration_endpoint
+}
+
 output "vpc_id" {
   description = "returns a string"
   value       = aws_fsx_windows_file_system.this.vpc_id

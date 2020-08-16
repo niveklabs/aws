@@ -11,7 +11,7 @@ module "aws_acm_certificate" {
   domain_name = null
   # private_key - (optional) is a type of string
   private_key = null
-  # subject_alternative_names - (optional) is a type of list of string
+  # subject_alternative_names - (optional) is a type of set of string
   subject_alternative_names = []
   # tags - (optional) is a type of map of string
   tags = {}

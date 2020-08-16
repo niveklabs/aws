@@ -9,8 +9,6 @@ module "aws_api_gateway_integration_response" {
   resource_id = null
   # response_parameters - (optional) is a type of map of string
   response_parameters = {}
-  # response_parameters_in_json - (optional) is a type of string
-  response_parameters_in_json = null
   # response_templates - (optional) is a type of map of string
   response_templates = {}
   # rest_api_id - (required) is a type of string

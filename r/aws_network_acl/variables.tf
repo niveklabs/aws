@@ -34,12 +34,6 @@ variable "ingress" {
   default = null
 }
 
-variable "subnet_id" {
-  description = "(optional)"
-  type        = string
-  default     = null
-}
-
 variable "subnet_ids" {
   description = "(optional)"
   type        = set(string)

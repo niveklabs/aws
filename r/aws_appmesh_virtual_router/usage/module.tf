@@ -15,6 +15,5 @@ module "aws_appmesh_virtual_router" {
         protocol = null
       }]
     }]
-    service_names = []
   }]
 }

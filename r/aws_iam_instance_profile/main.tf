@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -9,6 +9,5 @@ resource "aws_iam_instance_profile" "this" {
   name_prefix = var.name_prefix
   path        = var.path
   role        = var.role
-  roles       = var.roles
 }
 

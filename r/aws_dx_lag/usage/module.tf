@@ -9,8 +9,6 @@ module "aws_dx_lag" {
   location = null
   # name - (required) is a type of string
   name = null
-  # number_of_connections - (optional) is a type of number
-  number_of_connections = null
   # tags - (optional) is a type of map of string
   tags = {}
 }

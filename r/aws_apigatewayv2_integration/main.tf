@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
@@ -16,8 +16,17 @@ resource "aws_apigatewayv2_integration" "this" {
   integration_uri               = var.integration_uri
   passthrough_behavior          = var.passthrough_behavior
   payload_format_version        = var.payload_format_version
+  request_parameters            = var.request_parameters
   request_templates             = var.request_templates
   template_selection_expression = var.template_selection_expression
   timeout_milliseconds          = var.timeout_milliseconds
+
+  dynamic "tls_config" {
+    for_each = var.tls_config
+    content {
+      server_name_to_verify = tls_config.value["server_name_to_verify"]
+    }
+  }
+
 }
 

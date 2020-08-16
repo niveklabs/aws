@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
 resource "aws_ssm_parameter" "this" {
   allowed_pattern = var.allowed_pattern
   arn             = var.arn
+  data_type       = var.data_type
   description     = var.description
   key_id          = var.key_id
   name            = var.name

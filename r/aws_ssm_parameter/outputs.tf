@@ -3,6 +3,11 @@ output "arn" {
   value       = aws_ssm_parameter.this.arn
 }
 
+output "data_type" {
+  description = "returns a string"
+  value       = aws_ssm_parameter.this.data_type
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_ssm_parameter.this.id

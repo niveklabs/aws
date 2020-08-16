@@ -14,7 +14,6 @@ module "aws_appmesh_virtual_node" {
         virtual_service_name = null
       }]
     }]
-    backends = []
     listener = [{
       health_check = [{
         healthy_threshold   = null
@@ -44,8 +43,7 @@ module "aws_appmesh_virtual_node" {
         service_name   = null
       }]
       dns = [{
-        hostname     = null
-        service_name = null
+        hostname = null
       }]
     }]
   }]

@@ -1,13 +1,12 @@
 terraform {
   required_providers {
-    aws = ">= 2.70.0"
+    aws = ">= 3.2.0"
   }
 }
 
 resource "aws_elasticache_cluster" "this" {
   apply_immediately            = var.apply_immediately
   availability_zone            = var.availability_zone
-  availability_zones           = var.availability_zones
   az_mode                      = var.az_mode
   cluster_id                   = var.cluster_id
   engine                       = var.engine
