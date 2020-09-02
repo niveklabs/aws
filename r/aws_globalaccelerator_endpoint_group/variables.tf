@@ -49,8 +49,9 @@ variable "endpoint_configuration" {
   description = "nested mode: NestingSet, min items: 0, max items: 10"
   type = set(object(
     {
-      endpoint_id = string
-      weight      = number
+      client_ip_preservation_enabled = bool
+      endpoint_id                    = string
+      weight                         = number
     }
   ))
   default = []

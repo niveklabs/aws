@@ -4,6 +4,18 @@ variable "activation_key" {
   default     = null
 }
 
+variable "average_download_rate_limit_in_bits_per_sec" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
+variable "average_upload_rate_limit_in_bits_per_sec" {
+  description = "(optional)"
+  type        = number
+  default     = null
+}
+
 variable "cloudwatch_log_group_arn" {
   description = "(optional)"
   type        = string
@@ -45,6 +57,12 @@ variable "medium_changer_type" {
 }
 
 variable "smb_guest_password" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
+variable "smb_security_strategy" {
   description = "(optional)"
   type        = string
   default     = null

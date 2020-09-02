@@ -3,6 +3,18 @@ variable "gateway_arn" {
   type        = string
 }
 
+variable "kms_encrypted" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
+variable "kms_key" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "network_interface_id" {
   description = "(required)"
   type        = string

@@ -19,7 +19,8 @@ module "aws_globalaccelerator_endpoint_group" {
   traffic_dial_percentage = null
 
   endpoint_configuration = [{
-    endpoint_id = null
-    weight      = null
+    client_ip_preservation_enabled = null
+    endpoint_id                    = null
+    weight                         = null
   }]
 }

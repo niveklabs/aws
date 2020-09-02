@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.3.0"
+    aws = ">= 3.4.0"
   }
 }
 
@@ -17,8 +17,9 @@ resource "aws_globalaccelerator_endpoint_group" "this" {
   dynamic "endpoint_configuration" {
     for_each = var.endpoint_configuration
     content {
-      endpoint_id = endpoint_configuration.value["endpoint_id"]
-      weight      = endpoint_configuration.value["weight"]
+      client_ip_preservation_enabled = endpoint_configuration.value["client_ip_preservation_enabled"]
+      endpoint_id                    = endpoint_configuration.value["endpoint_id"]
+      weight                         = endpoint_configuration.value["weight"]
     }
   }
 

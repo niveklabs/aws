@@ -3,6 +3,10 @@ module "aws_storagegateway_cached_iscsi_volume" {
 
   # gateway_arn - (required) is a type of string
   gateway_arn = null
+  # kms_encrypted - (optional) is a type of bool
+  kms_encrypted = null
+  # kms_key - (optional) is a type of string
+  kms_key = null
   # network_interface_id - (required) is a type of string
   network_interface_id = null
   # snapshot_id - (optional) is a type of string

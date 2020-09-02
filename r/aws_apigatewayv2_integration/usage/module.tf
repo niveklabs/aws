@@ -15,6 +15,8 @@ module "aws_apigatewayv2_integration" {
   description = null
   # integration_method - (optional) is a type of string
   integration_method = null
+  # integration_subtype - (optional) is a type of string
+  integration_subtype = null
   # integration_type - (required) is a type of string
   integration_type = null
   # integration_uri - (optional) is a type of string

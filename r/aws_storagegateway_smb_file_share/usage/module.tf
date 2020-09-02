@@ -5,6 +5,8 @@ module "aws_storagegateway_smb_file_share" {
   audit_destination_arn = null
   # authentication - (optional) is a type of string
   authentication = null
+  # case_sensitivity - (optional) is a type of string
+  case_sensitivity = null
   # default_storage_class - (optional) is a type of string
   default_storage_class = null
   # gateway_arn - (required) is a type of string
@@ -33,6 +35,10 @@ module "aws_storagegateway_smb_file_share" {
   tags = {}
   # valid_user_list - (optional) is a type of set of string
   valid_user_list = []
+
+  cache_attributes = [{
+    cache_stale_timeout_in_seconds = null
+  }]
 
   timeouts = [{
     create = null

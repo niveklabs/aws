@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.3.0"
+    aws = ">= 3.4.0"
   }
 }
 
@@ -18,6 +18,13 @@ resource "aws_storagegateway_nfs_file_share" "this" {
   role_arn                = var.role_arn
   squash                  = var.squash
   tags                    = var.tags
+
+  dynamic "cache_attributes" {
+    for_each = var.cache_attributes
+    content {
+      cache_stale_timeout_in_seconds = cache_attributes.value["cache_stale_timeout_in_seconds"]
+    }
+  }
 
   dynamic "nfs_file_share_defaults" {
     for_each = var.nfs_file_share_defaults

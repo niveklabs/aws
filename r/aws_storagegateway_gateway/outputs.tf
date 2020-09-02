@@ -23,6 +23,11 @@ output "id" {
   value       = aws_storagegateway_gateway.this.id
 }
 
+output "smb_security_strategy" {
+  description = "returns a string"
+  value       = aws_storagegateway_gateway.this.smb_security_strategy
+}
+
 output "this" {
   value = aws_storagegateway_gateway.this
 }

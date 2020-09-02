@@ -10,6 +10,12 @@ variable "authentication" {
   default     = null
 }
 
+variable "case_sensitivity" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "default_storage_class" {
   description = "(optional)"
   type        = string
@@ -89,6 +95,16 @@ variable "valid_user_list" {
   description = "(optional)"
   type        = set(string)
   default     = null
+}
+
+variable "cache_attributes" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      cache_stale_timeout_in_seconds = number
+    }
+  ))
+  default = []
 }
 
 variable "timeouts" {

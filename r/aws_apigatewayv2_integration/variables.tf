@@ -39,6 +39,12 @@ variable "integration_method" {
   default     = null
 }
 
+variable "integration_subtype" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "integration_type" {
   description = "(required)"
   type        = string

@@ -21,6 +21,8 @@ module "aws_xray_sampling_rule" {
   service_name = null
   # service_type - (required) is a type of string
   service_type = null
+  # tags - (optional) is a type of map of string
+  tags = {}
   # url_path - (required) is a type of string
   url_path = null
   # version - (required) is a type of number

@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.3.0"
+    aws = ">= 3.4.0"
   }
 }
 
@@ -12,6 +12,7 @@ resource "aws_apigatewayv2_integration" "this" {
   credentials_arn               = var.credentials_arn
   description                   = var.description
   integration_method            = var.integration_method
+  integration_subtype           = var.integration_subtype
   integration_type              = var.integration_type
   integration_uri               = var.integration_uri
   passthrough_behavior          = var.passthrough_behavior

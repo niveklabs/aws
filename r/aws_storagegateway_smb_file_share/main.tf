@@ -1,12 +1,13 @@
 terraform {
   required_providers {
-    aws = ">= 3.3.0"
+    aws = ">= 3.4.0"
   }
 }
 
 resource "aws_storagegateway_smb_file_share" "this" {
   audit_destination_arn   = var.audit_destination_arn
   authentication          = var.authentication
+  case_sensitivity        = var.case_sensitivity
   default_storage_class   = var.default_storage_class
   gateway_arn             = var.gateway_arn
   guess_mime_type_enabled = var.guess_mime_type_enabled
@@ -21,6 +22,13 @@ resource "aws_storagegateway_smb_file_share" "this" {
   smb_acl_enabled         = var.smb_acl_enabled
   tags                    = var.tags
   valid_user_list         = var.valid_user_list
+
+  dynamic "cache_attributes" {
+    for_each = var.cache_attributes
+    content {
+      cache_stale_timeout_in_seconds = cache_attributes.value["cache_stale_timeout_in_seconds"]
+    }
+  }
 
   dynamic "timeouts" {
     for_each = var.timeouts

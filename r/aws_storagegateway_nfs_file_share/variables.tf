@@ -72,6 +72,16 @@ variable "tags" {
   default     = null
 }
 
+variable "cache_attributes" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      cache_stale_timeout_in_seconds = number
+    }
+  ))
+  default = []
+}
+
 variable "nfs_file_share_defaults" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

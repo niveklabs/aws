@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.3.0"
+    aws = ">= 3.4.0"
   }
 }
 
@@ -15,6 +15,7 @@ resource "aws_xray_sampling_rule" "this" {
   rule_name      = var.rule_name
   service_name   = var.service_name
   service_type   = var.service_type
+  tags           = var.tags
   url_path       = var.url_path
   version        = var.version
 }

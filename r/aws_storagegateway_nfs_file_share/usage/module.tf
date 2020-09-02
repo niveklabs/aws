@@ -28,6 +28,10 @@ module "aws_storagegateway_nfs_file_share" {
   # tags - (optional) is a type of map of string
   tags = {}
 
+  cache_attributes = [{
+    cache_stale_timeout_in_seconds = null
+  }]
+
   nfs_file_share_defaults = [{
     directory_mode = null
     file_mode      = null

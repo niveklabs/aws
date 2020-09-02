@@ -50,6 +50,12 @@ variable "service_type" {
   type        = string
 }
 
+variable "tags" {
+  description = "(optional)"
+  type        = map(string)
+  default     = null
+}
+
 variable "url_path" {
   description = "(required)"
   type        = string
