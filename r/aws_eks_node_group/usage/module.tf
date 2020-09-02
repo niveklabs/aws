@@ -26,6 +26,12 @@ module "aws_eks_node_group" {
   # version - (optional) is a type of string
   version = null
 
+  launch_template = [{
+    id      = null
+    name    = null
+    version = null
+  }]
+
   remote_access = [{
     ec2_ssh_key               = null
     source_security_group_ids = []

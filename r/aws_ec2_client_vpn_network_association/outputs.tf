@@ -1,3 +1,8 @@
+output "association_id" {
+  description = "returns a string"
+  value       = aws_ec2_client_vpn_network_association.this.association_id
+}
+
 output "id" {
   description = "returns a string"
   value       = aws_ec2_client_vpn_network_association.this.id

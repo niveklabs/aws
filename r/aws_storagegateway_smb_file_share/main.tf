@@ -1,10 +1,11 @@
 terraform {
   required_providers {
-    aws = ">= 3.2.0"
+    aws = ">= 3.3.0"
   }
 }
 
 resource "aws_storagegateway_smb_file_share" "this" {
+  audit_destination_arn   = var.audit_destination_arn
   authentication          = var.authentication
   default_storage_class   = var.default_storage_class
   gateway_arn             = var.gateway_arn
@@ -17,6 +18,7 @@ resource "aws_storagegateway_smb_file_share" "this" {
   read_only               = var.read_only
   requester_pays          = var.requester_pays
   role_arn                = var.role_arn
+  smb_acl_enabled         = var.smb_acl_enabled
   tags                    = var.tags
   valid_user_list         = var.valid_user_list
 

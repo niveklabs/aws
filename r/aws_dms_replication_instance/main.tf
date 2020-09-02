@@ -1,11 +1,12 @@
 terraform {
   required_providers {
-    aws = ">= 3.2.0"
+    aws = ">= 3.3.0"
   }
 }
 
 resource "aws_dms_replication_instance" "this" {
   allocated_storage            = var.allocated_storage
+  allow_major_version_upgrade  = var.allow_major_version_upgrade
   apply_immediately            = var.apply_immediately
   auto_minor_version_upgrade   = var.auto_minor_version_upgrade
   availability_zone            = var.availability_zone

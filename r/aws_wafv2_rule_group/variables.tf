@@ -114,6 +114,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -378,6 +384,12 @@ variable "rule" {
                   geo_match_statement = list(object(
                     {
                       country_codes = list(string)
+                      forwarded_ip_config = list(object(
+                        {
+                          fallback_behavior = string
+                          header_name       = string
+                        }
+                      ))
                     }
                   ))
                   ip_set_reference_statement = list(object(
@@ -443,6 +455,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -711,6 +729,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -1178,6 +1202,12 @@ variable "rule" {
           geo_match_statement = list(object(
             {
               country_codes = list(string)
+              forwarded_ip_config = list(object(
+                {
+                  fallback_behavior = string
+                  header_name       = string
+                }
+              ))
             }
           ))
           ip_set_reference_statement = list(object(
@@ -1247,6 +1277,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -1511,6 +1547,12 @@ variable "rule" {
                   geo_match_statement = list(object(
                     {
                       country_codes = list(string)
+                      forwarded_ip_config = list(object(
+                        {
+                          fallback_behavior = string
+                          header_name       = string
+                        }
+                      ))
                     }
                   ))
                   ip_set_reference_statement = list(object(
@@ -1576,6 +1618,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -1844,6 +1892,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -2319,6 +2373,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -2583,6 +2643,12 @@ variable "rule" {
                   geo_match_statement = list(object(
                     {
                       country_codes = list(string)
+                      forwarded_ip_config = list(object(
+                        {
+                          fallback_behavior = string
+                          header_name       = string
+                        }
+                      ))
                     }
                   ))
                   ip_set_reference_statement = list(object(
@@ -2648,6 +2714,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(
@@ -2916,6 +2988,12 @@ variable "rule" {
                           geo_match_statement = list(object(
                             {
                               country_codes = list(string)
+                              forwarded_ip_config = list(object(
+                                {
+                                  fallback_behavior = string
+                                  header_name       = string
+                                }
+                              ))
                             }
                           ))
                           ip_set_reference_statement = list(object(

@@ -64,6 +64,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -222,6 +226,10 @@ module "aws_wafv2_rule_group" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -261,6 +269,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -421,6 +433,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -700,6 +716,10 @@ module "aws_wafv2_rule_group" {
       }]
       geo_match_statement = [{
         country_codes = []
+        forwarded_ip_config = [{
+          fallback_behavior = null
+          header_name       = null
+        }]
       }]
       ip_set_reference_statement = [{
         arn = null
@@ -741,6 +761,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -899,6 +923,10 @@ module "aws_wafv2_rule_group" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -938,6 +966,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -1098,6 +1130,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -1381,6 +1417,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -1539,6 +1579,10 @@ module "aws_wafv2_rule_group" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -1578,6 +1622,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -1738,6 +1786,10 @@ module "aws_wafv2_rule_group" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null

@@ -81,6 +81,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -239,6 +243,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -278,6 +286,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -438,6 +450,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -717,6 +733,10 @@ module "aws_wafv2_web_acl" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -758,6 +778,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -916,6 +940,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -955,6 +983,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -1115,6 +1147,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -1398,6 +1434,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -1556,6 +1596,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -1595,6 +1639,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -1755,6 +1803,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -2155,6 +2207,10 @@ module "aws_wafv2_web_acl" {
       }]
       geo_match_statement = [{
         country_codes = []
+        forwarded_ip_config = [{
+          fallback_behavior = null
+          header_name       = null
+        }]
       }]
       ip_set_reference_statement = [{
         arn = null
@@ -2205,6 +2261,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -2363,6 +2423,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -2402,6 +2466,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -2562,6 +2630,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -2841,6 +2913,10 @@ module "aws_wafv2_web_acl" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -2882,6 +2958,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -3040,6 +3120,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -3079,6 +3163,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -3239,6 +3327,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -3522,6 +3614,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -3680,6 +3776,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -3719,6 +3819,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -3879,6 +3983,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -4285,6 +4393,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -4443,6 +4555,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -4482,6 +4598,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -4642,6 +4762,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -4921,6 +5045,10 @@ module "aws_wafv2_web_acl" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -4962,6 +5090,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -5120,6 +5252,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -5159,6 +5295,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -5319,6 +5459,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -5602,6 +5746,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -5760,6 +5908,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -5799,6 +5951,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -5959,6 +6115,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -6328,7 +6488,11 @@ module "aws_wafv2_web_acl" {
       }]
       rate_based_statement = [{
         aggregate_key_type = null
-        limit              = null
+        forwarded_ip_config = [{
+          fallback_behavior = null
+          header_name       = null
+        }]
+        limit = null
         scope_down_statement = [{
           and_statement = [{
             statement = [{
@@ -6367,6 +6531,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -6525,6 +6693,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -6564,6 +6736,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -6724,6 +6900,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -7003,6 +7183,10 @@ module "aws_wafv2_web_acl" {
           }]
           geo_match_statement = [{
             country_codes = []
+            forwarded_ip_config = [{
+              fallback_behavior = null
+              header_name       = null
+            }]
           }]
           ip_set_reference_statement = [{
             arn = null
@@ -7044,6 +7228,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -7202,6 +7390,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -7241,6 +7433,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -7401,6 +7597,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -7684,6 +7884,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -7842,6 +8046,10 @@ module "aws_wafv2_web_acl" {
               }]
               geo_match_statement = [{
                 country_codes = []
+                forwarded_ip_config = [{
+                  fallback_behavior = null
+                  header_name       = null
+                }]
               }]
               ip_set_reference_statement = [{
                 arn = null
@@ -7881,6 +8089,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null
@@ -8041,6 +8253,10 @@ module "aws_wafv2_web_acl" {
                   }]
                   geo_match_statement = [{
                     country_codes = []
+                    forwarded_ip_config = [{
+                      fallback_behavior = null
+                      header_name       = null
+                    }]
                   }]
                   ip_set_reference_statement = [{
                     arn = null

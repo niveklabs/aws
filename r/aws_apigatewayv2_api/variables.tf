@@ -4,6 +4,12 @@ variable "api_key_selection_expression" {
   default     = null
 }
 
+variable "body" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "credentials_arn" {
   description = "(optional)"
   type        = string

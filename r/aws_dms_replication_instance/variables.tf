@@ -4,6 +4,12 @@ variable "allocated_storage" {
   default     = null
 }
 
+variable "allow_major_version_upgrade" {
+  description = "(optional)"
+  type        = bool
+  default     = null
+}
+
 variable "apply_immediately" {
   description = "(optional)"
   type        = bool

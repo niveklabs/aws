@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.2.0"
+    aws = ">= 3.3.0"
   }
 }
 
@@ -17,6 +17,15 @@ resource "aws_eks_node_group" "this" {
   subnet_ids           = var.subnet_ids
   tags                 = var.tags
   version              = var.version
+
+  dynamic "launch_template" {
+    for_each = var.launch_template
+    content {
+      id      = launch_template.value["id"]
+      name    = launch_template.value["name"]
+      version = launch_template.value["version"]
+    }
+  }
 
   dynamic "remote_access" {
     for_each = var.remote_access

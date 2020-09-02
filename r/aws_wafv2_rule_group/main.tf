@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    aws = ">= 3.2.0"
+    aws = ">= 3.3.0"
   }
 }
 
@@ -134,6 +134,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -489,6 +498,15 @@ resource "aws_wafv2_rule_group" "this" {
                     for_each = statement.value.geo_match_statement
                     content {
                       country_codes = geo_match_statement.value["country_codes"]
+
+                      dynamic "forwarded_ip_config" {
+                        for_each = geo_match_statement.value.forwarded_ip_config
+                        content {
+                          fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                          header_name       = forwarded_ip_config.value["header_name"]
+                        }
+                      }
+
                     }
                   }
 
@@ -579,6 +597,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -942,6 +969,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -1570,6 +1606,15 @@ resource "aws_wafv2_rule_group" "this" {
             for_each = statement.value.geo_match_statement
             content {
               country_codes = geo_match_statement.value["country_codes"]
+
+              dynamic "forwarded_ip_config" {
+                for_each = geo_match_statement.value.forwarded_ip_config
+                content {
+                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                  header_name       = forwarded_ip_config.value["header_name"]
+                }
+              }
+
             }
           }
 
@@ -1668,6 +1713,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -2023,6 +2077,15 @@ resource "aws_wafv2_rule_group" "this" {
                     for_each = statement.value.geo_match_statement
                     content {
                       country_codes = geo_match_statement.value["country_codes"]
+
+                      dynamic "forwarded_ip_config" {
+                        for_each = geo_match_statement.value.forwarded_ip_config
+                        content {
+                          fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                          header_name       = forwarded_ip_config.value["header_name"]
+                        }
+                      }
+
                     }
                   }
 
@@ -2113,6 +2176,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -2476,6 +2548,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -3120,6 +3201,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -3475,6 +3565,15 @@ resource "aws_wafv2_rule_group" "this" {
                     for_each = statement.value.geo_match_statement
                     content {
                       country_codes = geo_match_statement.value["country_codes"]
+
+                      dynamic "forwarded_ip_config" {
+                        for_each = geo_match_statement.value.forwarded_ip_config
+                        content {
+                          fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                          header_name       = forwarded_ip_config.value["header_name"]
+                        }
+                      }
+
                     }
                   }
 
@@ -3565,6 +3664,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 
@@ -3928,6 +4036,15 @@ resource "aws_wafv2_rule_group" "this" {
                             for_each = statement.value.geo_match_statement
                             content {
                               country_codes = geo_match_statement.value["country_codes"]
+
+                              dynamic "forwarded_ip_config" {
+                                for_each = geo_match_statement.value.forwarded_ip_config
+                                content {
+                                  fallback_behavior = forwarded_ip_config.value["fallback_behavior"]
+                                  header_name       = forwarded_ip_config.value["header_name"]
+                                }
+                              }
+
                             }
                           }
 

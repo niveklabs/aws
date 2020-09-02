@@ -18,11 +18,6 @@ output "id" {
   value       = aws_subnet.this.id
 }
 
-output "ipv6_cidr_block" {
-  description = "returns a string"
-  value       = aws_subnet.this.ipv6_cidr_block
-}
-
 output "ipv6_cidr_block_association_id" {
   description = "returns a string"
   value       = aws_subnet.this.ipv6_cidr_block_association_id

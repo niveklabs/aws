@@ -1,3 +1,9 @@
+variable "audit_destination_arn" {
+  description = "(optional)"
+  type        = string
+  default     = null
+}
+
 variable "authentication" {
   description = "(optional)"
   type        = string
@@ -65,6 +71,12 @@ variable "requester_pays" {
 variable "role_arn" {
   description = "(required)"
   type        = string
+}
+
+variable "smb_acl_enabled" {
+  description = "(optional)"
+  type        = bool
+  default     = null
 }
 
 variable "tags" {

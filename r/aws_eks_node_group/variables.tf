@@ -66,6 +66,18 @@ variable "version" {
   default     = null
 }
 
+variable "launch_template" {
+  description = "nested mode: NestingList, min items: 0, max items: 1"
+  type = set(object(
+    {
+      id      = string
+      name    = string
+      version = string
+    }
+  ))
+  default = []
+}
+
 variable "remote_access" {
   description = "nested mode: NestingList, min items: 0, max items: 1"
   type = set(object(

@@ -3,6 +3,8 @@ module "aws_apigatewayv2_api" {
 
   # api_key_selection_expression - (optional) is a type of string
   api_key_selection_expression = null
+  # body - (optional) is a type of string
+  body = null
   # credentials_arn - (optional) is a type of string
   credentials_arn = null
   # description - (optional) is a type of string

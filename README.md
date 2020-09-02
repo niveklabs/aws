@@ -3,7 +3,7 @@
 [embedmd]:# (aws.tf)
 ```tf
 provider "aws" {
-  version = "3.2.0"
+  version = "3.3.0"
 
   # access_key - (optional) is a type of string
   access_key = null

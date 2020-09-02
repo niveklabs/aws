@@ -1,11 +1,12 @@
 terraform {
   required_providers {
-    aws = ">= 3.2.0"
+    aws = ">= 3.3.0"
   }
 }
 
 resource "aws_apigatewayv2_api" "this" {
   api_key_selection_expression = var.api_key_selection_expression
+  body                         = var.body
   credentials_arn              = var.credentials_arn
   description                  = var.description
   name                         = var.name
